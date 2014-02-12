@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<server>
+    <bindDn>cn=Admin,dc=slidev,dc=org</bindDn>
+    <!-- If bind_dn is provided the password is assigned. -->
+    <password>test1234</password>
+    <schema>
+        <name>ldif/ldap-schema.ldif</name>
+    </schema>
+    <root>
+        <objectDn>dc=slidev,dc=org</objectDn>
+        <objectClasses>
+            <objectClass>domain</objectClass>
+            <objectClass>top</objectClass>
+        </objectClasses>
+    </root>
+    <!-- <entries>
+        <entry>
+            <objectDn>ou=rcEnvironment,dc=slidev,dc=org</objectDn>
+            <objectClasses>
+                <objectClass>organizationalUnit</objectClass>
+            </objectClasses>
+        </entry>
+    </entries> -->
+    <listeners>
+        <listener>
+            <name>LDAP</name>
+            <!-- If address is null, listen on all available addresses and interfaces. -->
+            <address></address>
+            <port>10389</port>
+        </listener>
+    </listeners>
+    <ldifs>
+        <!-- Only one schema per server is allowed.  -->
+        <!-- Zero to many LDIF elements are allowed and loaded.  -->
+        <!--<ldif>
+            <name>ldif/ciDevLDIF.ldif.modified</name>
+        </ldif>
+        <ldif>
+            <name>ldif/rcLDIF.ldif.modified</name>
+        </ldif>
+        <ldif>
+            <name>ldif/IL-CHARTER.ldif.modified</name>
+        </ldif>  -->
+        <ldif>
+            <name>ldif/2014_01_16_ldap_export.ldif.modified</name>
+        </ldif>
+    </ldifs>
+ </server>

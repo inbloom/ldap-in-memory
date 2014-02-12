@@ -1,0 +1,90 @@
+<xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="server">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element type="xs:string" name="bindDn" minOccurs="1" maxOccurs="1" nillable="true"/>
+                <xs:element type="xs:string" name="password" minOccurs="1" maxOccurs="1" nillable="true">
+                    <xs:annotation>
+                        <xs:documentation>If bind_dn is provided the password is assigned.</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="schema" minOccurs="1" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="xs:string" name="name" minOccurs="1" maxOccurs="1" nillable="false"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="root" minOccurs="1" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="xs:string" name="objectDn" minOccurs="1" maxOccurs="1" nillable="false"/>
+                            <xs:element name="objectClasses" minOccurs="1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element type="xs:string" name="objectClass" minOccurs="1" maxOccurs="unbounded" nillable="false"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="entries" minOccurs="0" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="entry" maxOccurs="unbounded" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element type="xs:string" name="objectDn" nillable="false"/>
+                                        <xs:element name="objectClasses">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element type="xs:string" name="objectClass" nillable="false"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="listeners" minOccurs="1" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="listener">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element type="xs:string" name="name" minOccurs="1" maxOccurs="1" nillable="false"/>
+                                        <xs:element type="xs:string" name="address" nillable="true">
+                                            <xs:annotation>
+                                                <xs:documentation>If address is null, listen on all available addresses and interfaces.</xs:documentation>
+                                            </xs:annotation>
+                                        </xs:element>
+                                        <xs:element type="xs:positiveInteger" minOccurs="1" maxOccurs="1" name="port"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="ldifs" minOccurs="1" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ldif" minOccurs="1" maxOccurs="unbounded" nillable="false">
+                                <xs:annotation>
+                                    <xs:documentation>Only one schema per server is allowed.   Zero to many LDIF elements are allowed and loaded.</xs:documentation>
+                                </xs:annotation>
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element type="xs:string" name="name" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
