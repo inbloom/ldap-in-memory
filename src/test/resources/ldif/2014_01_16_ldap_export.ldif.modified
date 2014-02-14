@@ -49,6 +49,7 @@ gidNumber: 503
 memberUid: linda.kim
 memberUid: cgray
 memberUid: rbraverman
+memberUid: mabernathy
 
 dn: cn=Leader,ou=groups,ou=ProdTest-IL-Daybreak,ou=rcEnvironment,dc=slidev,d
  c=org
@@ -70,6 +71,7 @@ gidNumber: 513
 memberUid: jstevenson
 memberUid: akopel
 memberUid: rrogers
+memberUid: mabernathy
 
 dn: cn=Aggregate Viewer,ou=groups,ou=ProdTest-IL-Daybreak,ou=rcEnvironment,d
  c=slidev,dc=org
@@ -264,6 +266,22 @@ givenName: Rick
 loginShell: /bin/bash
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
+dn: cn=Mark Abernathy,ou=people,ou=ProdTest-IL-Daybreak,ou=rcEnvironment,dc=
+ slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Mark Abernathy
+gidNumber: 513
+homeDirectory: /home/users/mabernathy
+sn: Abernathy
+uid: mabernathy
+uidNumber: 1199
+givenName: Mark
+loginShell: /bin/bash
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
 dn: ou=IL-DAYBREAK,ou=DevTest,dc=slidev,dc=org
 changetype: add
 objectClass: organizationalUnit
@@ -285,6 +303,9 @@ gidNumber: 503
 memberUid: linda.kim
 memberUid: cgray
 memberUid: rbraverman
+memberUid: mabernathy
+memberUid: rbelding
+memberUid: jmacey
 
 dn: cn=Leader,ou=groups,ou=IL-DAYBREAK,ou=DevTest,dc=slidev,dc=org
 changetype: add
@@ -295,6 +316,10 @@ gidNumber: 512
 memberUid: sbantu
 memberUid: mgonzales
 memberUid: msmith
+memberUid: jmacey
+memberUid: rbelding
+memberUid: xbell
+memberUid: tcuyper
 
 dn: cn=IT Administrator,ou=groups,ou=IL-DAYBREAK,ou=DevTest,dc=slidev,dc=org
 changetype: add
@@ -305,6 +330,8 @@ gidNumber: 513
 memberUid: jstevenson
 memberUid: akopel
 memberUid: rrogers
+memberUid: mabernathy
+memberUid: tcuyper
 memberUid: linda.kim
 
 dn: cn=Aggregate Viewer,ou=groups,ou=IL-DAYBREAK,ou=DevTest,dc=slidev,dc=org
@@ -316,6 +343,7 @@ gidNumber: 514
 memberUid: jjackson
 memberUid: msmith
 memberUid: mjohnson
+memberUid: xbell
 
 dn: ou=people,ou=IL-DAYBREAK,ou=DevTest,dc=slidev,dc=org
 changetype: add
@@ -489,6 +517,21 @@ givenName: Rick
 loginShell: /bin/bash
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
+dn: cn=Mark Abernathy,ou=people,ou=IL-DAYBREAK,ou=DevTest,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Mark Abernathy
+gidNumber: 513
+homeDirectory: /home/users/mabernathy
+sn: Abernathy
+uid: mabernathy
+uidNumber: 1199
+givenName: Mark
+loginShell: /bin/bash
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
 dn: ou=IL-Sunset,ou=DevTest,dc=slidev,dc=org
 changetype: add
 objectClass: organizationalUnit
@@ -509,6 +552,7 @@ cn: Educator
 gidNumber: 507
 memberUid: manthony
 memberUid: cgray
+memberUid: jdoe
 
 dn: cn=Leader,ou=groups,ou=IL-Sunset,ou=DevTest,dc=slidev,dc=org
 changetype: add
@@ -625,6 +669,31 @@ objectClass: top
 cn: Charles Gray
 sn: Gray
 uid: cgray
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=BadAdmin Test,ou=people,ou=IL-Sunset,ou=DevTest,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: BadAdmin Test
+gidNumber: 511
+homeDirectory: /home/users/badadmin
+sn: Test
+uid: badadmin
+uidNumber: 1146
+givenName: BadAdmin
+loginShell: /bin/bash
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Joe Doe,ou=people,ou=IL-Sunset,ou=DevTest,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: top
+cn: Joe Doe
+sn: Doe
+givenName: Joe
+uid: jdoe
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: ou=IL-Daybreak-Students,ou=DevTest,dc=slidev,dc=org
@@ -888,6 +957,8 @@ objectClass: top
 cn: LEA Administrator
 gidNumber: 505
 memberUid: sunsetadmin
+memberUid: daybreakadmin
+memberUid: daybreaknorealmadmin
 
 dn: cn=SLC Operator,ou=people,ou=SLIAdmin,dc=slidev,dc=org
 changetype: add
@@ -904,6 +975,25 @@ displayName: 2ccd88620d9d3fb3ee8ee839c806fb73
 givenName: SLC
 loginShell: /bin/sh
 mail: slcoperator@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Daybreak Admin,ou=people,ou=SLIAdmin,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Daybreak Admin
+gidNumber: 505
+homeDirectory: /ingestion/lz/Midgar/13e785053e77f7d6b064cdcd43167f70ae8c32ca
+ 88c6a3b9b0c8cd52458faa77
+sn: Admin
+uid: daybreakadmin
+uidNumber: 1119
+description:: dGVuYW50PU1pZGdhcgplZE9yZz1JTC1EQVlCUkVBSw==
+displayName: 0bd6b800ec046191473a61b9b9584c48
+givenName: Daybreak
+loginShell: /bin/sh
+mail: daybreakadmin@slidev.org
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=Test Developer,ou=people,ou=SLIAdmin,dc=slidev,dc=org
@@ -934,6 +1024,7 @@ memberUid: testdeveloper
 memberUid: developer
 memberUid: slcdeveloper
 memberUid: developer-email@slidev.org
+memberUid: devldapuser@slidev.org
 memberUid: sandboxdeveloper
 memberUid: admintest-developer@slidev.org
 
@@ -943,6 +1034,7 @@ objectClass: posixGroup
 objectClass: top
 cn: SEA Administrator
 gidNumber: 508
+memberUid: nyadmin
 memberUid: iladmin
 
 dn: cn=Realm Administrator,ou=groups,ou=SLIAdmin,dc=slidev,dc=org
@@ -953,7 +1045,9 @@ cn: Realm Administrator
 gidNumber: 509
 memberUid: fakerealmadmin
 memberUid: sunsetadmin
+memberUid: nyadmin
 memberUid: sunsetrealmadmin
+memberUid: daybreakadmin
 
 dn: cn=Ingestion User,ou=groups,ou=SLIAdmin,dc=slidev,dc=org
 changetype: add
@@ -961,8 +1055,12 @@ objectClass: posixGroup
 objectClass: top
 cn: Ingestion User
 gidNumber: 510
+memberUid: nyadmin
 memberUid: sunsetadmin
+memberUid: daybreakadmin
 memberUid: ingestionuser
+memberUid: devldapuserpwolf-HP-EliteBook-2560p@slidev.org
+memberUid: devldapuser@slidev.org
 memberUid: sunsetingestionuser
 memberUid: sandboxingestionuser
 
@@ -1001,6 +1099,23 @@ displayName: 80e7f8e4c713a7c2495807c5c7a69dcf
 givenName: IL
 loginShell: /bin/sh
 mail: iladmin@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=NY Admin,ou=people,ou=SLIAdmin,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: NY Admin
+gidNumber: 508
+homeDirectory: /mnt/gluster-lz/NY/NY-STATE-NYC
+sn: Admin
+uid: nyadmin
+uidNumber: 1123
+description:: dGVuYW50PUh5cnVsZQplZE9yZz1OWS1TVEFURS1OWUM=
+displayName: 507c174942f3dd3ebc0e4b16d68553f2
+givenName: NY
+loginShell: /bin/sh
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=Sunset RealmAdmin,ou=people,ou=SLIAdmin,dc=slidev,dc=org
@@ -1118,6 +1233,24 @@ memberUid: administrator
 memberUid: demo
 memberUid: fakerealmadmin
 
+dn: cn=DaybreakNoRealmAdmin Test,ou=people,ou=SLIAdmin,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: DaybreakNoRealmAdmin Test
+gidNumber: 511
+homeDirectory: /home/users/daybreaknorealmadmin
+sn: Test
+uid: daybreaknorealmadmin
+uidNumber: 1133
+description:: dGVuYW50PU1pZGdhcgplZE9yZz1JTC1EQVlCUkVBSw==
+displayName: e0dda68f60f746ed58bd461a0a11792d
+givenName: DaybreakNoRealmAdmin
+loginShell: /bin/sh
+mail: daybreaknorealmadmin@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
 dn: cn=SLC Developer,ou=people,ou=SLIAdmin,dc=slidev,dc=org
 changetype: add
 objectClass: inetOrgPerson
@@ -1183,6 +1316,17 @@ objectClass: top
 cn: Sandbox Administrator
 gidNumber: 516
 memberUid: sandboxadministrator
+memberUid: devldapuser@slidev.org
+memberUid: devldapuser_nxslave1@slidev.org
+memberUid: devldapuser_nxslave5@slidev.org
+memberUid: devldapuser_nxslave8@slidev.org
+memberUid: devldapuser_nxslave7@slidev.org
+memberUid: devldapuser_nxslave2@slidev.org
+memberUid: devldapuser_nxslave9@slidev.org
+memberUid: devldapuser_cislave10@slidev.org
+memberUid: devldapuser_ip-10-163-6-112@slidev.org
+memberUid: devldapuser_ip-10-163-7-63@slidev.org
+memberUid: devldapuser_cislave@slidev.org
 
 dn: cn=ingestion_user,ou=groups,ou=SLIAdmin,dc=slidev,dc=org
 changetype: add
@@ -1190,10 +1334,31 @@ objectClass: posixGroup
 objectClass: top
 cn: ingestion_user
 gidNumber: 510
+memberUid: nyadmin
 memberUid: sunsetadmin
+memberUid: daybreakadmin
 memberUid: ingestionuser
+memberUid: devldapuser@slidev.org
 memberUid: sunsetingestionuser
 memberUid: sandboxingestionuser
+memberUid: devldapuser_nxslave4@slidev.org
+memberUid: devldapuser_Liu-Mac.local@slidev.org
+memberUid: devldapuser_localhost@slidev.org
+memberUid: devldapuser_nxslave6@slidev.org
+memberUid: devldapuser_nxslave3@slidev.org
+memberUid: devldapuser_nxslave10@slidev.org
+memberUid: devldapuser_nxslave1@slidev.org
+memberUid: devldapuser_nxslave5@slidev.org
+memberUid: devldapuser_cislave01.slidev.org@slidev.org
+memberUid: devldapuser_cislave02.slidev.org@slidev.org
+memberUid: devldapuser_nxslave8@slidev.org
+memberUid: devldapuser_nxslave7@slidev.org
+memberUid: devldapuser_nxslave2@slidev.org
+memberUid: devldapuser_nxslave9@slidev.org
+memberUid: devldapuser_cislave10@slidev.org
+memberUid: devldapuser_ip-10-163-6-112@slidev.org
+memberUid: devldapuser_ip-10-163-7-63@slidev.org
+memberUid: devldapuser_cislave@slidev.org
 
 dn: cn=application_developer,ou=groups,ou=SLIAdmin,dc=slidev,dc=org
 changetype: add
@@ -1205,7 +1370,25 @@ memberUid: testdeveloper
 memberUid: developer
 memberUid: slcdeveloper
 memberUid: developer-email@slidev.org
+memberUid: devldapuser@slidev.org
 memberUid: sandboxdeveloper
+memberUid: devldapuser_Liu-Mac.local@slidev.org
+memberUid: devldapuser_localhost@slidev.org
+memberUid: devldapuser_nxslave6@slidev.org
+memberUid: devldapuser_nxslave3@slidev.org
+memberUid: devldapuser_nxslave10@slidev.org
+memberUid: devldapuser_nxslave1@slidev.org
+memberUid: devldapuser_nxslave5@slidev.org
+memberUid: devldapuser_cislave01.slidev.org@slidev.org
+memberUid: devldapuser_cislave02.slidev.org@slidev.org
+memberUid: devldapuser_nxslave8@slidev.org
+memberUid: devldapuser_nxslave7@slidev.org
+memberUid: devldapuser_nxslave2@slidev.org
+memberUid: devldapuser_nxslave9@slidev.org
+memberUid: devldapuser_cislave10@slidev.org
+memberUid: devldapuser_ip-10-163-6-112@slidev.org
+memberUid: devldapuser_ip-10-163-7-63@slidev.org
+memberUid: devldapuser_cislave@slidev.org
 memberUid: admintest-developer@slidev.org
 
 dn: cn=Sandbox Admin,ou=people,ou=SLIAdmin,dc=slidev,dc=org
@@ -1278,6 +1461,24 @@ loginShell: /bin/bash
 mail: sandboxslcoperator@slidev.org
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
+dn: cn=Bill Operator,ou=people,ou=SLIAdmin,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Bill Operator
+gidNumber: 100
+homeDirectory: /home/users/toperator
+sn: Operator
+uid: slcoperator-email@slidev.org
+uidNumber: 1164
+displayName: 4ba75e11e2932e68dd6af3b4077c16ee
+givenName: Bill
+loginShell: /bin/bash
+mail: slcoperator-email@slidev.org
+o: test
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
 dn: cn=SLC Operator,ou=groups,ou=SLIAdmin,dc=slidev,dc=org
 changetype: add
 objectClass: posixGroup
@@ -1343,6 +1544,66 @@ memberUid: jjackson
 memberUid: msmith
 memberUid: mjohnson
 
+dn: cn=Javier Macey,ou=people,ou=IL-DAYBREAK,ou=DevTest,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Javier Macey
+gidNumber: 503
+homeDirectory: /home/users/jmacey
+sn: Macey
+uid: jmacey
+uidNumber: 1200
+givenName: Javier
+loginShell: /bin/sh
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Richard Belding,ou=people,ou=IL-DAYBREAK,ou=DevTest,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Richard Belding
+gidNumber: 503
+homeDirectory: /home/users/rbelding
+sn: Belding
+uid: rbelding
+uidNumber: 1201
+givenName: Richard
+loginShell: /bin/sh
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Xavier Bell,ou=people,ou=IL-DAYBREAK,ou=DevTest,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Xavier Bell
+gidNumber: 514
+homeDirectory: /home/users/xbell
+sn: Bell
+uid: xbell
+uidNumber: 1202
+givenName: Xavier
+loginShell: /bin/bash
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Teresa Cuyper,ou=people,ou=IL-DAYBREAK,ou=DevTest,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Teresa Cuyper
+gidNumber: 512
+homeDirectory: /home/users/xbell
+sn: Cuyper
+uid: tcuyper
+uidNumber: 1203
+givenName: Teresa
+loginShell: /bin/bash
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
 dn: ou=NY,ou=DevTest,dc=slidev,dc=org
 changetype: add
 objectClass: organizationalUnit
@@ -1362,6 +1623,7 @@ objectClass: top
 cn: Educator
 gidNumber: 518
 memberUid: johndoe
+memberUid: mario.sanchez
 memberUid: cgray
 
 dn: cn=Leader,ou=groups,ou=NY,ou=DevTest,dc=slidev,dc=org
@@ -1378,6 +1640,7 @@ objectClass: top
 cn: IT Administrator
 gidNumber: 520
 memberUid: jpratt
+memberUid: agibbs
 
 dn: cn=Aggregate Viewer,ou=groups,ou=NY,ou=DevTest,dc=slidev,dc=org
 changetype: add
@@ -1392,6 +1655,21 @@ changetype: add
 objectClass: organizationalUnit
 objectClass: top
 ou: people
+
+dn: cn=Mario Sanchez,ou=people,ou=NY,ou=DevTest,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Mario Sanchez
+gidNumber: 100
+homeDirectory: /home/users/mario.sanchez
+sn: Sanchez
+uid: mario.sanchez
+uidNumber: 1156
+givenName: Mario
+loginShell: /bin/bash
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=Jefferson Pratt,ou=people,ou=NY,ou=DevTest,dc=slidev,dc=org
 changetype: add
@@ -1415,6 +1693,15 @@ objectClass: top
 cn: Rene Lindsey
 sn: Lindsey
 uid: rlindsey
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Al Gibbs,ou=people,ou=NY,ou=DevTest,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: top
+cn: Al Gibbs
+sn: Gibbs
+uid: agibbs
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=John Doe,ou=people,ou=NY,ou=DevTest,dc=slidev,dc=org
@@ -1464,6 +1751,9 @@ gidNumber: 503
 memberUid: linda.kim
 memberUid: cgray
 memberUid: rbraverman
+memberUid: mabernathy
+memberUid: rbelding
+memberUid: jmacey
 
 dn: cn=Leader,ou=groups,ou=IL-DAYBREAK,dc=slidev,dc=org
 changetype: add
@@ -1474,6 +1764,10 @@ gidNumber: 512
 memberUid: sbantu
 memberUid: mgonzales
 memberUid: msmith
+memberUid: jmacey
+memberUid: rbelding
+memberUid: xbell
+memberUid: tcuyper
 
 dn: cn=IT Administrator,ou=groups,ou=IL-DAYBREAK,dc=slidev,dc=org
 changetype: add
@@ -1484,6 +1778,8 @@ gidNumber: 513
 memberUid: jstevenson
 memberUid: akopel
 memberUid: rrogers
+memberUid: mabernathy
+memberUid: tcuyper
 memberUid: linda.kim
 
 dn: cn=Aggregate Viewer,ou=groups,ou=IL-DAYBREAK,dc=slidev,dc=org
@@ -1495,6 +1791,7 @@ gidNumber: 514
 memberUid: jjackson
 memberUid: msmith
 memberUid: mjohnson
+memberUid: xbell
 
 dn: cn=LEA System Administrator,ou=groups,ou=IL-DAYBREAK,dc=slidev,dc=org
 changetype: add
@@ -1721,6 +2018,81 @@ givenName: Rick
 loginShell: /bin/bash
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
+dn: cn=Mark Abernathy,ou=people,ou=IL-DAYBREAK,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Mark Abernathy
+gidNumber: 513
+homeDirectory: /home/users/mabernathy
+sn: Abernathy
+uid: mabernathy
+uidNumber: 1199
+givenName: Mark
+loginShell: /bin/bash
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Javier Macey,ou=people,ou=IL-DAYBREAK,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Javier Macey
+gidNumber: 503
+homeDirectory: /home/users/jmacey
+sn: Macey
+uid: jmacey
+uidNumber: 1200
+givenName: Javier
+loginShell: /bin/sh
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Richard Belding,ou=people,ou=IL-DAYBREAK,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Richard Belding
+gidNumber: 503
+homeDirectory: /home/users/rbelding
+sn: Belding
+uid: rbelding
+uidNumber: 1201
+givenName: Richard
+loginShell: /bin/sh
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Xavier Bell,ou=people,ou=IL-DAYBREAK,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Xavier Bell
+gidNumber: 514
+homeDirectory: /home/users/xbell
+sn: Bell
+uid: xbell
+uidNumber: 1202
+givenName: Xavier
+loginShell: /bin/bash
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Teresa Cuyper,ou=people,ou=IL-DAYBREAK,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Teresa Cuyper
+gidNumber: 512
+homeDirectory: /home/users/xbell
+sn: Cuyper
+uid: tcuyper
+uidNumber: 1203
+givenName: Teresa
+loginShell: /bin/bash
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
 dn: ou=IL-Sunset,dc=slidev,dc=org
 changetype: add
 objectClass: organizationalUnit
@@ -1741,6 +2113,7 @@ cn: Educator
 gidNumber: 507
 memberUid: manthony
 memberUid: cgray
+memberUid: jdoe
 
 dn: cn=Leader,ou=groups,ou=IL-Sunset,dc=slidev,dc=org
 changetype: add
@@ -1859,6 +2232,31 @@ sn: Gray
 uid: cgray
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
+dn: cn=BadAdmin Test,ou=people,ou=IL-Sunset,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: BadAdmin Test
+gidNumber: 511
+homeDirectory: /home/users/badadmin
+sn: Test
+uid: badadmin
+uidNumber: 1146
+givenName: BadAdmin
+loginShell: /bin/bash
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Joe Doe,ou=people,ou=IL-Sunset,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: top
+cn: Joe Doe
+sn: Doe
+givenName: Joe
+uid: jdoe
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
 dn: ou=NY,dc=slidev,dc=org
 changetype: add
 objectClass: organizationalUnit
@@ -1878,6 +2276,7 @@ objectClass: top
 cn: Educator
 gidNumber: 518
 memberUid: johndoe
+memberUid: mario.sanchez
 memberUid: cgray
 
 dn: cn=Leader,ou=groups,ou=NY,dc=slidev,dc=org
@@ -1894,6 +2293,7 @@ objectClass: top
 cn: IT Administrator
 gidNumber: 520
 memberUid: jpratt
+memberUid: agibbs
 
 dn: cn=Aggregate Viewer,ou=groups,ou=NY,dc=slidev,dc=org
 changetype: add
@@ -1908,6 +2308,21 @@ changetype: add
 objectClass: organizationalUnit
 objectClass: top
 ou: people
+
+dn: cn=Mario Sanchez,ou=people,ou=NY,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Mario Sanchez
+gidNumber: 100
+homeDirectory: /home/users/mario.sanchez
+sn: Sanchez
+uid: mario.sanchez
+uidNumber: 1156
+givenName: Mario
+loginShell: /bin/bash
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=Jefferson Pratt,ou=people,ou=NY,dc=slidev,dc=org
 changetype: add
@@ -1931,6 +2346,15 @@ objectClass: top
 cn: Rene Lindsey
 sn: Lindsey
 uid: rlindsey
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Al Gibbs,ou=people,ou=NY,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: top
+cn: Al Gibbs
+sn: Gibbs
+uid: agibbs
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=John Doe,ou=people,ou=NY,dc=slidev,dc=org
@@ -1972,6 +2396,8 @@ objectClass: top
 cn: LEA Administrator
 gidNumber: 505
 memberUid: sunsetadmin
+memberUid: daybreakadmin
+memberUid: daybreaknorealmadmin
 
 dn: cn=Application Developer,ou=groups,ou=LocalNew,ou=DevTest,dc=slidev,dc=o
  rg
@@ -1984,6 +2410,7 @@ memberUid: testdeveloper
 memberUid: developer
 memberUid: slcdeveloper
 memberUid: developer-email@slidev.org
+memberUid: devldapuser@slidev.org
 memberUid: sandboxdeveloper
 memberUid: admintest-developer@slidev.org
 
@@ -1993,6 +2420,7 @@ objectClass: posixGroup
 objectClass: top
 cn: SEA Administrator
 gidNumber: 508
+memberUid: nyadmin
 memberUid: iladmin
 
 dn: cn=Realm Administrator,ou=groups,ou=LocalNew,ou=DevTest,dc=slidev,dc=org
@@ -2003,7 +2431,9 @@ cn: Realm Administrator
 gidNumber: 509
 memberUid: fakerealmadmin
 memberUid: sunsetadmin
+memberUid: nyadmin
 memberUid: sunsetrealmadmin
+memberUid: daybreakadmin
  sscmvWGVTKofPnwkyzHt
 
 dn: cn=Ingestion User,ou=groups,ou=LocalNew,ou=DevTest,dc=slidev,dc=org
@@ -2012,8 +2442,12 @@ objectClass: posixGroup
 objectClass: top
 cn: Ingestion User
 gidNumber: 510
+memberUid: nyadmin
 memberUid: sunsetadmin
+memberUid: daybreakadmin
 memberUid: ingestionuser
+memberUid: devldapuserpwolf-HP-EliteBook-2560p@slidev.org
+memberUid: devldapuser@slidev.org
 memberUid: sunsetingestionuser
 memberUid: sandboxingestionuser
 
@@ -2046,6 +2480,34 @@ objectClass: top
 cn: Sandbox Administrator
 gidNumber: 516
 memberUid: sandboxadministrator
+memberUid: devldapuser@slidev.org
+memberUid: devldapuser_nxslave1@slidev.org
+memberUid: devldapuser_nxslave5@slidev.org
+memberUid: devldapuser_nxslave8@slidev.org
+memberUid: devldapuser_nxslave7@slidev.org
+memberUid: devldapuser_nxslave2@slidev.org
+memberUid: devldapuser_nxslave9@slidev.org
+memberUid: devldapuser_ablum-mac.local@slidev.org
+memberUid: devldapuser_bsuzuki-mac.local@slidev.org
+memberUid: devldapuser_jhinsdale-mac.local@slidev.org
+memberUid: devldapuser_jsingh-mac.local@slidev.org
+memberUid: devldapuser_tshewchuk-mac.local@slidev.org
+memberUid: devldapuser_smuhit-mac.local@slidev.org
+memberUid: devldapuser_tke-mac-7.local@slidev.org
+memberUid: devldapuser_3c_07_54_5d_6e_10@slidev.org
+memberUid: devldapuser_14_10_9f_d1_4b_9b@slidev.org
+memberUid: devldapuser_14_10_9f_df_ef_af@slidev.org
+memberUid: devldapuser_14_10_9f_e0_2f_1f@slidev.org
+memberUid: devldapuser_14_10_9f_e0_14_c9@slidev.org
+memberUid: devldapuser_14_10_9f_d7_55_ed@slidev.org
+memberUid: devldapuser_3c_07_54_74_4b_53@slidev.org
+memberUid: devldapuser_d0_67_e5_34_d4_07@slidev.org
+memberUid: devldapuser_20_c9_d0_42_46_f5@slidev.org
+memberUid: devldapuser_14_10_9f_d7_65_0f@slidev.org
+memberUid: devldapuser_14_10_9f_db_92_ff@slidev.org
+memberUid: devldapuser_a8_20_66_1b_83_bf@slidev.org
+memberUid: devldapuser_b8_e8_56_41_e6_fa@slidev.org
+memberUid: devldapuser_08_00_27_f9_2b_be@slidev.org
 
 dn: cn=ingestion_user,ou=groups,ou=LocalNew,ou=DevTest,dc=slidev,dc=org
 changetype: add
@@ -2053,10 +2515,48 @@ objectClass: posixGroup
 objectClass: top
 cn: ingestion_user
 gidNumber: 510
+memberUid: nyadmin
 memberUid: sunsetadmin
+memberUid: daybreakadmin
 memberUid: ingestionuser
+memberUid: devldapuser@slidev.org
 memberUid: sunsetingestionuser
 memberUid: sandboxingestionuser
+memberUid: devldapuser_nxslave4@slidev.org
+memberUid: devldapuser_Liu-Mac.local@slidev.org
+memberUid: devldapuser_localhost@slidev.org
+memberUid: devldapuser_nxslave6@slidev.org
+memberUid: devldapuser_nxslave3@slidev.org
+memberUid: devldapuser_nxslave10@slidev.org
+memberUid: devldapuser_nxslave1@slidev.org
+memberUid: devldapuser_nxslave5@slidev.org
+memberUid: devldapuser_cislave01.slidev.org@slidev.org
+memberUid: devldapuser_cislave02.slidev.org@slidev.org
+memberUid: devldapuser_nxslave8@slidev.org
+memberUid: devldapuser_nxslave7@slidev.org
+memberUid: devldapuser_nxslave2@slidev.org
+memberUid: devldapuser_nxslave9@slidev.org
+memberUid: devldapuser_ablum-mac.local@slidev.org
+memberUid: devldapuser_bsuzuki-mac.local@slidev.org
+memberUid: devldapuser_jhinsdale-mac.local@slidev.org
+memberUid: devldapuser_jsingh-mac.local@slidev.org
+memberUid: devldapuser_tshewchuk-mac.local@slidev.org
+memberUid: devldapuser_smuhit-mac.local@slidev.org
+memberUid: devldapuser_tke-mac-7.local@slidev.org
+memberUid: devldapuser_3c_07_54_5d_6e_10@slidev.org
+memberUid: devldapuser_14_10_9f_d1_4b_9b@slidev.org
+memberUid: devldapuser_14_10_9f_df_ef_af@slidev.org
+memberUid: devldapuser_14_10_9f_e0_2f_1f@slidev.org
+memberUid: devldapuser_14_10_9f_e0_14_c9@slidev.org
+memberUid: devldapuser_14_10_9f_d7_55_ed@slidev.org
+memberUid: devldapuser_3c_07_54_74_4b_53@slidev.org
+memberUid: devldapuser_d0_67_e5_34_d4_07@slidev.org
+memberUid: devldapuser_20_c9_d0_42_46_f5@slidev.org
+memberUid: devldapuser_14_10_9f_d7_65_0f@slidev.org
+memberUid: devldapuser_14_10_9f_db_92_ff@slidev.org
+memberUid: devldapuser_a8_20_66_1b_83_bf@slidev.org
+memberUid: devldapuser_b8_e8_56_41_e6_fa@slidev.org
+memberUid: devldapuser_08_00_27_f9_2b_be@slidev.org
 
 dn: cn=application_developer,ou=groups,ou=LocalNew,ou=DevTest,dc=slidev,dc=o
  rg
@@ -2069,8 +2569,43 @@ memberUid: testdeveloper
 memberUid: developer
 memberUid: slcdeveloper
 memberUid: developer-email@slidev.org
+memberUid: devldapuser@slidev.org
 memberUid: sandboxdeveloper
+memberUid: devldapuser_Liu-Mac.local@slidev.org
+memberUid: devldapuser_localhost@slidev.org
+memberUid: devldapuser_nxslave6@slidev.org
+memberUid: devldapuser_nxslave3@slidev.org
+memberUid: devldapuser_nxslave10@slidev.org
+memberUid: devldapuser_nxslave1@slidev.org
+memberUid: devldapuser_nxslave5@slidev.org
+memberUid: devldapuser_cislave01.slidev.org@slidev.org
+memberUid: devldapuser_cislave02.slidev.org@slidev.org
+memberUid: devldapuser_nxslave8@slidev.org
+memberUid: devldapuser_nxslave7@slidev.org
+memberUid: devldapuser_nxslave2@slidev.org
+memberUid: devldapuser_nxslave9@slidev.org
+memberUid: devldapuser_ablum-mac.local@slidev.org
+memberUid: devldapuser_bsuzuki-mac.local@slidev.org
+memberUid: devldapuser_jhinsdale-mac.local@slidev.org
+memberUid: devldapuser_jsingh-mac.local@slidev.org
+memberUid: devldapuser_tshewchuk-mac.local@slidev.org
 memberUid: admintest-developer@slidev.org
+memberUid: devldapuser_smuhit-mac.local@slidev.org
+memberUid: devldapuser_tke-mac-7.local@slidev.org
+memberUid: devldapuser_3c_07_54_5d_6e_10@slidev.org
+memberUid: devldapuser_14_10_9f_d1_4b_9b@slidev.org
+memberUid: devldapuser_14_10_9f_df_ef_af@slidev.org
+memberUid: devldapuser_14_10_9f_e0_2f_1f@slidev.org
+memberUid: devldapuser_14_10_9f_e0_14_c9@slidev.org
+memberUid: devldapuser_14_10_9f_d7_55_ed@slidev.org
+memberUid: devldapuser_3c_07_54_74_4b_53@slidev.org
+memberUid: devldapuser_d0_67_e5_34_d4_07@slidev.org
+memberUid: devldapuser_20_c9_d0_42_46_f5@slidev.org
+memberUid: devldapuser_14_10_9f_d7_65_0f@slidev.org
+memberUid: devldapuser_14_10_9f_db_92_ff@slidev.org
+memberUid: devldapuser_a8_20_66_1b_83_bf@slidev.org
+memberUid: devldapuser_b8_e8_56_41_e6_fa@slidev.org
+memberUid: devldapuser_08_00_27_f9_2b_be@slidev.org
 
 dn: ou=people,ou=LocalNew,ou=DevTest,dc=slidev,dc=org
 changetype: add
@@ -2093,6 +2628,25 @@ displayName: 2ccd88620d9d3fb3ee8ee839c806fb73
 givenName: SLC
 loginShell: /bin/sh
 mail: slcoperator@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Daybreak Admin,ou=people,ou=LocalNew,ou=DevTest,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Daybreak Admin
+gidNumber: 505
+homeDirectory: /ingestion/lz/Midgar/13e785053e77f7d6b064cdcd43167f70ae8c32ca
+ 88c6a3b9b0c8cd52458faa77
+sn: Admin
+uid: daybreakadmin
+uidNumber: 1119
+description:: dGVuYW50PU1pZGdhcgplZE9yZz1JTC1EQVlCUkVBSw==
+displayName: 0bd6b800ec046191473a61b9b9584c48
+givenName: Daybreak
+loginShell: /bin/sh
+mail: daybreakadmin@slidev.org
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=Test Developer,ou=people,ou=LocalNew,ou=DevTest,dc=slidev,dc=org
@@ -2150,6 +2704,23 @@ gecos: b1e5033cb5079960fddf241a0fe99ee5@1384809182
 givenName: IL
 loginShell: /sbin/nologin
 mail: iladmin@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=NY Admin,ou=people,ou=LocalNew,ou=DevTest,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: NY Admin
+gidNumber: 508
+homeDirectory: /mnt/gluster-lz/NY/NY-STATE-NYC
+sn: Admin
+uid: nyadmin
+uidNumber: 1123
+description:: dGVuYW50PUh5cnVsZQplZE9yZz1OWS1TVEFURS1OWUM=
+displayName: 507c174942f3dd3ebc0e4b16d68553f2
+givenName: NY
+loginShell: /bin/sh
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=Sunset RealmAdmin,ou=people,ou=LocalNew,ou=DevTest,dc=slidev,dc=org
@@ -2255,6 +2826,26 @@ displayName: 09e5fa8790282698c9c2f29a373618fa
 givenName: Fakerealmadmin
 loginShell: /bin/sh
 mail: fakerealmadmin@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=DaybreakNoRealmAdmin Test,ou=people,ou=LocalNew,ou=DevTest,dc=slidev,
+ dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: DaybreakNoRealmAdmin Test
+gidNumber: 113
+homeDirectory: /home/users/daybreaknorealmadmin
+sn: Test
+uid: daybreaknorealmadmin
+uidNumber: 500
+description: tenant=Midgar,edOrg=IL-DAYBREAK
+destinationIndicator: approved
+displayName: e0dda68f60f746ed58bd461a0a11792d
+givenName: DaybreakNoRealmAdmin
+loginShell: /sbin/nologin
+mail: daybreaknorealmadmin@slidev.org
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=SLC Developer,ou=people,ou=LocalNew,ou=DevTest,dc=slidev,dc=org
@@ -2418,6 +3009,9 @@ gidNumber: 503
 memberUid: linda.kim
 memberUid: cgray
 memberUid: rbraverman
+memberUid: mabernathy
+memberUid: rbelding
+memberUid: jmacey
 
 dn: cn=Leader,ou=groups,ou=Charter-School-Daybreak-Central-High,ou=DevTest,d
  c=slidev,dc=org
@@ -2429,6 +3023,10 @@ gidNumber: 512
 memberUid: sbantu
 memberUid: mgonzales
 memberUid: msmith
+memberUid: jmacey
+memberUid: rbelding
+memberUid: xbell
+memberUid: tcuyper
 
 dn: cn=IT Administrator,ou=groups,ou=Charter-School-Daybreak-Central-High,ou
  =DevTest,dc=slidev,dc=org
@@ -2440,6 +3038,9 @@ gidNumber: 513
 memberUid: jstevenson
 memberUid: akopel
 memberUid: rrogers
+memberUid: mabernathy
+memberUid: tcuyper
+memberUid: swood
 
 dn: cn=Aggregate Viewer,ou=groups,ou=Charter-School-Daybreak-Central-High,ou
  =DevTest,dc=slidev,dc=org
@@ -2451,6 +3052,7 @@ gidNumber: 514
 memberUid: jjackson
 memberUid: msmith
 memberUid: mjohnson
+memberUid: xbell
 
 dn: cn=LEA System Administrator,ou=groups,ou=Charter-School-Daybreak-Central
  -High,ou=DevTest,dc=slidev,dc=org
@@ -2691,6 +3293,86 @@ sn: Rogers
 uid: rrogers
 uidNumber: 1144
 givenName: Rick
+loginShell: /bin/bash
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Mark Abernathy,ou=people,ou=Charter-School-Daybreak-Central-High,ou=D
+ evTest,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Mark Abernathy
+gidNumber: 513
+homeDirectory: /home/users/mabernathy
+sn: Abernathy
+uid: mabernathy
+uidNumber: 1199
+givenName: Mark
+loginShell: /bin/bash
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Javier Macey,ou=people,ou=Charter-School-Daybreak-Central-High,ou=Dev
+ Test,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Javier Macey
+gidNumber: 503
+homeDirectory: /home/users/jmacey
+sn: Macey
+uid: jmacey
+uidNumber: 1200
+givenName: Javier
+loginShell: /bin/sh
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Richard Belding,ou=people,ou=Charter-School-Daybreak-Central-High,ou=
+ DevTest,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Richard Belding
+gidNumber: 503
+homeDirectory: /home/users/rbelding
+sn: Belding
+uid: rbelding
+uidNumber: 1201
+givenName: Richard
+loginShell: /bin/sh
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Xavier Bell,ou=people,ou=Charter-School-Daybreak-Central-High,ou=DevT
+ est,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Xavier Bell
+gidNumber: 514
+homeDirectory: /home/users/xbell
+sn: Bell
+uid: xbell
+uidNumber: 1202
+givenName: Xavier
+loginShell: /bin/bash
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Teresa Cuyper,ou=people,ou=Charter-School-Daybreak-Central-High,ou=De
+ vTest,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Teresa Cuyper
+gidNumber: 512
+homeDirectory: /home/users/xbell
+sn: Cuyper
+uid: tcuyper
+uidNumber: 1203
+givenName: Teresa
 loginShell: /bin/bash
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
@@ -2945,6 +3627,9 @@ gidNumber: 503
 memberUid: linda.kim
 memberUid: cgray
 memberUid: rbraverman
+memberUid: mabernathy
+memberUid: rbelding
+memberUid: jmacey
 
 dn: cn=Leader,ou=groups,ou=Charter-School-Daybreak-Central-High,dc=slidev,dc
  =org
@@ -2956,6 +3641,10 @@ gidNumber: 512
 memberUid: sbantu
 memberUid: mgonzales
 memberUid: msmith
+memberUid: jmacey
+memberUid: rbelding
+memberUid: xbell
+memberUid: tcuyper
 
 dn: cn=IT Administrator,ou=groups,ou=Charter-School-Daybreak-Central-High,dc
  =slidev,dc=org
@@ -2967,6 +3656,9 @@ gidNumber: 513
 memberUid: jstevenson
 memberUid: akopel
 memberUid: rrogers
+memberUid: mabernathy
+memberUid: tcuyper
+memberUid: swood
 
 dn: cn=Aggregate Viewer,ou=groups,ou=Charter-School-Daybreak-Central-High,dc
  =slidev,dc=org
@@ -2978,6 +3670,7 @@ gidNumber: 514
 memberUid: jjackson
 memberUid: msmith
 memberUid: mjohnson
+memberUid: xbell
 
 dn: cn=LEA System Administrator,ou=groups,ou=Charter-School-Daybreak-Central
  -High,dc=slidev,dc=org
@@ -3220,6 +3913,86 @@ givenName: Rick
 loginShell: /bin/bash
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
+dn: cn=Mark Abernathy,ou=people,ou=Charter-School-Daybreak-Central-High,dc=s
+ lidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Mark Abernathy
+gidNumber: 513
+homeDirectory: /home/users/mabernathy
+sn: Abernathy
+uid: mabernathy
+uidNumber: 1199
+givenName: Mark
+loginShell: /bin/bash
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Javier Macey,ou=people,ou=Charter-School-Daybreak-Central-High,dc=sli
+ dev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Javier Macey
+gidNumber: 503
+homeDirectory: /home/users/jmacey
+sn: Macey
+uid: jmacey
+uidNumber: 1200
+givenName: Javier
+loginShell: /bin/sh
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Richard Belding,ou=people,ou=Charter-School-Daybreak-Central-High,dc=
+ slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Richard Belding
+gidNumber: 503
+homeDirectory: /home/users/rbelding
+sn: Belding
+uid: rbelding
+uidNumber: 1201
+givenName: Richard
+loginShell: /bin/sh
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Xavier Bell,ou=people,ou=Charter-School-Daybreak-Central-High,dc=slid
+ ev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Xavier Bell
+gidNumber: 514
+homeDirectory: /home/users/xbell
+sn: Bell
+uid: xbell
+uidNumber: 1202
+givenName: Xavier
+loginShell: /bin/bash
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Teresa Cuyper,ou=people,ou=Charter-School-Daybreak-Central-High,dc=sl
+ idev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Teresa Cuyper
+gidNumber: 512
+homeDirectory: /home/users/xbell
+sn: Cuyper
+uid: tcuyper
+uidNumber: 1203
+givenName: Teresa
+loginShell: /bin/bash
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
 dn: ou=IL-Charter,dc=slidev,dc=org
 changetype: add
 objectClass: organizationalUnit
@@ -3241,6 +4014,9 @@ gidNumber: 503
 memberUid: linda.kim
 memberUid: cgray
 memberUid: rbraverman
+memberUid: mabernathy
+memberUid: rbelding
+memberUid: jmacey
 memberUid: chartereducator
 
 dn: cn=Leader,ou=groups,ou=IL-Charter,dc=slidev,dc=org
@@ -3252,6 +4028,10 @@ gidNumber: 512
 memberUid: sbantu
 memberUid: mgonzales
 memberUid: msmith
+memberUid: jmacey
+memberUid: rbelding
+memberUid: xbell
+memberUid: tcuyper
 memberUid: charterleader
 
 dn: cn=IT Administrator,ou=groups,ou=IL-Charter,dc=slidev,dc=org
@@ -3262,6 +4042,8 @@ cn: IT Administrator
 gidNumber: 513
 memberUid: jstevenson
 memberUid: akopel
+memberUid: mabernathy
+memberUid: charteradmin
 memberUid: rrogers
 
 dn: cn=Aggregate Viewer,ou=groups,ou=IL-Charter,dc=slidev,dc=org
@@ -3272,6 +4054,7 @@ cn: Aggregate Viewer
 gidNumber: 514
 memberUid: msmith
 memberUid: mjohnson
+memberUid: xbell
 
 dn: cn=LEA System Administrator,ou=groups,ou=IL-Charter,dc=slidev,dc=org
 changetype: add
@@ -3468,6 +4251,21 @@ givenName: Amy
 loginShell: /bin/bash
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
+dn: cn=Charter Admin,ou=people,ou=IL-Charter,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Charter Admin
+gidNumber: 100
+homeDirectory: /home/users/charteradmin
+sn: Admin
+uid: charteradmin
+uidNumber: 1144
+givenName: Charter
+loginShell: /bin/bash
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
 dn: cn=Charter Leader,ou=people,ou=IL-Charter,dc=slidev,dc=org
 changetype: add
 objectClass: inetOrgPerson
@@ -3480,6 +4278,81 @@ sn: Leader
 uid: charterleader
 uidNumber: 1145
 givenName: Charter
+loginShell: /bin/bash
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Mark Abernathy,ou=people,ou=IL-Charter,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Mark Abernathy
+gidNumber: 513
+homeDirectory: /home/users/mabernathy
+sn: Abernathy
+uid: mabernathy
+uidNumber: 1199
+givenName: Mark
+loginShell: /bin/bash
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Javier Macey,ou=people,ou=IL-Charter,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Javier Macey
+gidNumber: 503
+homeDirectory: /home/users/jmacey
+sn: Macey
+uid: jmacey
+uidNumber: 1200
+givenName: Javier
+loginShell: /bin/sh
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Richard Belding,ou=people,ou=IL-Charter,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Richard Belding
+gidNumber: 503
+homeDirectory: /home/users/rbelding
+sn: Belding
+uid: rbelding
+uidNumber: 1201
+givenName: Richard
+loginShell: /bin/sh
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Xavier Bell,ou=people,ou=IL-Charter,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Xavier Bell
+gidNumber: 514
+homeDirectory: /home/users/xbell
+sn: Bell
+uid: xbell
+uidNumber: 1202
+givenName: Xavier
+loginShell: /bin/bash
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Teresa Cuyper,ou=people,ou=IL-Charter,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Teresa Cuyper
+gidNumber: 512
+homeDirectory: /home/users/xbell
+sn: Cuyper
+uid: tcuyper
+uidNumber: 1203
+givenName: Teresa
 loginShell: /bin/bash
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
@@ -3527,6 +4400,9 @@ cn: Educator
 gidNumber: 503
 memberUid: cgray
 memberUid: rbraverman
+memberUid: mabernathy
+memberUid: rbelding
+memberUid: jmacey
 memberUid: chartereducator
 
 dn: cn=Leader,ou=groups,ou=IL-Charter,ou=DevTest,dc=slidev,dc=org
@@ -3538,6 +4414,10 @@ gidNumber: 512
 memberUid: sbantu
 memberUid: mgonzales
 memberUid: msmith
+memberUid: jmacey
+memberUid: rbelding
+memberUid: xbell
+memberUid: tcuyper
 memberUid: charterleader
 
 dn: cn=IT Administrator,ou=groups,ou=IL-Charter,ou=DevTest,dc=slidev,dc=org
@@ -3549,6 +4429,9 @@ gidNumber: 513
 memberUid: jstevenson
 memberUid: akopel
 memberUid: rrogers
+memberUid: mabernathy
+memberUid: tcuyper
+memberUid: charteradmin
 
 dn: cn=Aggregate Viewer,ou=groups,ou=IL-Charter,ou=DevTest,dc=slidev,dc=org
 changetype: add
@@ -3559,6 +4442,7 @@ gidNumber: 514
 memberUid: jjackson
 memberUid: msmith
 memberUid: mjohnson
+memberUid: xbell
 
 dn: cn=LEA System Administrator,ou=groups,ou=IL-Charter,ou=DevTest,dc=slidev
  ,dc=org
@@ -3787,6 +4671,81 @@ givenName: Rick
 loginShell: /bin/bash
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
+dn: cn=Mark Abernathy,ou=people,ou=IL-Charter,ou=DevTest,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Mark Abernathy
+gidNumber: 513
+homeDirectory: /home/users/mabernathy
+sn: Abernathy
+uid: mabernathy
+uidNumber: 1199
+givenName: Mark
+loginShell: /bin/bash
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Javier Macey,ou=people,ou=IL-Charter,ou=DevTest,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Javier Macey
+gidNumber: 503
+homeDirectory: /home/users/jmacey
+sn: Macey
+uid: jmacey
+uidNumber: 1200
+givenName: Javier
+loginShell: /bin/sh
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Richard Belding,ou=people,ou=IL-Charter,ou=DevTest,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Richard Belding
+gidNumber: 503
+homeDirectory: /home/users/rbelding
+sn: Belding
+uid: rbelding
+uidNumber: 1201
+givenName: Richard
+loginShell: /bin/sh
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Xavier Bell,ou=people,ou=IL-Charter,ou=DevTest,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Xavier Bell
+gidNumber: 514
+homeDirectory: /home/users/xbell
+sn: Bell
+uid: xbell
+uidNumber: 1202
+givenName: Xavier
+loginShell: /bin/bash
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Teresa Cuyper,ou=people,ou=IL-Charter,ou=DevTest,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Teresa Cuyper
+gidNumber: 512
+homeDirectory: /home/users/xbell
+sn: Cuyper
+uid: tcuyper
+uidNumber: 1203
+givenName: Teresa
+loginShell: /bin/bash
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
 dn: cn=Charter Educator,ou=people,ou=IL-Charter,ou=DevTest,dc=slidev,dc=org
 changetype: add
 objectClass: inetOrgPerson
@@ -3800,6 +4759,96 @@ uid: chartereducator
 uidNumber: 1117
 givenName: Charter
 loginShell: /bin/sh
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=developer-email@slidev.org,ou=people,ou=LocalNew,ou=DevTest,dc=slidev
+ ,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: top
+objectClass: posixAccount
+cn: developer-email@slidev.org
+gidNumber: 500
+homeDirectory: /ingestion/lz/developer-email@slidev.org/IL
+sn: Developer
+uid: developer-email@slidev.org
+uidNumber: 834
+description:: dGVuYW50PWRldmVsb3Blci1lbWFpbEBzbGlkZXYub3JnCmVkT3JnPUlM
+destinationIndicator: approved
+displayName: 75c16a1f1735525ab6adee8c01fa4a7f
+gecos: 
+givenName: Joe
+mail: developer-email@slidev.org
+o: SLC
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Bill Operator,ou=people,ou=LocalNew,ou=DevTest,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Bill Operator
+gidNumber: 100
+homeDirectory: /home/users/toperator
+sn: Operator
+uid: slcoperator-email@slidev.org
+uidNumber: 1164
+displayName: 4ba75e11e2932e68dd6af3b4077c16ee
+givenName: Bill
+loginShell: /bin/bash
+mail: slcoperator-email@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=developer-email@slidev.org,ou=people,ou=SLIAdmin,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: top
+objectClass: posixAccount
+cn: developer-email@slidev.org
+gidNumber: 500
+homeDirectory: /ingestion/lz/developer-email@slidev.org/IL
+sn: Developer
+uid: developer-email@slidev.org
+uidNumber: 834
+description:: dGVuYW50PWRldmVsb3Blci1lbWFpbEBzbGlkZXYub3JnCmVkT3JnPUlM
+destinationIndicator: approved
+displayName: 75c16a1f1735525ab6adee8c01fa4a7f
+gecos: 
+givenName: Joe
+mail: developer-email@slidev.org
+o: SLC
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Shan Wood,ou=people,ou=Charter-School-Daybreak-Central-High,dc=slidev
+ ,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Shan Wood
+gidNumber: 513
+homeDirectory: /home/users/swood
+sn: Wood
+uid: swood
+uidNumber: 12137
+givenName: Shan
+loginShell: /bin/bash
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Shan Wood,ou=people,ou=Charter-School-Daybreak-Central-High,ou=DevTes
+ t,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Shan Wood
+gidNumber: 513
+homeDirectory: /home/users/swood
+sn: Wood
+uid: swood
+uidNumber: 12137
+givenName: Shan
+loginShell: /bin/bash
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=Rick Rogers,ou=people,ou=IL-Charter,dc=slidev,dc=org
@@ -3832,6 +4881,21 @@ givenName: Charter
 loginShell: /bin/bash
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
+dn: cn=Charter Admin,ou=people,ou=IL-Charter,ou=DevTest,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Charter Admin
+gidNumber: 100
+homeDirectory: /home/users/charteradmin
+sn: Admin
+uid: charteradmin
+uidNumber: 1144
+givenName: Charter
+loginShell: /bin/bash
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
 dn: ou=CI,dc=slidev,dc=org
 changetype: add
 objectClass: organizationalUnit
@@ -3850,6 +4914,8 @@ objectClass: top
 cn: LEA Administrator
 gidNumber: 505
 memberUid: sunsetadmin
+memberUid: daybreakadmin
+memberUid: daybreaknorealmadmin
 
 dn: cn=Application Developer,ou=groups,ou=CI,dc=slidev,dc=org
 changetype: add
@@ -3861,6 +4927,7 @@ memberUid: testdeveloper
 memberUid: developer
 memberUid: slcdeveloper
 memberUid: developer-email@slidev.org
+memberUid: devldapuser@slidev.org
 memberUid: sandboxdeveloper
 memberUid: admintest-developer@slidev.org
 
@@ -3870,6 +4937,7 @@ objectClass: posixGroup
 objectClass: top
 cn: SEA Administrator
 gidNumber: 508
+memberUid: nyadmin
 memberUid: iladmin
 
 dn: cn=Realm Administrator,ou=groups,ou=CI,dc=slidev,dc=org
@@ -3880,7 +4948,9 @@ cn: Realm Administrator
 gidNumber: 509
 memberUid: fakerealmadmin
 memberUid: sunsetadmin
+memberUid: nyadmin
 memberUid: sunsetrealmadmin
+memberUid: daybreakadmin
 
 dn: cn=Ingestion User,ou=groups,ou=CI,dc=slidev,dc=org
 changetype: add
@@ -3888,8 +4958,12 @@ objectClass: posixGroup
 objectClass: top
 cn: Ingestion User
 gidNumber: 510
+memberUid: nyadmin
 memberUid: sunsetadmin
+memberUid: daybreakadmin
 memberUid: ingestionuser
+memberUid: devldapuserpwolf-HP-EliteBook-2560p@slidev.org
+memberUid: devldapuser@slidev.org
 memberUid: sunsetingestionuser
 memberUid: sandboxingestionuser
 
@@ -3919,6 +4993,62 @@ objectClass: top
 cn: Sandbox Administrator
 gidNumber: 516
 memberUid: sandboxadministrator
+memberUid: devldapuser@slidev.org
+memberUid: devldapuser_nxslave1@slidev.org
+memberUid: devldapuser_nxslave5@slidev.org
+memberUid: devldapuser_nxslave8@slidev.org
+memberUid: devldapuser_nxslave7@slidev.org
+memberUid: devldapuser_nxslave2@slidev.org
+memberUid: devldapuser_nxslave9@slidev.org
+memberUid: devldapuser_ablum-mac.local@slidev.org
+memberUid: devldapuser_bsuzuki-mac.local@slidev.org
+memberUid: devldapuser_jhinsdale-mac.local@slidev.org
+memberUid: devldapuser_jsingh-mac.local@slidev.org
+memberUid: devldapuser_tshewchuk-mac.local@slidev.org
+memberUid: devldapuser_smuhit-mac.local@slidev.org
+memberUid: devldapuser_tke-mac-7.local@slidev.org
+memberUid: devldapuser_cislave@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a3@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_9f@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a0@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a2@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a4@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a7@slidev.org
+memberUid: devldapuser_06_6c_72_7c_c6_bb@slidev.org
+memberUid: devldapuser_0e_af_ae_8a_1f_30@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a6@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a5@slidev.org
+memberUid: devldapuser_0e_90_7c_30_a3_07@slidev.org
+memberUid: devldapuser_0e_0b_2a_96_8a_82@slidev.org
+memberUid: devldapuser_0e_03_f9_54_d5_66@slidev.org
+memberUid: devldapuser_0e_29_55_13_a7_0b@slidev.org
+memberUid: devldapuser_0e_29_49_2c_44_67@slidev.org
+memberUid: devldapuser_0e_1d_4c_bc_69_5d@slidev.org
+memberUid: devldapuser_0e_f6_76_f1_e4_a7@slidev.org
+memberUid: devldapuser_0e_c3_1d_42_16_2f@slidev.org
+memberUid: devldapuser_0e_a1_65_1a_9f_48@slidev.org
+memberUid: devldapuser_0e_11_0c_f8_ea_64@slidev.org
+memberUid: devldapuser_0e_a7_bf_37_38_ed@slidev.org
+memberUid: devldapuser_0e_2d_fd_c8_3b_98@slidev.org
+memberUid: devldapuser_0e_13_30_3b_52_30@slidev.org
+memberUid: devldapuser_0e_8f_a5_0c_3a_f1@slidev.org
+memberUid: devldapuser_0e_7e_35_46_0f_e6@slidev.org
+memberUid: devldapuser_0e_48_3a_5a_42_46@slidev.org
+memberUid: devldapuser_0e_8a_58_4a_ef_63@slidev.org
+memberUid: devldapuser_0e_0e_5b_bd_0c_be@slidev.org
+memberUid: devldapuser_0e_df_60_c2_55_df@slidev.org
+memberUid: devldapuser_0e_5f_1e_2b_16_87@slidev.org
+memberUid: devldapuser_0e_4d_3b_a5_86_20@slidev.org
+memberUid: devldapuser_0e_f7_6f_00_5a_54@slidev.org
+memberUid: devldapuser_0e_3b_f7_83_87_21@slidev.org
+memberUid: devldapuser_0e_1d_25_12_09_9d@slidev.org
+memberUid: devldapuser_0e_2b_b0_fe_4e_b0@slidev.org
+memberUid: devldapuser_0e_9e_e9_8c_09_ae@slidev.org
+memberUid: devldapuser_0e_4f_b3_a5_e7_cc@slidev.org
+memberUid: devldapuser_0e_a6_d6_00_08_cc@slidev.org
+memberUid: e2etestdev_sb@slidev.org
+memberUid: devldapuser_0e_ea_37_8e_1e_51@slidev.org
+memberUid: devldapuser_0e_5c_af_56_01_ab@slidev.org
 
 dn: cn=ingestion_user,ou=groups,ou=CI,dc=slidev,dc=org
 changetype: add
@@ -3926,11 +5056,78 @@ objectClass: posixGroup
 objectClass: top
 cn: ingestion_user
 gidNumber: 510
+memberUid: nyadmin
 memberUid: sunsetadmin
+memberUid: daybreakadmin
 memberUid: ingestionuser
+memberUid: devldapuser@slidev.org
 memberUid: sunsetingestionuser
 memberUid: sandboxingestionuser
+memberUid: devldapuser_nxslave4@slidev.org
+memberUid: devldapuser_Liu-Mac.local@slidev.org
+memberUid: devldapuser_localhost@slidev.org
+memberUid: devldapuser_nxslave6@slidev.org
+memberUid: devldapuser_nxslave3@slidev.org
+memberUid: devldapuser_nxslave10@slidev.org
+memberUid: devldapuser_nxslave1@slidev.org
+memberUid: devldapuser_nxslave5@slidev.org
+memberUid: devldapuser_cislave01.slidev.org@slidev.org
+memberUid: devldapuser_cislave02.slidev.org@slidev.org
+memberUid: devldapuser_nxslave8@slidev.org
+memberUid: devldapuser_nxslave7@slidev.org
+memberUid: devldapuser_nxslave2@slidev.org
+memberUid: devldapuser_nxslave9@slidev.org
+memberUid: devldapuser_ablum-mac.local@slidev.org
+memberUid: devldapuser_bsuzuki-mac.local@slidev.org
+memberUid: devldapuser_jhinsdale-mac.local@slidev.org
+memberUid: devldapuser_jsingh-mac.local@slidev.org
+memberUid: devldapuser_tshewchuk-mac.local@slidev.org
+memberUid: devldapuser_smuhit-mac.local@slidev.org
+memberUid: devldapuser_tke-mac-7.local@slidev.org
+memberUid: devldapuser_cislave@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a3@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_9f@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a0@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a2@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a4@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a7@slidev.org
+memberUid: devldapuser_06_6c_72_7c_c6_bb@slidev.org
+memberUid: devldapuser_0e_af_ae_8a_1f_30@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a6@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a5@slidev.org
+memberUid: devldapuser_0e_90_7c_30_a3_07@slidev.org
+memberUid: devldapuser_0e_0b_2a_96_8a_82@slidev.org
+memberUid: devldapuser_0e_03_f9_54_d5_66@slidev.org
+memberUid: devldapuser_0e_29_55_13_a7_0b@slidev.org
+memberUid: devldapuser_0e_29_49_2c_44_67@slidev.org
+memberUid: devldapuser_0e_1d_4c_bc_69_5d@slidev.org
+memberUid: devldapuser_0e_f6_76_f1_e4_a7@slidev.org
+memberUid: devldapuser_0e_c3_1d_42_16_2f@slidev.org
+memberUid: devldapuser_0e_a1_65_1a_9f_48@slidev.org
+memberUid: devldapuser_0e_11_0c_f8_ea_64@slidev.org
+memberUid: devldapuser_0e_a7_bf_37_38_ed@slidev.org
+memberUid: devldapuser_0e_2d_fd_c8_3b_98@slidev.org
+memberUid: devldapuser_0e_13_30_3b_52_30@slidev.org
+memberUid: devldapuser_0e_8f_a5_0c_3a_f1@slidev.org
+memberUid: devldapuser_0e_7e_35_46_0f_e6@slidev.org
+memberUid: devldapuser_0e_48_3a_5a_42_46@slidev.org
+memberUid: devldapuser_0e_8a_58_4a_ef_63@slidev.org
+memberUid: devldapuser_0e_0e_5b_bd_0c_be@slidev.org
+memberUid: devldapuser_0e_df_60_c2_55_df@slidev.org
+memberUid: devldapuser_0e_5f_1e_2b_16_87@slidev.org
+memberUid: devldapuser_0e_4d_3b_a5_86_20@slidev.org
+memberUid: devldapuser_0e_f7_6f_00_5a_54@slidev.org
+memberUid: devldapuser_0e_3b_f7_83_87_21@slidev.org
  GkypahuwrSCchMCoyddBoNXQTqIqJs
+memberUid: devldapuser_0e_1d_25_12_09_9d@slidev.org
+memberUid: devldapuser_0e_2b_b0_fe_4e_b0@slidev.org
+memberUid: devldapuser_0e_12_92_0a_cf_9f@slidev.org
+memberUid: devldapuser_0e_9e_e9_8c_09_ae@slidev.org
+memberUid: devldapuser_0e_4f_b3_a5_e7_cc@slidev.org
+memberUid: devldapuser_0e_a6_d6_00_08_cc@slidev.org
+memberUid: e2etestdev_sb@slidev.org
+memberUid: devldapuser_0e_ea_37_8e_1e_51@slidev.org
+memberUid: devldapuser_0e_5c_af_56_01_ab@slidev.org
 
 dn: cn=application_developer,ou=groups,ou=CI,dc=slidev,dc=org
 changetype: add
@@ -3942,11 +5139,75 @@ memberUid: testdeveloper
 memberUid: developer
 memberUid: slcdeveloper
 memberUid: developer-email@slidev.org
+memberUid: devldapuser@slidev.org
 memberUid: sandboxdeveloper
+memberUid: devldapuser_Liu-Mac.local@slidev.org
+memberUid: devldapuser_localhost@slidev.org
+memberUid: devldapuser_nxslave6@slidev.org
+memberUid: devldapuser_nxslave3@slidev.org
+memberUid: devldapuser_nxslave10@slidev.org
+memberUid: devldapuser_nxslave1@slidev.org
+memberUid: devldapuser_nxslave5@slidev.org
+memberUid: devldapuser_cislave01.slidev.org@slidev.org
+memberUid: devldapuser_cislave02.slidev.org@slidev.org
+memberUid: devldapuser_nxslave8@slidev.org
+memberUid: devldapuser_nxslave7@slidev.org
+memberUid: devldapuser_nxslave2@slidev.org
+memberUid: devldapuser_nxslave9@slidev.org
+memberUid: devldapuser_ablum-mac.local@slidev.org
+memberUid: devldapuser_bsuzuki-mac.local@slidev.org
+memberUid: devldapuser_jhinsdale-mac.local@slidev.org
+memberUid: devldapuser_jsingh-mac.local@slidev.org
+memberUid: devldapuser_tshewchuk-mac.local@slidev.org
+memberUid: devldapuser_smuhit-mac.local@slidev.org
+memberUid: devldapuser_tke-mac-7.local@slidev.org
 memberUid: admintest-developer@slidev.org
+memberUid: devldapuser_cislave@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a3@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_9f@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a0@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a2@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a4@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a7@slidev.org
+memberUid: devldapuser_06_6c_72_7c_c6_bb@slidev.org
+memberUid: devldapuser_0e_af_ae_8a_1f_30@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a6@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a5@slidev.org
+memberUid: devldapuser_0e_90_7c_30_a3_07@slidev.org
+memberUid: devldapuser_0e_0b_2a_96_8a_82@slidev.org
+memberUid: devldapuser_0e_03_f9_54_d5_66@slidev.org
+memberUid: devldapuser_0e_29_55_13_a7_0b@slidev.org
+memberUid: devldapuser_0e_29_49_2c_44_67@slidev.org
+memberUid: devldapuser_0e_1d_4c_bc_69_5d@slidev.org
+memberUid: devldapuser_0e_f6_76_f1_e4_a7@slidev.org
+memberUid: devldapuser_0e_c3_1d_42_16_2f@slidev.org
+memberUid: devldapuser_0e_a1_65_1a_9f_48@slidev.org
+memberUid: devldapuser_0e_11_0c_f8_ea_64@slidev.org
+memberUid: devldapuser_0e_a7_bf_37_38_ed@slidev.org
+memberUid: devldapuser_0e_2d_fd_c8_3b_98@slidev.org
+memberUid: devldapuser_0e_13_30_3b_52_30@slidev.org
+memberUid: devldapuser_0e_8f_a5_0c_3a_f1@slidev.org
+memberUid: devldapuser_0e_7e_35_46_0f_e6@slidev.org
+memberUid: devldapuser_0e_48_3a_5a_42_46@slidev.org
+memberUid: devldapuser_0e_8a_58_4a_ef_63@slidev.org
+memberUid: devldapuser_0e_0e_5b_bd_0c_be@slidev.org
+memberUid: devldapuser_0e_df_60_c2_55_df@slidev.org
+memberUid: devldapuser_0e_5f_1e_2b_16_87@slidev.org
+memberUid: devldapuser_0e_4d_3b_a5_86_20@slidev.org
+memberUid: devldapuser_0e_f7_6f_00_5a_54@slidev.org
+memberUid: devldapuser_0e_12_92_0a_cf_9f@slidev.org
+memberUid: devldapuser_0e_3b_f7_83_87_21@slidev.org
  SWtfmkGCKySyScYaPHOcCYzselTjEQ
  GkypahuwrSCchMCoyddBoNXQTqIqJs
+memberUid: devldapuser_0e_1d_25_12_09_9d@slidev.org
+memberUid: devldapuser_0e_2b_b0_fe_4e_b0@slidev.org
  oTxjVabsfcWRYFObZVJLnnVmDZxhkx
+memberUid: devldapuser_0e_9e_e9_8c_09_ae@slidev.org
+memberUid: devldapuser_0e_4f_b3_a5_e7_cc@slidev.org
+memberUid: devldapuser_0e_a6_d6_00_08_cc@slidev.org
+memberUid: e2etestdev_sb@slidev.org
+memberUid: devldapuser_0e_ea_37_8e_1e_51@slidev.org
+memberUid: devldapuser_0e_5c_af_56_01_ab@slidev.org
 
 dn: cn=SLC Operator,ou=groups,ou=CI,dc=slidev,dc=org
 changetype: add
@@ -3978,6 +5239,25 @@ displayName: 2ccd88620d9d3fb3ee8ee839c806fb73
 givenName: SLC
 loginShell: /bin/sh
 mail: slcoperator@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Daybreak Admin,ou=people,ou=CI,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Daybreak Admin
+gidNumber: 505
+homeDirectory: /ingestion/lz/Midgar/13e785053e77f7d6b064cdcd43167f70ae8c32ca
+ 88c6a3b9b0c8cd52458faa77
+sn: Admin
+uid: daybreakadmin
+uidNumber: 1119
+description:: dGVuYW50PU1pZGdhcgplZE9yZz1JTC1EQVlCUkVBSw==
+displayName: 0bd6b800ec046191473a61b9b9584c48
+givenName: Daybreak
+loginShell: /bin/sh
+mail: daybreakadmin@slidev.org
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=Test Developer,ou=people,ou=CI,dc=slidev,dc=org
@@ -4033,6 +5313,23 @@ displayName: 80e7f8e4c713a7c2495807c5c7a69dcf
 givenName: IL
 loginShell: /bin/sh
 mail: iladmin@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=NY Admin,ou=people,ou=CI,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: NY Admin
+gidNumber: 508
+homeDirectory: /mnt/gluster-lz/NY/NY-STATE-NYC
+sn: Admin
+uid: nyadmin
+uidNumber: 1123
+description:: dGVuYW50PUh5cnVsZQplZE9yZz1OWS1TVEFURS1OWUM=
+displayName: 507c174942f3dd3ebc0e4b16d68553f2
+givenName: NY
+loginShell: /bin/sh
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=Sunset RealmAdmin,ou=people,ou=CI,dc=slidev,dc=org
@@ -4138,6 +5435,24 @@ displayName: 09e5fa8790282698c9c2f29a373618fa
 givenName: Fakerealmadmin
 loginShell: /bin/sh
 mail: fakerealmadmin@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=DaybreakNoRealmAdmin Test,ou=people,ou=CI,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: DaybreakNoRealmAdmin Test
+gidNumber: 511
+homeDirectory: /home/users/daybreaknorealmadmin
+sn: Test
+uid: daybreaknorealmadmin
+uidNumber: 1133
+description:: dGVuYW50PU1pZGdhcgplZE9yZz1JTC1EQVlCUkVBSw==
+displayName: e0dda68f60f746ed58bd461a0a11792d
+givenName: DaybreakNoRealmAdmin
+loginShell: /bin/sh
+mail: daybreaknorealmadmin@slidev.org
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=SLC Developer,ou=people,ou=CI,dc=slidev,dc=org
@@ -4276,6 +5591,104 @@ givenName: Ingestion
 mail: ingestionuser@slidev.org
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
+dn: cn=developer-email@slidev.org,ou=people,ou=CI,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: top
+objectClass: posixAccount
+cn: developer-email@slidev.org
+gidNumber: 500
+homeDirectory: /ingestion/lz/developer-email@slidev.org/IL
+sn: Developer
+uid: developer-email@slidev.org
+uidNumber: 834
+description:: dGVuYW50PWRldmVsb3Blci1lbWFpbEBzbGlkZXYub3JnCmVkT3JnPUlM
+destinationIndicator: approved
+displayName: 75c16a1f1735525ab6adee8c01fa4a7f
+gecos: 
+givenName: Joe
+mail: developer-email@slidev.org
+o: SLC
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Bill Operator,ou=people,ou=CI,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Bill Operator
+gidNumber: 100
+homeDirectory: /home/users/toperator
+sn: Operator
+uid: slcoperator-email@slidev.org
+uidNumber: 1164
+displayName: 4ba75e11e2932e68dd6af3b4077c16ee
+givenName: Bill
+loginShell: /bin/bash
+mail: slcoperator-email@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=admintest-developer@slidev.org,ou=people,ou=SLIAdmin,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: top
+objectClass: posixAccount
+cn: admintest-developer@slidev.org
+gidNumber: 500
+homeDirectory: /ingestion/lz/developer-email@slidev.org/IL
+sn: Developer
+uid: admintest-developer@slidev.org
+uidNumber: 834
+description:: dGVuYW50PWRldmVsb3Blci1lbWFpbEBzbGlkZXYub3JnCmVkT3JnPUlM
+destinationIndicator: approved
+displayName: 75c16a1f1735525ab6adee8c01fa4a7f
+gecos: 
+givenName: Joe
+mail: admintest-developer@slidev.org
+o: SLC
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=admintest-developer@slidev.org,ou=people,ou=LocalNew,ou=DevTest,dc=sl
+ idev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: top
+objectClass: posixAccount
+cn: admintest-developer@slidev.org
+gidNumber: 500
+homeDirectory: /ingestion/lz/developer-email@slidev.org/IL
+sn: Developer
+uid: admintest-developer@slidev.org
+uidNumber: 834
+description:: dGVuYW50PWRldmVsb3Blci1lbWFpbEBzbGlkZXYub3JnCmVkT3JnPUlM
+destinationIndicator: approved
+displayName: 75c16a1f1735525ab6adee8c01fa4a7f
+gecos: 
+givenName: Joe
+mail: admintest-developer@slidev.org
+o: SLC
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=admintest-developer@slidev.org,ou=people,ou=CI,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: top
+objectClass: posixAccount
+cn: admintest-developer@slidev.org
+gidNumber: 500
+homeDirectory: /ingestion/lz/developer-email@slidev.org/IL
+sn: Developer
+uid: admintest-developer@slidev.org
+uidNumber: 834
+description:: dGVuYW50PWRldmVsb3Blci1lbWFpbEBzbGlkZXYub3JnCmVkT3JnPUlM
+destinationIndicator: approved
+displayName: 75c16a1f1735525ab6adee8c01fa4a7f
+gecos: 
+givenName: Joe
+mail: admintest-developer@slidev.org
+o: SLC
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
 dn: cn=SAMT_Welcome_Email_tke-mac-7.localVnZZXxNidWumGlbbxGoxdRTNnmOYIgfsscm
  vWGVTKofPnwkyzHt,ou=people,ou=LocalNew,ou=DevTest,dc=slidev,dc=org
 changetype: add
@@ -4317,6 +5730,8 @@ objectClass: top
 cn: LEA Administrator
 gidNumber: 505
 memberUid: sunsetadmin
+memberUid: daybreakadmin
+memberUid: daybreaknorealmadmin
 
 dn: cn=Application Developer,ou=groups,ou=cislave01,dc=slidev,dc=org
 changetype: add
@@ -4328,6 +5743,7 @@ memberUid: testdeveloper
 memberUid: developer
 memberUid: slcdeveloper
 memberUid: developer-email@slidev.org
+memberUid: devldapuser@slidev.org
 memberUid: sandboxdeveloper
 memberUid: admintest-developer@slidev.org
 
@@ -4337,6 +5753,7 @@ objectClass: posixGroup
 objectClass: top
 cn: SEA Administrator
 gidNumber: 508
+memberUid: nyadmin
 memberUid: iladmin
 
 dn: cn=Realm Administrator,ou=groups,ou=cislave01,dc=slidev,dc=org
@@ -4347,7 +5764,9 @@ cn: Realm Administrator
 gidNumber: 509
 memberUid: fakerealmadmin
 memberUid: sunsetadmin
+memberUid: nyadmin
 memberUid: sunsetrealmadmin
+memberUid: daybreakadmin
  GRFCuEDNjZSMfahLDbIlZuxYqdbnbFzOd
 
 dn: cn=Ingestion User,ou=groups,ou=cislave01,dc=slidev,dc=org
@@ -4356,8 +5775,12 @@ objectClass: posixGroup
 objectClass: top
 cn: Ingestion User
 gidNumber: 510
+memberUid: nyadmin
 memberUid: sunsetadmin
+memberUid: daybreakadmin
 memberUid: ingestionuser
+memberUid: devldapuserpwolf-HP-EliteBook-2560p@slidev.org
+memberUid: devldapuser@slidev.org
 memberUid: sunsetingestionuser
 memberUid: sandboxingestionuser
 
@@ -4387,6 +5810,40 @@ objectClass: top
 cn: Sandbox Administrator
 gidNumber: 516
 memberUid: sandboxadministrator
+memberUid: devldapuser@slidev.org
+memberUid: devldapuser_nxslave1@slidev.org
+memberUid: devldapuser_nxslave5@slidev.org
+memberUid: devldapuser_nxslave8@slidev.org
+memberUid: devldapuser_nxslave7@slidev.org
+memberUid: devldapuser_nxslave2@slidev.org
+memberUid: devldapuser_nxslave9@slidev.org
+memberUid: devldapuser_ablum-mac.local@slidev.org
+memberUid: devldapuser_bsuzuki-mac.local@slidev.org
+memberUid: devldapuser_jhinsdale-mac.local@slidev.org
+memberUid: devldapuser_jsingh-mac.local@slidev.org
+memberUid: devldapuser_tshewchuk-mac.local@slidev.org
+memberUid: devldapuser_smuhit-mac.local@slidev.org
+memberUid: devldapuser_tke-mac-7.local@slidev.org
+memberUid: devldapuser_local.slidev.org@slidev.org
+memberUid: devldapuser_cislave@slidev.org
+memberUid: devldapuser_06_6c_72_4f_05_3a@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_02@slidev.org
+memberUid: devldapuser_06_6c_72_53_3f_2f@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_03@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_33@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_31@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_05@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_32@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_04@slidev.org
+memberUid: devldapuser_06_6c_72_7d_66_fc@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a4@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a3@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a7@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a2@slidev.org
+memberUid: e2etestdev_sb@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a5@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a0@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a6@slidev.org
 
 dn: cn=ingestion_user,ou=groups,ou=cislave01,dc=slidev,dc=org
 changetype: add
@@ -4394,15 +5851,60 @@ objectClass: posixGroup
 objectClass: top
 cn: ingestion_user
 gidNumber: 510
+memberUid: nyadmin
 memberUid: sunsetadmin
+memberUid: daybreakadmin
 memberUid: ingestionuser
+memberUid: devldapuser@slidev.org
 memberUid: sunsetingestionuser
 memberUid: sandboxingestionuser
+memberUid: devldapuser_nxslave4@slidev.org
+memberUid: devldapuser_Liu-Mac.local@slidev.org
+memberUid: devldapuser_localhost@slidev.org
+memberUid: devldapuser_nxslave6@slidev.org
+memberUid: devldapuser_nxslave3@slidev.org
+memberUid: devldapuser_nxslave10@slidev.org
+memberUid: devldapuser_nxslave1@slidev.org
+memberUid: devldapuser_nxslave5@slidev.org
+memberUid: devldapuser_cislave01.slidev.org@slidev.org
+memberUid: devldapuser_cislave02.slidev.org@slidev.org
+memberUid: devldapuser_nxslave8@slidev.org
+memberUid: devldapuser_nxslave7@slidev.org
+memberUid: devldapuser_nxslave2@slidev.org
+memberUid: devldapuser_nxslave9@slidev.org
+memberUid: devldapuser_ablum-mac.local@slidev.org
+memberUid: devldapuser_bsuzuki-mac.local@slidev.org
+memberUid: devldapuser_jhinsdale-mac.local@slidev.org
+memberUid: devldapuser_jsingh-mac.local@slidev.org
+memberUid: devldapuser_tshewchuk-mac.local@slidev.org
+memberUid: devldapuser_smuhit-mac.local@slidev.org
+memberUid: devldapuser_tke-mac-7.local@slidev.org
  uEcikWNsXejsrPvRiLwq
+memberUid: devldapuser_local.slidev.org@slidev.org
  ksCZdZzOjFhnnnzwaxnyfQawiAATbFNDS
+memberUid: devldapuser_cislave@slidev.org
+memberUid: devldapuser_06_6c_72_4f_05_3a@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_02@slidev.org
 memberUid: ingestionuser_06_6c_72_67_a5_02_06_6c_72_67_a5_02
+memberUid: devldapuser_06_6c_72_53_3f_2f@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_03@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_33@slidev.org
  meqbNsGTIdKlRFiVIgCkzvrdJDnOgq
+memberUid: devldapuser_06_6c_72_46_25_31@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_05@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_32@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_04@slidev.org
+memberUid: devldapuser_06_6c_72_7d_66_fc@slidev.org
  LiFGPQaDeIHHtxhkcGXCqPWzmQWjTm
+memberUid: devldapuser_06_6c_72_4c_26_a4@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a3@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a7@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a1@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a2@slidev.org
+memberUid: e2etestdev_sb@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a5@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a0@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a6@slidev.org
 
 dn: cn=application_developer,ou=groups,ou=cislave01,dc=slidev,dc=org
 changetype: add
@@ -4414,8 +5916,50 @@ memberUid: testdeveloper
 memberUid: developer
 memberUid: slcdeveloper
 memberUid: developer-email@slidev.org
+memberUid: devldapuser@slidev.org
 memberUid: sandboxdeveloper
+memberUid: devldapuser_Liu-Mac.local@slidev.org
+memberUid: devldapuser_localhost@slidev.org
+memberUid: devldapuser_nxslave6@slidev.org
+memberUid: devldapuser_nxslave3@slidev.org
+memberUid: devldapuser_nxslave10@slidev.org
+memberUid: devldapuser_nxslave1@slidev.org
+memberUid: devldapuser_nxslave5@slidev.org
+memberUid: devldapuser_cislave01.slidev.org@slidev.org
+memberUid: devldapuser_cislave02.slidev.org@slidev.org
+memberUid: devldapuser_nxslave8@slidev.org
+memberUid: devldapuser_nxslave7@slidev.org
+memberUid: devldapuser_nxslave2@slidev.org
+memberUid: devldapuser_nxslave9@slidev.org
+memberUid: devldapuser_ablum-mac.local@slidev.org
+memberUid: devldapuser_bsuzuki-mac.local@slidev.org
+memberUid: devldapuser_jhinsdale-mac.local@slidev.org
+memberUid: devldapuser_jsingh-mac.local@slidev.org
+memberUid: devldapuser_tshewchuk-mac.local@slidev.org
+memberUid: devldapuser_smuhit-mac.local@slidev.org
+memberUid: devldapuser_tke-mac-7.local@slidev.org
 memberUid: admintest-developer@slidev.org
+memberUid: devldapuser_local.slidev.org@slidev.org
+memberUid: devldapuser_cislave@slidev.org
+memberUid: devldapuser_06_6c_72_4f_05_3a@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_02@slidev.org
+memberUid: devldapuser_06_6c_72_53_3f_2f@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_03@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_33@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_31@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_05@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_32@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_04@slidev.org
+memberUid: devldapuser_06_6c_72_7d_66_fc@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a4@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a3@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a7@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a1@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a2@slidev.org
+memberUid: e2etestdev_sb@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a5@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a0@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a6@slidev.org
 
 dn: cn=SLC Operator,ou=groups,ou=cislave01,dc=slidev,dc=org
 changetype: add
@@ -4447,6 +5991,25 @@ displayName: 2ccd88620d9d3fb3ee8ee839c806fb73
 givenName: SLC
 loginShell: /bin/sh
 mail: slcoperator@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Daybreak Admin,ou=people,ou=cislave01,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Daybreak Admin
+gidNumber: 505
+homeDirectory: /ingestion/lz/Midgar/13e785053e77f7d6b064cdcd43167f70ae8c32ca
+ 88c6a3b9b0c8cd52458faa77
+sn: Admin
+uid: daybreakadmin
+uidNumber: 1119
+description:: dGVuYW50PU1pZGdhcgplZE9yZz1JTC1EQVlCUkVBSw==
+displayName: 0bd6b800ec046191473a61b9b9584c48
+givenName: Daybreak
+loginShell: /bin/sh
+mail: daybreakadmin@slidev.org
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=Test Developer,ou=people,ou=cislave01,dc=slidev,dc=org
@@ -4502,6 +6065,23 @@ displayName: 80e7f8e4c713a7c2495807c5c7a69dcf
 givenName: IL
 loginShell: /bin/sh
 mail: iladmin@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=NY Admin,ou=people,ou=cislave01,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: NY Admin
+gidNumber: 508
+homeDirectory: /mnt/gluster-lz/NY/NY-STATE-NYC
+sn: Admin
+uid: nyadmin
+uidNumber: 1123
+description:: dGVuYW50PUh5cnVsZQplZE9yZz1OWS1TVEFURS1OWUM=
+displayName: 507c174942f3dd3ebc0e4b16d68553f2
+givenName: NY
+loginShell: /bin/sh
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=Sunset RealmAdmin,ou=people,ou=cislave01,dc=slidev,dc=org
@@ -4607,6 +6187,24 @@ displayName: 09e5fa8790282698c9c2f29a373618fa
 givenName: Fakerealmadmin
 loginShell: /bin/sh
 mail: fakerealmadmin@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=DaybreakNoRealmAdmin Test,ou=people,ou=cislave01,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: DaybreakNoRealmAdmin Test
+gidNumber: 511
+homeDirectory: /home/users/daybreaknorealmadmin
+sn: Test
+uid: daybreaknorealmadmin
+uidNumber: 1133
+description:: dGVuYW50PU1pZGdhcgplZE9yZz1JTC1EQVlCUkVBSw==
+displayName: e0dda68f60f746ed58bd461a0a11792d
+givenName: DaybreakNoRealmAdmin
+loginShell: /bin/sh
+mail: daybreaknorealmadmin@slidev.org
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=SLC Developer,ou=people,ou=cislave01,dc=slidev,dc=org
@@ -4745,6 +6343,64 @@ givenName: Ingestion
 mail: ingestionuser@slidev.org
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
+dn: cn=developer-email@slidev.org,ou=people,ou=cislave01,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: top
+objectClass: posixAccount
+cn: developer-email@slidev.org
+gidNumber: 500
+homeDirectory: /ingestion/lz/developer-email@slidev.org/IL
+sn: Developer
+uid: developer-email@slidev.org
+uidNumber: 834
+description:: dGVuYW50PWRldmVsb3Blci1lbWFpbEBzbGlkZXYub3JnCmVkT3JnPUlM
+destinationIndicator: approved
+displayName: 75c16a1f1735525ab6adee8c01fa4a7f
+gecos: 
+givenName: Joe
+mail: developer-email@slidev.org
+o: SLC
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Bill Operator,ou=people,ou=cislave01,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Bill Operator
+gidNumber: 100
+homeDirectory: /home/users/toperator
+sn: Operator
+uid: slcoperator-email@slidev.org
+uidNumber: 1164
+displayName: 4ba75e11e2932e68dd6af3b4077c16ee
+givenName: Bill
+loginShell: /bin/bash
+mail: slcoperator-email@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=admintest-developer@slidev.org,ou=people,ou=cislave01,dc=slidev,dc=or
+ g
+changetype: add
+objectClass: inetOrgPerson
+objectClass: top
+objectClass: posixAccount
+cn: admintest-developer@slidev.org
+gidNumber: 500
+homeDirectory: /ingestion/lz/developer-email@slidev.org/IL
+sn: Developer
+uid: admintest-developer@slidev.org
+uidNumber: 834
+description:: dGVuYW50PWRldmVsb3Blci1lbWFpbEBzbGlkZXYub3JnCmVkT3JnPUlM
+destinationIndicator: approved
+displayName: 75c16a1f1735525ab6adee8c01fa4a7f
+gecos: 
+givenName: Joe
+mail: admintest-developer@slidev.org
+o: SLC
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
 dn: ou=cislave02,dc=slidev,dc=org
 changetype: add
 objectClass: organizationalUnit
@@ -4763,6 +6419,8 @@ objectClass: top
 cn: LEA Administrator
 gidNumber: 505
 memberUid: sunsetadmin
+memberUid: daybreakadmin
+memberUid: daybreaknorealmadmin
 
 dn: cn=Application Developer,ou=groups,ou=cislave02,dc=slidev,dc=org
 changetype: add
@@ -4774,6 +6432,7 @@ memberUid: testdeveloper
 memberUid: developer
 memberUid: slcdeveloper
 memberUid: developer-email@slidev.org
+memberUid: devldapuser@slidev.org
 memberUid: sandboxdeveloper
 memberUid: admintest-developer@slidev.org
 
@@ -4783,6 +6442,7 @@ objectClass: posixGroup
 objectClass: top
 cn: SEA Administrator
 gidNumber: 508
+memberUid: nyadmin
 memberUid: iladmin
 
 dn: cn=Realm Administrator,ou=groups,ou=cislave02,dc=slidev,dc=org
@@ -4793,7 +6453,9 @@ cn: Realm Administrator
 gidNumber: 509
 memberUid: fakerealmadmin
 memberUid: sunsetadmin
+memberUid: nyadmin
 memberUid: sunsetrealmadmin
+memberUid: daybreakadmin
  GRFCuEDNjZSMfahLDbIlZuxYqdbnbFzOd
 
 dn: cn=Ingestion User,ou=groups,ou=cislave02,dc=slidev,dc=org
@@ -4802,8 +6464,12 @@ objectClass: posixGroup
 objectClass: top
 cn: Ingestion User
 gidNumber: 510
+memberUid: nyadmin
 memberUid: sunsetadmin
+memberUid: daybreakadmin
 memberUid: ingestionuser
+memberUid: devldapuserpwolf-HP-EliteBook-2560p@slidev.org
+memberUid: devldapuser@slidev.org
 memberUid: sunsetingestionuser
 memberUid: sandboxingestionuser
 
@@ -4833,6 +6499,39 @@ objectClass: top
 cn: Sandbox Administrator
 gidNumber: 516
 memberUid: sandboxadministrator
+memberUid: devldapuser@slidev.org
+memberUid: devldapuser_nxslave1@slidev.org
+memberUid: devldapuser_nxslave5@slidev.org
+memberUid: devldapuser_nxslave8@slidev.org
+memberUid: devldapuser_nxslave7@slidev.org
+memberUid: devldapuser_nxslave2@slidev.org
+memberUid: devldapuser_nxslave9@slidev.org
+memberUid: devldapuser_ablum-mac.local@slidev.org
+memberUid: devldapuser_bsuzuki-mac.local@slidev.org
+memberUid: devldapuser_jhinsdale-mac.local@slidev.org
+memberUid: devldapuser_jsingh-mac.local@slidev.org
+memberUid: devldapuser_tshewchuk-mac.local@slidev.org
+memberUid: devldapuser_smuhit-mac.local@slidev.org
+memberUid: devldapuser_tke-mac-7.local@slidev.org
+memberUid: devldapuser_local.slidev.org@slidev.org
+memberUid: devldapuser_cislave@slidev.org
+memberUid: devldapuser_06_6c_72_4f_05_3a@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_02@slidev.org
+memberUid: devldapuser_06_6c_72_53_3f_2f@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_03@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_33@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_31@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_05@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_32@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_04@slidev.org
+memberUid: devldapuser_06_6c_72_7d_66_fc@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a4@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a3@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a7@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a2@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a5@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a0@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a6@slidev.org
 
 dn: cn=ingestion_user,ou=groups,ou=cislave02,dc=slidev,dc=org
 changetype: add
@@ -4840,15 +6539,59 @@ objectClass: posixGroup
 objectClass: top
 cn: ingestion_user
 gidNumber: 510
+memberUid: nyadmin
 memberUid: sunsetadmin
+memberUid: daybreakadmin
 memberUid: ingestionuser
+memberUid: devldapuser@slidev.org
 memberUid: sunsetingestionuser
 memberUid: sandboxingestionuser
+memberUid: devldapuser_nxslave4@slidev.org
+memberUid: devldapuser_Liu-Mac.local@slidev.org
+memberUid: devldapuser_localhost@slidev.org
+memberUid: devldapuser_nxslave6@slidev.org
+memberUid: devldapuser_nxslave3@slidev.org
+memberUid: devldapuser_nxslave10@slidev.org
+memberUid: devldapuser_nxslave1@slidev.org
+memberUid: devldapuser_nxslave5@slidev.org
+memberUid: devldapuser_cislave01.slidev.org@slidev.org
+memberUid: devldapuser_cislave02.slidev.org@slidev.org
+memberUid: devldapuser_nxslave8@slidev.org
+memberUid: devldapuser_nxslave7@slidev.org
+memberUid: devldapuser_nxslave2@slidev.org
+memberUid: devldapuser_nxslave9@slidev.org
+memberUid: devldapuser_ablum-mac.local@slidev.org
+memberUid: devldapuser_bsuzuki-mac.local@slidev.org
+memberUid: devldapuser_jhinsdale-mac.local@slidev.org
+memberUid: devldapuser_jsingh-mac.local@slidev.org
+memberUid: devldapuser_tshewchuk-mac.local@slidev.org
+memberUid: devldapuser_smuhit-mac.local@slidev.org
+memberUid: devldapuser_tke-mac-7.local@slidev.org
  uEcikWNsXejsrPvRiLwq
+memberUid: devldapuser_local.slidev.org@slidev.org
  ksCZdZzOjFhnnnzwaxnyfQawiAATbFNDS
+memberUid: devldapuser_cislave@slidev.org
+memberUid: devldapuser_06_6c_72_4f_05_3a@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_02@slidev.org
 memberUid: ingestionuser_06_6c_72_67_a5_02_06_6c_72_67_a5_02
+memberUid: devldapuser_06_6c_72_53_3f_2f@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_03@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_33@slidev.org
  meqbNsGTIdKlRFiVIgCkzvrdJDnOgq
+memberUid: devldapuser_06_6c_72_46_25_31@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_05@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_32@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_04@slidev.org
+memberUid: devldapuser_06_6c_72_7d_66_fc@slidev.org
  LiFGPQaDeIHHtxhkcGXCqPWzmQWjTm
+memberUid: devldapuser_06_6c_72_4c_26_a4@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a3@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a7@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a1@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a2@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a5@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a0@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a6@slidev.org
 
 dn: cn=application_developer,ou=groups,ou=cislave02,dc=slidev,dc=org
 changetype: add
@@ -4860,8 +6603,49 @@ memberUid: testdeveloper
 memberUid: developer
 memberUid: slcdeveloper
 memberUid: developer-email@slidev.org
+memberUid: devldapuser@slidev.org
 memberUid: sandboxdeveloper
+memberUid: devldapuser_Liu-Mac.local@slidev.org
+memberUid: devldapuser_localhost@slidev.org
+memberUid: devldapuser_nxslave6@slidev.org
+memberUid: devldapuser_nxslave3@slidev.org
+memberUid: devldapuser_nxslave10@slidev.org
+memberUid: devldapuser_nxslave1@slidev.org
+memberUid: devldapuser_nxslave5@slidev.org
+memberUid: devldapuser_cislave01.slidev.org@slidev.org
+memberUid: devldapuser_cislave02.slidev.org@slidev.org
+memberUid: devldapuser_nxslave8@slidev.org
+memberUid: devldapuser_nxslave7@slidev.org
+memberUid: devldapuser_nxslave2@slidev.org
+memberUid: devldapuser_nxslave9@slidev.org
+memberUid: devldapuser_ablum-mac.local@slidev.org
+memberUid: devldapuser_bsuzuki-mac.local@slidev.org
+memberUid: devldapuser_jhinsdale-mac.local@slidev.org
+memberUid: devldapuser_jsingh-mac.local@slidev.org
+memberUid: devldapuser_tshewchuk-mac.local@slidev.org
+memberUid: devldapuser_smuhit-mac.local@slidev.org
+memberUid: devldapuser_tke-mac-7.local@slidev.org
 memberUid: admintest-developer@slidev.org
+memberUid: devldapuser_local.slidev.org@slidev.org
+memberUid: devldapuser_cislave@slidev.org
+memberUid: devldapuser_06_6c_72_4f_05_3a@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_02@slidev.org
+memberUid: devldapuser_06_6c_72_53_3f_2f@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_03@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_33@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_31@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_05@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_32@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_04@slidev.org
+memberUid: devldapuser_06_6c_72_7d_66_fc@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a4@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a3@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a7@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a1@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a2@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a5@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a0@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a6@slidev.org
 
 dn: cn=SLC Operator,ou=groups,ou=cislave02,dc=slidev,dc=org
 changetype: add
@@ -4893,6 +6677,25 @@ displayName: 2ccd88620d9d3fb3ee8ee839c806fb73
 givenName: SLC
 loginShell: /bin/sh
 mail: slcoperator@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Daybreak Admin,ou=people,ou=cislave02,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Daybreak Admin
+gidNumber: 505
+homeDirectory: /ingestion/lz/Midgar/13e785053e77f7d6b064cdcd43167f70ae8c32ca
+ 88c6a3b9b0c8cd52458faa77
+sn: Admin
+uid: daybreakadmin
+uidNumber: 1119
+description:: dGVuYW50PU1pZGdhcgplZE9yZz1JTC1EQVlCUkVBSw==
+displayName: 0bd6b800ec046191473a61b9b9584c48
+givenName: Daybreak
+loginShell: /bin/sh
+mail: daybreakadmin@slidev.org
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=Test Developer,ou=people,ou=cislave02,dc=slidev,dc=org
@@ -4948,6 +6751,23 @@ displayName: 80e7f8e4c713a7c2495807c5c7a69dcf
 givenName: IL
 loginShell: /bin/sh
 mail: iladmin@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=NY Admin,ou=people,ou=cislave02,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: NY Admin
+gidNumber: 508
+homeDirectory: /mnt/gluster-lz/NY/NY-STATE-NYC
+sn: Admin
+uid: nyadmin
+uidNumber: 1123
+description:: dGVuYW50PUh5cnVsZQplZE9yZz1OWS1TVEFURS1OWUM=
+displayName: 507c174942f3dd3ebc0e4b16d68553f2
+givenName: NY
+loginShell: /bin/sh
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=Sunset RealmAdmin,ou=people,ou=cislave02,dc=slidev,dc=org
@@ -5053,6 +6873,24 @@ displayName: 09e5fa8790282698c9c2f29a373618fa
 givenName: Fakerealmadmin
 loginShell: /bin/sh
 mail: fakerealmadmin@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=DaybreakNoRealmAdmin Test,ou=people,ou=cislave02,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: DaybreakNoRealmAdmin Test
+gidNumber: 511
+homeDirectory: /home/users/daybreaknorealmadmin
+sn: Test
+uid: daybreaknorealmadmin
+uidNumber: 1133
+description:: dGVuYW50PU1pZGdhcgplZE9yZz1JTC1EQVlCUkVBSw==
+displayName: e0dda68f60f746ed58bd461a0a11792d
+givenName: DaybreakNoRealmAdmin
+loginShell: /bin/sh
+mail: daybreaknorealmadmin@slidev.org
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=SLC Developer,ou=people,ou=cislave02,dc=slidev,dc=org
@@ -5191,6 +7029,64 @@ givenName: Ingestion
 mail: ingestionuser@slidev.org
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
+dn: cn=developer-email@slidev.org,ou=people,ou=cislave02,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: top
+objectClass: posixAccount
+cn: developer-email@slidev.org
+gidNumber: 500
+homeDirectory: /ingestion/lz/developer-email@slidev.org/IL
+sn: Developer
+uid: developer-email@slidev.org
+uidNumber: 834
+description:: dGVuYW50PWRldmVsb3Blci1lbWFpbEBzbGlkZXYub3JnCmVkT3JnPUlM
+destinationIndicator: approved
+displayName: 75c16a1f1735525ab6adee8c01fa4a7f
+gecos: 
+givenName: Joe
+mail: developer-email@slidev.org
+o: SLC
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Bill Operator,ou=people,ou=cislave02,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Bill Operator
+gidNumber: 100
+homeDirectory: /home/users/toperator
+sn: Operator
+uid: slcoperator-email@slidev.org
+uidNumber: 1164
+displayName: 4ba75e11e2932e68dd6af3b4077c16ee
+givenName: Bill
+loginShell: /bin/bash
+mail: slcoperator-email@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=admintest-developer@slidev.org,ou=people,ou=cislave02,dc=slidev,dc=or
+ g
+changetype: add
+objectClass: inetOrgPerson
+objectClass: top
+objectClass: posixAccount
+cn: admintest-developer@slidev.org
+gidNumber: 500
+homeDirectory: /ingestion/lz/developer-email@slidev.org/IL
+sn: Developer
+uid: admintest-developer@slidev.org
+uidNumber: 834
+description:: dGVuYW50PWRldmVsb3Blci1lbWFpbEBzbGlkZXYub3JnCmVkT3JnPUlM
+destinationIndicator: approved
+displayName: 75c16a1f1735525ab6adee8c01fa4a7f
+gecos: 
+givenName: Joe
+mail: admintest-developer@slidev.org
+o: SLC
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
 dn: ou=cislave03,dc=slidev,dc=org
 changetype: add
 objectClass: organizationalUnit
@@ -5209,6 +7105,8 @@ objectClass: top
 cn: LEA Administrator
 gidNumber: 505
 memberUid: sunsetadmin
+memberUid: daybreakadmin
+memberUid: daybreaknorealmadmin
 
 dn: cn=Application Developer,ou=groups,ou=cislave03,dc=slidev,dc=org
 changetype: add
@@ -5220,6 +7118,7 @@ memberUid: testdeveloper
 memberUid: developer
 memberUid: slcdeveloper
 memberUid: developer-email@slidev.org
+memberUid: devldapuser@slidev.org
 memberUid: sandboxdeveloper
 memberUid: admintest-developer@slidev.org
 
@@ -5229,6 +7128,7 @@ objectClass: posixGroup
 objectClass: top
 cn: SEA Administrator
 gidNumber: 508
+memberUid: nyadmin
 memberUid: iladmin
 
 dn: cn=Realm Administrator,ou=groups,ou=cislave03,dc=slidev,dc=org
@@ -5239,7 +7139,9 @@ cn: Realm Administrator
 gidNumber: 509
 memberUid: fakerealmadmin
 memberUid: sunsetadmin
+memberUid: nyadmin
 memberUid: sunsetrealmadmin
+memberUid: daybreakadmin
  GRFCuEDNjZSMfahLDbIlZuxYqdbnbFzOd
 
 dn: cn=Ingestion User,ou=groups,ou=cislave03,dc=slidev,dc=org
@@ -5248,8 +7150,12 @@ objectClass: posixGroup
 objectClass: top
 cn: Ingestion User
 gidNumber: 510
+memberUid: nyadmin
 memberUid: sunsetadmin
+memberUid: daybreakadmin
 memberUid: ingestionuser
+memberUid: devldapuserpwolf-HP-EliteBook-2560p@slidev.org
+memberUid: devldapuser@slidev.org
 memberUid: sunsetingestionuser
 memberUid: sandboxingestionuser
 
@@ -5279,6 +7185,40 @@ objectClass: top
 cn: Sandbox Administrator
 gidNumber: 516
 memberUid: sandboxadministrator
+memberUid: devldapuser@slidev.org
+memberUid: devldapuser_nxslave1@slidev.org
+memberUid: devldapuser_nxslave5@slidev.org
+memberUid: devldapuser_nxslave8@slidev.org
+memberUid: devldapuser_nxslave7@slidev.org
+memberUid: devldapuser_nxslave2@slidev.org
+memberUid: devldapuser_nxslave9@slidev.org
+memberUid: devldapuser_ablum-mac.local@slidev.org
+memberUid: devldapuser_bsuzuki-mac.local@slidev.org
+memberUid: devldapuser_jhinsdale-mac.local@slidev.org
+memberUid: devldapuser_jsingh-mac.local@slidev.org
+memberUid: devldapuser_tshewchuk-mac.local@slidev.org
+memberUid: devldapuser_smuhit-mac.local@slidev.org
+memberUid: devldapuser_tke-mac-7.local@slidev.org
+memberUid: devldapuser_local.slidev.org@slidev.org
+memberUid: devldapuser_cislave@slidev.org
+memberUid: devldapuser_06_6c_72_4f_05_3a@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_02@slidev.org
+memberUid: devldapuser_06_6c_72_53_3f_2f@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_03@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_33@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_31@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_05@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_32@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_04@slidev.org
+memberUid: devldapuser_06_6c_72_7d_66_fc@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a4@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a3@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a7@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a2@slidev.org
+memberUid: e2etestdev_sb@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a5@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a0@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a6@slidev.org
 
 dn: cn=ingestion_user,ou=groups,ou=cislave03,dc=slidev,dc=org
 changetype: add
@@ -5286,15 +7226,60 @@ objectClass: posixGroup
 objectClass: top
 cn: ingestion_user
 gidNumber: 510
+memberUid: nyadmin
 memberUid: sunsetadmin
+memberUid: daybreakadmin
 memberUid: ingestionuser
+memberUid: devldapuser@slidev.org
 memberUid: sunsetingestionuser
 memberUid: sandboxingestionuser
+memberUid: devldapuser_nxslave4@slidev.org
+memberUid: devldapuser_Liu-Mac.local@slidev.org
+memberUid: devldapuser_localhost@slidev.org
+memberUid: devldapuser_nxslave6@slidev.org
+memberUid: devldapuser_nxslave3@slidev.org
+memberUid: devldapuser_nxslave10@slidev.org
+memberUid: devldapuser_nxslave1@slidev.org
+memberUid: devldapuser_nxslave5@slidev.org
+memberUid: devldapuser_cislave01.slidev.org@slidev.org
+memberUid: devldapuser_cislave02.slidev.org@slidev.org
+memberUid: devldapuser_nxslave8@slidev.org
+memberUid: devldapuser_nxslave7@slidev.org
+memberUid: devldapuser_nxslave2@slidev.org
+memberUid: devldapuser_nxslave9@slidev.org
+memberUid: devldapuser_ablum-mac.local@slidev.org
+memberUid: devldapuser_bsuzuki-mac.local@slidev.org
+memberUid: devldapuser_jhinsdale-mac.local@slidev.org
+memberUid: devldapuser_jsingh-mac.local@slidev.org
+memberUid: devldapuser_tshewchuk-mac.local@slidev.org
+memberUid: devldapuser_smuhit-mac.local@slidev.org
+memberUid: devldapuser_tke-mac-7.local@slidev.org
  uEcikWNsXejsrPvRiLwq
+memberUid: devldapuser_local.slidev.org@slidev.org
  ksCZdZzOjFhnnnzwaxnyfQawiAATbFNDS
+memberUid: devldapuser_cislave@slidev.org
+memberUid: devldapuser_06_6c_72_4f_05_3a@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_02@slidev.org
 memberUid: ingestionuser_06_6c_72_67_a5_02_06_6c_72_67_a5_02
+memberUid: devldapuser_06_6c_72_53_3f_2f@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_03@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_33@slidev.org
  meqbNsGTIdKlRFiVIgCkzvrdJDnOgq
+memberUid: devldapuser_06_6c_72_46_25_31@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_05@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_32@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_04@slidev.org
+memberUid: devldapuser_06_6c_72_7d_66_fc@slidev.org
  LiFGPQaDeIHHtxhkcGXCqPWzmQWjTm
+memberUid: devldapuser_06_6c_72_4c_26_a4@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a3@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a7@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a1@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a2@slidev.org
+memberUid: e2etestdev_sb@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a5@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a0@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a6@slidev.org
 
 dn: cn=application_developer,ou=groups,ou=cislave03,dc=slidev,dc=org
 changetype: add
@@ -5306,8 +7291,50 @@ memberUid: testdeveloper
 memberUid: developer
 memberUid: slcdeveloper
 memberUid: developer-email@slidev.org
+memberUid: devldapuser@slidev.org
 memberUid: sandboxdeveloper
+memberUid: devldapuser_Liu-Mac.local@slidev.org
+memberUid: devldapuser_localhost@slidev.org
+memberUid: devldapuser_nxslave6@slidev.org
+memberUid: devldapuser_nxslave3@slidev.org
+memberUid: devldapuser_nxslave10@slidev.org
+memberUid: devldapuser_nxslave1@slidev.org
+memberUid: devldapuser_nxslave5@slidev.org
+memberUid: devldapuser_cislave01.slidev.org@slidev.org
+memberUid: devldapuser_cislave02.slidev.org@slidev.org
+memberUid: devldapuser_nxslave8@slidev.org
+memberUid: devldapuser_nxslave7@slidev.org
+memberUid: devldapuser_nxslave2@slidev.org
+memberUid: devldapuser_nxslave9@slidev.org
+memberUid: devldapuser_ablum-mac.local@slidev.org
+memberUid: devldapuser_bsuzuki-mac.local@slidev.org
+memberUid: devldapuser_jhinsdale-mac.local@slidev.org
+memberUid: devldapuser_jsingh-mac.local@slidev.org
+memberUid: devldapuser_tshewchuk-mac.local@slidev.org
+memberUid: devldapuser_smuhit-mac.local@slidev.org
+memberUid: devldapuser_tke-mac-7.local@slidev.org
 memberUid: admintest-developer@slidev.org
+memberUid: devldapuser_local.slidev.org@slidev.org
+memberUid: devldapuser_cislave@slidev.org
+memberUid: devldapuser_06_6c_72_4f_05_3a@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_02@slidev.org
+memberUid: devldapuser_06_6c_72_53_3f_2f@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_03@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_33@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_31@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_05@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_32@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_04@slidev.org
+memberUid: devldapuser_06_6c_72_7d_66_fc@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a4@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a3@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a7@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a1@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a2@slidev.org
+memberUid: e2etestdev_sb@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a5@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a0@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a6@slidev.org
 
 dn: cn=SLC Operator,ou=groups,ou=cislave03,dc=slidev,dc=org
 changetype: add
@@ -5339,6 +7366,25 @@ displayName: 2ccd88620d9d3fb3ee8ee839c806fb73
 givenName: SLC
 loginShell: /bin/sh
 mail: slcoperator@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Daybreak Admin,ou=people,ou=cislave03,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Daybreak Admin
+gidNumber: 505
+homeDirectory: /ingestion/lz/Midgar/13e785053e77f7d6b064cdcd43167f70ae8c32ca
+ 88c6a3b9b0c8cd52458faa77
+sn: Admin
+uid: daybreakadmin
+uidNumber: 1119
+description:: dGVuYW50PU1pZGdhcgplZE9yZz1JTC1EQVlCUkVBSw==
+displayName: 0bd6b800ec046191473a61b9b9584c48
+givenName: Daybreak
+loginShell: /bin/sh
+mail: daybreakadmin@slidev.org
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=Test Developer,ou=people,ou=cislave03,dc=slidev,dc=org
@@ -5394,6 +7440,23 @@ displayName: 80e7f8e4c713a7c2495807c5c7a69dcf
 givenName: IL
 loginShell: /bin/sh
 mail: iladmin@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=NY Admin,ou=people,ou=cislave03,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: NY Admin
+gidNumber: 508
+homeDirectory: /mnt/gluster-lz/NY/NY-STATE-NYC
+sn: Admin
+uid: nyadmin
+uidNumber: 1123
+description:: dGVuYW50PUh5cnVsZQplZE9yZz1OWS1TVEFURS1OWUM=
+displayName: 507c174942f3dd3ebc0e4b16d68553f2
+givenName: NY
+loginShell: /bin/sh
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=Sunset RealmAdmin,ou=people,ou=cislave03,dc=slidev,dc=org
@@ -5499,6 +7562,24 @@ displayName: 09e5fa8790282698c9c2f29a373618fa
 givenName: Fakerealmadmin
 loginShell: /bin/sh
 mail: fakerealmadmin@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=DaybreakNoRealmAdmin Test,ou=people,ou=cislave03,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: DaybreakNoRealmAdmin Test
+gidNumber: 511
+homeDirectory: /home/users/daybreaknorealmadmin
+sn: Test
+uid: daybreaknorealmadmin
+uidNumber: 1133
+description:: dGVuYW50PU1pZGdhcgplZE9yZz1JTC1EQVlCUkVBSw==
+displayName: e0dda68f60f746ed58bd461a0a11792d
+givenName: DaybreakNoRealmAdmin
+loginShell: /bin/sh
+mail: daybreaknorealmadmin@slidev.org
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=SLC Developer,ou=people,ou=cislave03,dc=slidev,dc=org
@@ -5637,6 +7718,64 @@ givenName: Ingestion
 mail: ingestionuser@slidev.org
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
+dn: cn=developer-email@slidev.org,ou=people,ou=cislave03,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: top
+objectClass: posixAccount
+cn: developer-email@slidev.org
+gidNumber: 500
+homeDirectory: /ingestion/lz/developer-email@slidev.org/IL
+sn: Developer
+uid: developer-email@slidev.org
+uidNumber: 834
+description:: dGVuYW50PWRldmVsb3Blci1lbWFpbEBzbGlkZXYub3JnCmVkT3JnPUlM
+destinationIndicator: approved
+displayName: 75c16a1f1735525ab6adee8c01fa4a7f
+gecos: 
+givenName: Joe
+mail: developer-email@slidev.org
+o: SLC
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Bill Operator,ou=people,ou=cislave03,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Bill Operator
+gidNumber: 100
+homeDirectory: /home/users/toperator
+sn: Operator
+uid: slcoperator-email@slidev.org
+uidNumber: 1164
+displayName: 4ba75e11e2932e68dd6af3b4077c16ee
+givenName: Bill
+loginShell: /bin/bash
+mail: slcoperator-email@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=admintest-developer@slidev.org,ou=people,ou=cislave03,dc=slidev,dc=or
+ g
+changetype: add
+objectClass: inetOrgPerson
+objectClass: top
+objectClass: posixAccount
+cn: admintest-developer@slidev.org
+gidNumber: 500
+homeDirectory: /ingestion/lz/developer-email@slidev.org/IL
+sn: Developer
+uid: admintest-developer@slidev.org
+uidNumber: 834
+description:: dGVuYW50PWRldmVsb3Blci1lbWFpbEBzbGlkZXYub3JnCmVkT3JnPUlM
+destinationIndicator: approved
+displayName: 75c16a1f1735525ab6adee8c01fa4a7f
+gecos: 
+givenName: Joe
+mail: admintest-developer@slidev.org
+o: SLC
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
 dn: ou=cislave04,dc=slidev,dc=org
 changetype: add
 objectClass: organizationalUnit
@@ -5655,6 +7794,8 @@ objectClass: top
 cn: LEA Administrator
 gidNumber: 505
 memberUid: sunsetadmin
+memberUid: daybreakadmin
+memberUid: daybreaknorealmadmin
 
 dn: cn=Application Developer,ou=groups,ou=cislave04,dc=slidev,dc=org
 changetype: add
@@ -5666,6 +7807,7 @@ memberUid: testdeveloper
 memberUid: developer
 memberUid: slcdeveloper
 memberUid: developer-email@slidev.org
+memberUid: devldapuser@slidev.org
 memberUid: sandboxdeveloper
 memberUid: admintest-developer@slidev.org
 
@@ -5675,6 +7817,7 @@ objectClass: posixGroup
 objectClass: top
 cn: SEA Administrator
 gidNumber: 508
+memberUid: nyadmin
 memberUid: iladmin
 
 dn: cn=Realm Administrator,ou=groups,ou=cislave04,dc=slidev,dc=org
@@ -5685,7 +7828,9 @@ cn: Realm Administrator
 gidNumber: 509
 memberUid: fakerealmadmin
 memberUid: sunsetadmin
+memberUid: nyadmin
 memberUid: sunsetrealmadmin
+memberUid: daybreakadmin
  GRFCuEDNjZSMfahLDbIlZuxYqdbnbFzOd
 
 dn: cn=Ingestion User,ou=groups,ou=cislave04,dc=slidev,dc=org
@@ -5694,8 +7839,12 @@ objectClass: posixGroup
 objectClass: top
 cn: Ingestion User
 gidNumber: 510
+memberUid: nyadmin
 memberUid: sunsetadmin
+memberUid: daybreakadmin
 memberUid: ingestionuser
+memberUid: devldapuserpwolf-HP-EliteBook-2560p@slidev.org
+memberUid: devldapuser@slidev.org
 memberUid: sunsetingestionuser
 memberUid: sandboxingestionuser
 
@@ -5725,6 +7874,40 @@ objectClass: top
 cn: Sandbox Administrator
 gidNumber: 516
 memberUid: sandboxadministrator
+memberUid: devldapuser@slidev.org
+memberUid: devldapuser_nxslave1@slidev.org
+memberUid: devldapuser_nxslave5@slidev.org
+memberUid: devldapuser_nxslave8@slidev.org
+memberUid: devldapuser_nxslave7@slidev.org
+memberUid: devldapuser_nxslave2@slidev.org
+memberUid: devldapuser_nxslave9@slidev.org
+memberUid: devldapuser_ablum-mac.local@slidev.org
+memberUid: devldapuser_bsuzuki-mac.local@slidev.org
+memberUid: devldapuser_jhinsdale-mac.local@slidev.org
+memberUid: devldapuser_jsingh-mac.local@slidev.org
+memberUid: devldapuser_tshewchuk-mac.local@slidev.org
+memberUid: devldapuser_smuhit-mac.local@slidev.org
+memberUid: devldapuser_tke-mac-7.local@slidev.org
+memberUid: devldapuser_local.slidev.org@slidev.org
+memberUid: devldapuser_cislave@slidev.org
+memberUid: devldapuser_06_6c_72_4f_05_3a@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_02@slidev.org
+memberUid: devldapuser_06_6c_72_53_3f_2f@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_03@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_33@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_31@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_05@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_32@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_04@slidev.org
+memberUid: devldapuser_06_6c_72_7d_66_fc@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a4@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a3@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a7@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a2@slidev.org
+memberUid: e2etestdev_sb@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a5@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a0@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a6@slidev.org
 
 dn: cn=ingestion_user,ou=groups,ou=cislave04,dc=slidev,dc=org
 changetype: add
@@ -5732,15 +7915,60 @@ objectClass: posixGroup
 objectClass: top
 cn: ingestion_user
 gidNumber: 510
+memberUid: nyadmin
 memberUid: sunsetadmin
+memberUid: daybreakadmin
 memberUid: ingestionuser
+memberUid: devldapuser@slidev.org
 memberUid: sunsetingestionuser
 memberUid: sandboxingestionuser
+memberUid: devldapuser_nxslave4@slidev.org
+memberUid: devldapuser_Liu-Mac.local@slidev.org
+memberUid: devldapuser_localhost@slidev.org
+memberUid: devldapuser_nxslave6@slidev.org
+memberUid: devldapuser_nxslave3@slidev.org
+memberUid: devldapuser_nxslave10@slidev.org
+memberUid: devldapuser_nxslave1@slidev.org
+memberUid: devldapuser_nxslave5@slidev.org
+memberUid: devldapuser_cislave01.slidev.org@slidev.org
+memberUid: devldapuser_cislave02.slidev.org@slidev.org
+memberUid: devldapuser_nxslave8@slidev.org
+memberUid: devldapuser_nxslave7@slidev.org
+memberUid: devldapuser_nxslave2@slidev.org
+memberUid: devldapuser_nxslave9@slidev.org
+memberUid: devldapuser_ablum-mac.local@slidev.org
+memberUid: devldapuser_bsuzuki-mac.local@slidev.org
+memberUid: devldapuser_jhinsdale-mac.local@slidev.org
+memberUid: devldapuser_jsingh-mac.local@slidev.org
+memberUid: devldapuser_tshewchuk-mac.local@slidev.org
+memberUid: devldapuser_smuhit-mac.local@slidev.org
+memberUid: devldapuser_tke-mac-7.local@slidev.org
  uEcikWNsXejsrPvRiLwq
+memberUid: devldapuser_local.slidev.org@slidev.org
  ksCZdZzOjFhnnnzwaxnyfQawiAATbFNDS
+memberUid: devldapuser_cislave@slidev.org
+memberUid: devldapuser_06_6c_72_4f_05_3a@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_02@slidev.org
 memberUid: ingestionuser_06_6c_72_67_a5_02_06_6c_72_67_a5_02
+memberUid: devldapuser_06_6c_72_53_3f_2f@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_03@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_33@slidev.org
  meqbNsGTIdKlRFiVIgCkzvrdJDnOgq
+memberUid: devldapuser_06_6c_72_46_25_31@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_05@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_32@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_04@slidev.org
+memberUid: devldapuser_06_6c_72_7d_66_fc@slidev.org
  LiFGPQaDeIHHtxhkcGXCqPWzmQWjTm
+memberUid: devldapuser_06_6c_72_4c_26_a4@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a3@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a7@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a1@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a2@slidev.org
+memberUid: e2etestdev_sb@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a5@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a0@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a6@slidev.org
 
 dn: cn=application_developer,ou=groups,ou=cislave04,dc=slidev,dc=org
 changetype: add
@@ -5752,8 +7980,50 @@ memberUid: testdeveloper
 memberUid: developer
 memberUid: slcdeveloper
 memberUid: developer-email@slidev.org
+memberUid: devldapuser@slidev.org
 memberUid: sandboxdeveloper
+memberUid: devldapuser_Liu-Mac.local@slidev.org
+memberUid: devldapuser_localhost@slidev.org
+memberUid: devldapuser_nxslave6@slidev.org
+memberUid: devldapuser_nxslave3@slidev.org
+memberUid: devldapuser_nxslave10@slidev.org
+memberUid: devldapuser_nxslave1@slidev.org
+memberUid: devldapuser_nxslave5@slidev.org
+memberUid: devldapuser_cislave01.slidev.org@slidev.org
+memberUid: devldapuser_cislave02.slidev.org@slidev.org
+memberUid: devldapuser_nxslave8@slidev.org
+memberUid: devldapuser_nxslave7@slidev.org
+memberUid: devldapuser_nxslave2@slidev.org
+memberUid: devldapuser_nxslave9@slidev.org
+memberUid: devldapuser_ablum-mac.local@slidev.org
+memberUid: devldapuser_bsuzuki-mac.local@slidev.org
+memberUid: devldapuser_jhinsdale-mac.local@slidev.org
+memberUid: devldapuser_jsingh-mac.local@slidev.org
+memberUid: devldapuser_tshewchuk-mac.local@slidev.org
+memberUid: devldapuser_smuhit-mac.local@slidev.org
+memberUid: devldapuser_tke-mac-7.local@slidev.org
 memberUid: admintest-developer@slidev.org
+memberUid: devldapuser_local.slidev.org@slidev.org
+memberUid: devldapuser_cislave@slidev.org
+memberUid: devldapuser_06_6c_72_4f_05_3a@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_02@slidev.org
+memberUid: devldapuser_06_6c_72_53_3f_2f@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_03@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_33@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_31@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_05@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_32@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_04@slidev.org
+memberUid: devldapuser_06_6c_72_7d_66_fc@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a4@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a3@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a7@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a1@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a2@slidev.org
+memberUid: e2etestdev_sb@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a5@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a0@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a6@slidev.org
 
 dn: cn=SLC Operator,ou=groups,ou=cislave04,dc=slidev,dc=org
 changetype: add
@@ -5785,6 +8055,25 @@ displayName: 2ccd88620d9d3fb3ee8ee839c806fb73
 givenName: SLC
 loginShell: /bin/sh
 mail: slcoperator@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Daybreak Admin,ou=people,ou=cislave04,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Daybreak Admin
+gidNumber: 505
+homeDirectory: /ingestion/lz/Midgar/13e785053e77f7d6b064cdcd43167f70ae8c32ca
+ 88c6a3b9b0c8cd52458faa77
+sn: Admin
+uid: daybreakadmin
+uidNumber: 1119
+description:: dGVuYW50PU1pZGdhcgplZE9yZz1JTC1EQVlCUkVBSw==
+displayName: 0bd6b800ec046191473a61b9b9584c48
+givenName: Daybreak
+loginShell: /bin/sh
+mail: daybreakadmin@slidev.org
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=Test Developer,ou=people,ou=cislave04,dc=slidev,dc=org
@@ -5840,6 +8129,23 @@ displayName: 80e7f8e4c713a7c2495807c5c7a69dcf
 givenName: IL
 loginShell: /bin/sh
 mail: iladmin@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=NY Admin,ou=people,ou=cislave04,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: NY Admin
+gidNumber: 508
+homeDirectory: /mnt/gluster-lz/NY/NY-STATE-NYC
+sn: Admin
+uid: nyadmin
+uidNumber: 1123
+description:: dGVuYW50PUh5cnVsZQplZE9yZz1OWS1TVEFURS1OWUM=
+displayName: 507c174942f3dd3ebc0e4b16d68553f2
+givenName: NY
+loginShell: /bin/sh
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=Sunset RealmAdmin,ou=people,ou=cislave04,dc=slidev,dc=org
@@ -5945,6 +8251,24 @@ displayName: 09e5fa8790282698c9c2f29a373618fa
 givenName: Fakerealmadmin
 loginShell: /bin/sh
 mail: fakerealmadmin@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=DaybreakNoRealmAdmin Test,ou=people,ou=cislave04,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: DaybreakNoRealmAdmin Test
+gidNumber: 511
+homeDirectory: /home/users/daybreaknorealmadmin
+sn: Test
+uid: daybreaknorealmadmin
+uidNumber: 1133
+description:: dGVuYW50PU1pZGdhcgplZE9yZz1JTC1EQVlCUkVBSw==
+displayName: e0dda68f60f746ed58bd461a0a11792d
+givenName: DaybreakNoRealmAdmin
+loginShell: /bin/sh
+mail: daybreaknorealmadmin@slidev.org
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=SLC Developer,ou=people,ou=cislave04,dc=slidev,dc=org
@@ -6083,6 +8407,64 @@ givenName: Ingestion
 mail: ingestionuser@slidev.org
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
+dn: cn=developer-email@slidev.org,ou=people,ou=cislave04,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: top
+objectClass: posixAccount
+cn: developer-email@slidev.org
+gidNumber: 500
+homeDirectory: /ingestion/lz/developer-email@slidev.org/IL
+sn: Developer
+uid: developer-email@slidev.org
+uidNumber: 834
+description:: dGVuYW50PWRldmVsb3Blci1lbWFpbEBzbGlkZXYub3JnCmVkT3JnPUlM
+destinationIndicator: approved
+displayName: 75c16a1f1735525ab6adee8c01fa4a7f
+gecos: 
+givenName: Joe
+mail: developer-email@slidev.org
+o: SLC
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Bill Operator,ou=people,ou=cislave04,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Bill Operator
+gidNumber: 100
+homeDirectory: /home/users/toperator
+sn: Operator
+uid: slcoperator-email@slidev.org
+uidNumber: 1164
+displayName: 4ba75e11e2932e68dd6af3b4077c16ee
+givenName: Bill
+loginShell: /bin/bash
+mail: slcoperator-email@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=admintest-developer@slidev.org,ou=people,ou=cislave04,dc=slidev,dc=or
+ g
+changetype: add
+objectClass: inetOrgPerson
+objectClass: top
+objectClass: posixAccount
+cn: admintest-developer@slidev.org
+gidNumber: 500
+homeDirectory: /ingestion/lz/developer-email@slidev.org/IL
+sn: Developer
+uid: admintest-developer@slidev.org
+uidNumber: 834
+description:: dGVuYW50PWRldmVsb3Blci1lbWFpbEBzbGlkZXYub3JnCmVkT3JnPUlM
+destinationIndicator: approved
+displayName: 75c16a1f1735525ab6adee8c01fa4a7f
+gecos: 
+givenName: Joe
+mail: admintest-developer@slidev.org
+o: SLC
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
 dn: ou=cislave05,dc=slidev,dc=org
 changetype: add
 objectClass: organizationalUnit
@@ -6101,6 +8483,8 @@ objectClass: top
 cn: LEA Administrator
 gidNumber: 505
 memberUid: sunsetadmin
+memberUid: daybreakadmin
+memberUid: daybreaknorealmadmin
 
 dn: cn=Application Developer,ou=groups,ou=cislave05,dc=slidev,dc=org
 changetype: add
@@ -6112,6 +8496,7 @@ memberUid: testdeveloper
 memberUid: developer
 memberUid: slcdeveloper
 memberUid: developer-email@slidev.org
+memberUid: devldapuser@slidev.org
 memberUid: sandboxdeveloper
 memberUid: admintest-developer@slidev.org
 
@@ -6121,6 +8506,7 @@ objectClass: posixGroup
 objectClass: top
 cn: SEA Administrator
 gidNumber: 508
+memberUid: nyadmin
 memberUid: iladmin
 
 dn: cn=Realm Administrator,ou=groups,ou=cislave05,dc=slidev,dc=org
@@ -6131,7 +8517,9 @@ cn: Realm Administrator
 gidNumber: 509
 memberUid: fakerealmadmin
 memberUid: sunsetadmin
+memberUid: nyadmin
 memberUid: sunsetrealmadmin
+memberUid: daybreakadmin
  GRFCuEDNjZSMfahLDbIlZuxYqdbnbFzOd
 
 dn: cn=Ingestion User,ou=groups,ou=cislave05,dc=slidev,dc=org
@@ -6140,8 +8528,12 @@ objectClass: posixGroup
 objectClass: top
 cn: Ingestion User
 gidNumber: 510
+memberUid: nyadmin
 memberUid: sunsetadmin
+memberUid: daybreakadmin
 memberUid: ingestionuser
+memberUid: devldapuserpwolf-HP-EliteBook-2560p@slidev.org
+memberUid: devldapuser@slidev.org
 memberUid: sunsetingestionuser
 memberUid: sandboxingestionuser
 
@@ -6171,6 +8563,40 @@ objectClass: top
 cn: Sandbox Administrator
 gidNumber: 516
 memberUid: sandboxadministrator
+memberUid: devldapuser@slidev.org
+memberUid: devldapuser_nxslave1@slidev.org
+memberUid: devldapuser_nxslave5@slidev.org
+memberUid: devldapuser_nxslave8@slidev.org
+memberUid: devldapuser_nxslave7@slidev.org
+memberUid: devldapuser_nxslave2@slidev.org
+memberUid: devldapuser_nxslave9@slidev.org
+memberUid: devldapuser_ablum-mac.local@slidev.org
+memberUid: devldapuser_bsuzuki-mac.local@slidev.org
+memberUid: devldapuser_jhinsdale-mac.local@slidev.org
+memberUid: devldapuser_jsingh-mac.local@slidev.org
+memberUid: devldapuser_tshewchuk-mac.local@slidev.org
+memberUid: devldapuser_smuhit-mac.local@slidev.org
+memberUid: devldapuser_tke-mac-7.local@slidev.org
+memberUid: devldapuser_local.slidev.org@slidev.org
+memberUid: devldapuser_cislave@slidev.org
+memberUid: devldapuser_06_6c_72_4f_05_3a@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_02@slidev.org
+memberUid: devldapuser_06_6c_72_53_3f_2f@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_03@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_33@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_31@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_05@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_32@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_04@slidev.org
+memberUid: devldapuser_06_6c_72_7d_66_fc@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a4@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a3@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a7@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a2@slidev.org
+memberUid: e2etestdev_sb@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a5@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a0@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a6@slidev.org
 
 dn: cn=ingestion_user,ou=groups,ou=cislave05,dc=slidev,dc=org
 changetype: add
@@ -6178,15 +8604,60 @@ objectClass: posixGroup
 objectClass: top
 cn: ingestion_user
 gidNumber: 510
+memberUid: nyadmin
 memberUid: sunsetadmin
+memberUid: daybreakadmin
 memberUid: ingestionuser
+memberUid: devldapuser@slidev.org
 memberUid: sunsetingestionuser
 memberUid: sandboxingestionuser
+memberUid: devldapuser_nxslave4@slidev.org
+memberUid: devldapuser_Liu-Mac.local@slidev.org
+memberUid: devldapuser_localhost@slidev.org
+memberUid: devldapuser_nxslave6@slidev.org
+memberUid: devldapuser_nxslave3@slidev.org
+memberUid: devldapuser_nxslave10@slidev.org
+memberUid: devldapuser_nxslave1@slidev.org
+memberUid: devldapuser_nxslave5@slidev.org
+memberUid: devldapuser_cislave01.slidev.org@slidev.org
+memberUid: devldapuser_cislave02.slidev.org@slidev.org
+memberUid: devldapuser_nxslave8@slidev.org
+memberUid: devldapuser_nxslave7@slidev.org
+memberUid: devldapuser_nxslave2@slidev.org
+memberUid: devldapuser_nxslave9@slidev.org
+memberUid: devldapuser_ablum-mac.local@slidev.org
+memberUid: devldapuser_bsuzuki-mac.local@slidev.org
+memberUid: devldapuser_jhinsdale-mac.local@slidev.org
+memberUid: devldapuser_jsingh-mac.local@slidev.org
+memberUid: devldapuser_tshewchuk-mac.local@slidev.org
+memberUid: devldapuser_smuhit-mac.local@slidev.org
+memberUid: devldapuser_tke-mac-7.local@slidev.org
  uEcikWNsXejsrPvRiLwq
+memberUid: devldapuser_local.slidev.org@slidev.org
  ksCZdZzOjFhnnnzwaxnyfQawiAATbFNDS
+memberUid: devldapuser_cislave@slidev.org
+memberUid: devldapuser_06_6c_72_4f_05_3a@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_02@slidev.org
 memberUid: ingestionuser_06_6c_72_67_a5_02_06_6c_72_67_a5_02
+memberUid: devldapuser_06_6c_72_53_3f_2f@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_03@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_33@slidev.org
  meqbNsGTIdKlRFiVIgCkzvrdJDnOgq
+memberUid: devldapuser_06_6c_72_46_25_31@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_05@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_32@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_04@slidev.org
+memberUid: devldapuser_06_6c_72_7d_66_fc@slidev.org
  LiFGPQaDeIHHtxhkcGXCqPWzmQWjTm
+memberUid: devldapuser_06_6c_72_4c_26_a4@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a3@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a7@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a1@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a2@slidev.org
+memberUid: e2etestdev_sb@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a5@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a0@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a6@slidev.org
 
 dn: cn=application_developer,ou=groups,ou=cislave05,dc=slidev,dc=org
 changetype: add
@@ -6198,8 +8669,50 @@ memberUid: testdeveloper
 memberUid: developer
 memberUid: slcdeveloper
 memberUid: developer-email@slidev.org
+memberUid: devldapuser@slidev.org
 memberUid: sandboxdeveloper
+memberUid: devldapuser_Liu-Mac.local@slidev.org
+memberUid: devldapuser_localhost@slidev.org
+memberUid: devldapuser_nxslave6@slidev.org
+memberUid: devldapuser_nxslave3@slidev.org
+memberUid: devldapuser_nxslave10@slidev.org
+memberUid: devldapuser_nxslave1@slidev.org
+memberUid: devldapuser_nxslave5@slidev.org
+memberUid: devldapuser_cislave01.slidev.org@slidev.org
+memberUid: devldapuser_cislave02.slidev.org@slidev.org
+memberUid: devldapuser_nxslave8@slidev.org
+memberUid: devldapuser_nxslave7@slidev.org
+memberUid: devldapuser_nxslave2@slidev.org
+memberUid: devldapuser_nxslave9@slidev.org
+memberUid: devldapuser_ablum-mac.local@slidev.org
+memberUid: devldapuser_bsuzuki-mac.local@slidev.org
+memberUid: devldapuser_jhinsdale-mac.local@slidev.org
+memberUid: devldapuser_jsingh-mac.local@slidev.org
+memberUid: devldapuser_tshewchuk-mac.local@slidev.org
+memberUid: devldapuser_smuhit-mac.local@slidev.org
+memberUid: devldapuser_tke-mac-7.local@slidev.org
 memberUid: admintest-developer@slidev.org
+memberUid: devldapuser_local.slidev.org@slidev.org
+memberUid: devldapuser_cislave@slidev.org
+memberUid: devldapuser_06_6c_72_4f_05_3a@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_02@slidev.org
+memberUid: devldapuser_06_6c_72_53_3f_2f@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_03@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_33@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_31@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_05@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_32@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_04@slidev.org
+memberUid: devldapuser_06_6c_72_7d_66_fc@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a4@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a3@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a7@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a1@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a2@slidev.org
+memberUid: e2etestdev_sb@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a5@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a0@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a6@slidev.org
 
 dn: cn=SLC Operator,ou=groups,ou=cislave05,dc=slidev,dc=org
 changetype: add
@@ -6231,6 +8744,25 @@ displayName: 2ccd88620d9d3fb3ee8ee839c806fb73
 givenName: SLC
 loginShell: /bin/sh
 mail: slcoperator@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Daybreak Admin,ou=people,ou=cislave05,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Daybreak Admin
+gidNumber: 505
+homeDirectory: /ingestion/lz/Midgar/13e785053e77f7d6b064cdcd43167f70ae8c32ca
+ 88c6a3b9b0c8cd52458faa77
+sn: Admin
+uid: daybreakadmin
+uidNumber: 1119
+description:: dGVuYW50PU1pZGdhcgplZE9yZz1JTC1EQVlCUkVBSw==
+displayName: 0bd6b800ec046191473a61b9b9584c48
+givenName: Daybreak
+loginShell: /bin/sh
+mail: daybreakadmin@slidev.org
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=Test Developer,ou=people,ou=cislave05,dc=slidev,dc=org
@@ -6286,6 +8818,23 @@ displayName: 80e7f8e4c713a7c2495807c5c7a69dcf
 givenName: IL
 loginShell: /bin/sh
 mail: iladmin@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=NY Admin,ou=people,ou=cislave05,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: NY Admin
+gidNumber: 508
+homeDirectory: /mnt/gluster-lz/NY/NY-STATE-NYC
+sn: Admin
+uid: nyadmin
+uidNumber: 1123
+description:: dGVuYW50PUh5cnVsZQplZE9yZz1OWS1TVEFURS1OWUM=
+displayName: 507c174942f3dd3ebc0e4b16d68553f2
+givenName: NY
+loginShell: /bin/sh
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=Sunset RealmAdmin,ou=people,ou=cislave05,dc=slidev,dc=org
@@ -6391,6 +8940,24 @@ displayName: 09e5fa8790282698c9c2f29a373618fa
 givenName: Fakerealmadmin
 loginShell: /bin/sh
 mail: fakerealmadmin@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=DaybreakNoRealmAdmin Test,ou=people,ou=cislave05,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: DaybreakNoRealmAdmin Test
+gidNumber: 511
+homeDirectory: /home/users/daybreaknorealmadmin
+sn: Test
+uid: daybreaknorealmadmin
+uidNumber: 1133
+description:: dGVuYW50PU1pZGdhcgplZE9yZz1JTC1EQVlCUkVBSw==
+displayName: e0dda68f60f746ed58bd461a0a11792d
+givenName: DaybreakNoRealmAdmin
+loginShell: /bin/sh
+mail: daybreaknorealmadmin@slidev.org
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=SLC Developer,ou=people,ou=cislave05,dc=slidev,dc=org
@@ -6529,6 +9096,64 @@ givenName: Ingestion
 mail: ingestionuser@slidev.org
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
+dn: cn=developer-email@slidev.org,ou=people,ou=cislave05,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: top
+objectClass: posixAccount
+cn: developer-email@slidev.org
+gidNumber: 500
+homeDirectory: /ingestion/lz/developer-email@slidev.org/IL
+sn: Developer
+uid: developer-email@slidev.org
+uidNumber: 834
+description:: dGVuYW50PWRldmVsb3Blci1lbWFpbEBzbGlkZXYub3JnCmVkT3JnPUlM
+destinationIndicator: approved
+displayName: 75c16a1f1735525ab6adee8c01fa4a7f
+gecos: 
+givenName: Joe
+mail: developer-email@slidev.org
+o: SLC
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Bill Operator,ou=people,ou=cislave05,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Bill Operator
+gidNumber: 100
+homeDirectory: /home/users/toperator
+sn: Operator
+uid: slcoperator-email@slidev.org
+uidNumber: 1164
+displayName: 4ba75e11e2932e68dd6af3b4077c16ee
+givenName: Bill
+loginShell: /bin/bash
+mail: slcoperator-email@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=admintest-developer@slidev.org,ou=people,ou=cislave05,dc=slidev,dc=or
+ g
+changetype: add
+objectClass: inetOrgPerson
+objectClass: top
+objectClass: posixAccount
+cn: admintest-developer@slidev.org
+gidNumber: 500
+homeDirectory: /ingestion/lz/developer-email@slidev.org/IL
+sn: Developer
+uid: admintest-developer@slidev.org
+uidNumber: 834
+description:: dGVuYW50PWRldmVsb3Blci1lbWFpbEBzbGlkZXYub3JnCmVkT3JnPUlM
+destinationIndicator: approved
+displayName: 75c16a1f1735525ab6adee8c01fa4a7f
+gecos: 
+givenName: Joe
+mail: admintest-developer@slidev.org
+o: SLC
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
 dn: ou=cislave06,dc=slidev,dc=org
 changetype: add
 objectClass: organizationalUnit
@@ -6547,6 +9172,8 @@ objectClass: top
 cn: LEA Administrator
 gidNumber: 505
 memberUid: sunsetadmin
+memberUid: daybreakadmin
+memberUid: daybreaknorealmadmin
 
 dn: cn=Application Developer,ou=groups,ou=cislave06,dc=slidev,dc=org
 changetype: add
@@ -6558,6 +9185,7 @@ memberUid: testdeveloper
 memberUid: developer
 memberUid: slcdeveloper
 memberUid: developer-email@slidev.org
+memberUid: devldapuser@slidev.org
 memberUid: sandboxdeveloper
 memberUid: admintest-developer@slidev.org
 
@@ -6567,6 +9195,7 @@ objectClass: posixGroup
 objectClass: top
 cn: SEA Administrator
 gidNumber: 508
+memberUid: nyadmin
 memberUid: iladmin
 
 dn: cn=Realm Administrator,ou=groups,ou=cislave06,dc=slidev,dc=org
@@ -6577,7 +9206,9 @@ cn: Realm Administrator
 gidNumber: 509
 memberUid: fakerealmadmin
 memberUid: sunsetadmin
+memberUid: nyadmin
 memberUid: sunsetrealmadmin
+memberUid: daybreakadmin
  GRFCuEDNjZSMfahLDbIlZuxYqdbnbFzOd
 
 dn: cn=Ingestion User,ou=groups,ou=cislave06,dc=slidev,dc=org
@@ -6586,8 +9217,12 @@ objectClass: posixGroup
 objectClass: top
 cn: Ingestion User
 gidNumber: 510
+memberUid: nyadmin
 memberUid: sunsetadmin
+memberUid: daybreakadmin
 memberUid: ingestionuser
+memberUid: devldapuserpwolf-HP-EliteBook-2560p@slidev.org
+memberUid: devldapuser@slidev.org
 memberUid: sunsetingestionuser
 memberUid: sandboxingestionuser
 
@@ -6617,6 +9252,40 @@ objectClass: top
 cn: Sandbox Administrator
 gidNumber: 516
 memberUid: sandboxadministrator
+memberUid: devldapuser@slidev.org
+memberUid: devldapuser_nxslave1@slidev.org
+memberUid: devldapuser_nxslave5@slidev.org
+memberUid: devldapuser_nxslave8@slidev.org
+memberUid: devldapuser_nxslave7@slidev.org
+memberUid: devldapuser_nxslave2@slidev.org
+memberUid: devldapuser_nxslave9@slidev.org
+memberUid: devldapuser_ablum-mac.local@slidev.org
+memberUid: devldapuser_bsuzuki-mac.local@slidev.org
+memberUid: devldapuser_jhinsdale-mac.local@slidev.org
+memberUid: devldapuser_jsingh-mac.local@slidev.org
+memberUid: devldapuser_tshewchuk-mac.local@slidev.org
+memberUid: devldapuser_smuhit-mac.local@slidev.org
+memberUid: devldapuser_tke-mac-7.local@slidev.org
+memberUid: devldapuser_local.slidev.org@slidev.org
+memberUid: devldapuser_cislave@slidev.org
+memberUid: devldapuser_06_6c_72_4f_05_3a@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_02@slidev.org
+memberUid: devldapuser_06_6c_72_53_3f_2f@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_03@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_33@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_31@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_05@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_32@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_04@slidev.org
+memberUid: devldapuser_06_6c_72_7d_66_fc@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a4@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a3@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a7@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a2@slidev.org
+memberUid: e2etestdev_sb@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a5@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a0@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a6@slidev.org
 
 dn: cn=ingestion_user,ou=groups,ou=cislave06,dc=slidev,dc=org
 changetype: add
@@ -6624,15 +9293,60 @@ objectClass: posixGroup
 objectClass: top
 cn: ingestion_user
 gidNumber: 510
+memberUid: nyadmin
 memberUid: sunsetadmin
+memberUid: daybreakadmin
 memberUid: ingestionuser
+memberUid: devldapuser@slidev.org
 memberUid: sunsetingestionuser
 memberUid: sandboxingestionuser
+memberUid: devldapuser_nxslave4@slidev.org
+memberUid: devldapuser_Liu-Mac.local@slidev.org
+memberUid: devldapuser_localhost@slidev.org
+memberUid: devldapuser_nxslave6@slidev.org
+memberUid: devldapuser_nxslave3@slidev.org
+memberUid: devldapuser_nxslave10@slidev.org
+memberUid: devldapuser_nxslave1@slidev.org
+memberUid: devldapuser_nxslave5@slidev.org
+memberUid: devldapuser_cislave01.slidev.org@slidev.org
+memberUid: devldapuser_cislave02.slidev.org@slidev.org
+memberUid: devldapuser_nxslave8@slidev.org
+memberUid: devldapuser_nxslave7@slidev.org
+memberUid: devldapuser_nxslave2@slidev.org
+memberUid: devldapuser_nxslave9@slidev.org
+memberUid: devldapuser_ablum-mac.local@slidev.org
+memberUid: devldapuser_bsuzuki-mac.local@slidev.org
+memberUid: devldapuser_jhinsdale-mac.local@slidev.org
+memberUid: devldapuser_jsingh-mac.local@slidev.org
+memberUid: devldapuser_tshewchuk-mac.local@slidev.org
+memberUid: devldapuser_smuhit-mac.local@slidev.org
+memberUid: devldapuser_tke-mac-7.local@slidev.org
  uEcikWNsXejsrPvRiLwq
+memberUid: devldapuser_local.slidev.org@slidev.org
  ksCZdZzOjFhnnnzwaxnyfQawiAATbFNDS
+memberUid: devldapuser_cislave@slidev.org
+memberUid: devldapuser_06_6c_72_4f_05_3a@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_02@slidev.org
 memberUid: ingestionuser_06_6c_72_67_a5_02_06_6c_72_67_a5_02
+memberUid: devldapuser_06_6c_72_53_3f_2f@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_03@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_33@slidev.org
  meqbNsGTIdKlRFiVIgCkzvrdJDnOgq
+memberUid: devldapuser_06_6c_72_46_25_31@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_05@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_32@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_04@slidev.org
+memberUid: devldapuser_06_6c_72_7d_66_fc@slidev.org
  LiFGPQaDeIHHtxhkcGXCqPWzmQWjTm
+memberUid: devldapuser_06_6c_72_4c_26_a4@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a3@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a7@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a1@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a2@slidev.org
+memberUid: e2etestdev_sb@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a5@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a0@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a6@slidev.org
 
 dn: cn=application_developer,ou=groups,ou=cislave06,dc=slidev,dc=org
 changetype: add
@@ -6644,8 +9358,50 @@ memberUid: testdeveloper
 memberUid: developer
 memberUid: slcdeveloper
 memberUid: developer-email@slidev.org
+memberUid: devldapuser@slidev.org
 memberUid: sandboxdeveloper
+memberUid: devldapuser_Liu-Mac.local@slidev.org
+memberUid: devldapuser_localhost@slidev.org
+memberUid: devldapuser_nxslave6@slidev.org
+memberUid: devldapuser_nxslave3@slidev.org
+memberUid: devldapuser_nxslave10@slidev.org
+memberUid: devldapuser_nxslave1@slidev.org
+memberUid: devldapuser_nxslave5@slidev.org
+memberUid: devldapuser_cislave01.slidev.org@slidev.org
+memberUid: devldapuser_cislave02.slidev.org@slidev.org
+memberUid: devldapuser_nxslave8@slidev.org
+memberUid: devldapuser_nxslave7@slidev.org
+memberUid: devldapuser_nxslave2@slidev.org
+memberUid: devldapuser_nxslave9@slidev.org
+memberUid: devldapuser_ablum-mac.local@slidev.org
+memberUid: devldapuser_bsuzuki-mac.local@slidev.org
+memberUid: devldapuser_jhinsdale-mac.local@slidev.org
+memberUid: devldapuser_jsingh-mac.local@slidev.org
+memberUid: devldapuser_tshewchuk-mac.local@slidev.org
+memberUid: devldapuser_smuhit-mac.local@slidev.org
+memberUid: devldapuser_tke-mac-7.local@slidev.org
 memberUid: admintest-developer@slidev.org
+memberUid: devldapuser_local.slidev.org@slidev.org
+memberUid: devldapuser_cislave@slidev.org
+memberUid: devldapuser_06_6c_72_4f_05_3a@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_02@slidev.org
+memberUid: devldapuser_06_6c_72_53_3f_2f@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_03@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_33@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_31@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_05@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_32@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_04@slidev.org
+memberUid: devldapuser_06_6c_72_7d_66_fc@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a4@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a3@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a7@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a1@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a2@slidev.org
+memberUid: e2etestdev_sb@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a5@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a0@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a6@slidev.org
 
 dn: cn=SLC Operator,ou=groups,ou=cislave06,dc=slidev,dc=org
 changetype: add
@@ -6677,6 +9433,25 @@ displayName: 2ccd88620d9d3fb3ee8ee839c806fb73
 givenName: SLC
 loginShell: /bin/sh
 mail: slcoperator@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Daybreak Admin,ou=people,ou=cislave06,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Daybreak Admin
+gidNumber: 505
+homeDirectory: /ingestion/lz/Midgar/13e785053e77f7d6b064cdcd43167f70ae8c32ca
+ 88c6a3b9b0c8cd52458faa77
+sn: Admin
+uid: daybreakadmin
+uidNumber: 1119
+description:: dGVuYW50PU1pZGdhcgplZE9yZz1JTC1EQVlCUkVBSw==
+displayName: 0bd6b800ec046191473a61b9b9584c48
+givenName: Daybreak
+loginShell: /bin/sh
+mail: daybreakadmin@slidev.org
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=Test Developer,ou=people,ou=cislave06,dc=slidev,dc=org
@@ -6732,6 +9507,23 @@ displayName: 80e7f8e4c713a7c2495807c5c7a69dcf
 givenName: IL
 loginShell: /bin/sh
 mail: iladmin@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=NY Admin,ou=people,ou=cislave06,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: NY Admin
+gidNumber: 508
+homeDirectory: /mnt/gluster-lz/NY/NY-STATE-NYC
+sn: Admin
+uid: nyadmin
+uidNumber: 1123
+description:: dGVuYW50PUh5cnVsZQplZE9yZz1OWS1TVEFURS1OWUM=
+displayName: 507c174942f3dd3ebc0e4b16d68553f2
+givenName: NY
+loginShell: /bin/sh
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=Sunset RealmAdmin,ou=people,ou=cislave06,dc=slidev,dc=org
@@ -6837,6 +9629,24 @@ displayName: 09e5fa8790282698c9c2f29a373618fa
 givenName: Fakerealmadmin
 loginShell: /bin/sh
 mail: fakerealmadmin@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=DaybreakNoRealmAdmin Test,ou=people,ou=cislave06,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: DaybreakNoRealmAdmin Test
+gidNumber: 511
+homeDirectory: /home/users/daybreaknorealmadmin
+sn: Test
+uid: daybreaknorealmadmin
+uidNumber: 1133
+description:: dGVuYW50PU1pZGdhcgplZE9yZz1JTC1EQVlCUkVBSw==
+displayName: e0dda68f60f746ed58bd461a0a11792d
+givenName: DaybreakNoRealmAdmin
+loginShell: /bin/sh
+mail: daybreaknorealmadmin@slidev.org
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=SLC Developer,ou=people,ou=cislave06,dc=slidev,dc=org
@@ -6975,6 +9785,64 @@ givenName: Ingestion
 mail: ingestionuser@slidev.org
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
+dn: cn=developer-email@slidev.org,ou=people,ou=cislave06,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: top
+objectClass: posixAccount
+cn: developer-email@slidev.org
+gidNumber: 500
+homeDirectory: /ingestion/lz/developer-email@slidev.org/IL
+sn: Developer
+uid: developer-email@slidev.org
+uidNumber: 834
+description:: dGVuYW50PWRldmVsb3Blci1lbWFpbEBzbGlkZXYub3JnCmVkT3JnPUlM
+destinationIndicator: approved
+displayName: 75c16a1f1735525ab6adee8c01fa4a7f
+gecos: 
+givenName: Joe
+mail: developer-email@slidev.org
+o: SLC
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Bill Operator,ou=people,ou=cislave06,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Bill Operator
+gidNumber: 100
+homeDirectory: /home/users/toperator
+sn: Operator
+uid: slcoperator-email@slidev.org
+uidNumber: 1164
+displayName: 4ba75e11e2932e68dd6af3b4077c16ee
+givenName: Bill
+loginShell: /bin/bash
+mail: slcoperator-email@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=admintest-developer@slidev.org,ou=people,ou=cislave06,dc=slidev,dc=or
+ g
+changetype: add
+objectClass: inetOrgPerson
+objectClass: top
+objectClass: posixAccount
+cn: admintest-developer@slidev.org
+gidNumber: 500
+homeDirectory: /ingestion/lz/developer-email@slidev.org/IL
+sn: Developer
+uid: admintest-developer@slidev.org
+uidNumber: 834
+description:: dGVuYW50PWRldmVsb3Blci1lbWFpbEBzbGlkZXYub3JnCmVkT3JnPUlM
+destinationIndicator: approved
+displayName: 75c16a1f1735525ab6adee8c01fa4a7f
+gecos: 
+givenName: Joe
+mail: admintest-developer@slidev.org
+o: SLC
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
 dn: ou=cislave07,dc=slidev,dc=org
 changetype: add
 objectClass: organizationalUnit
@@ -6993,6 +9861,8 @@ objectClass: top
 cn: LEA Administrator
 gidNumber: 505
 memberUid: sunsetadmin
+memberUid: daybreakadmin
+memberUid: daybreaknorealmadmin
 
 dn: cn=Application Developer,ou=groups,ou=cislave07,dc=slidev,dc=org
 changetype: add
@@ -7004,6 +9874,7 @@ memberUid: testdeveloper
 memberUid: developer
 memberUid: slcdeveloper
 memberUid: developer-email@slidev.org
+memberUid: devldapuser@slidev.org
 memberUid: sandboxdeveloper
 memberUid: admintest-developer@slidev.org
 
@@ -7013,6 +9884,7 @@ objectClass: posixGroup
 objectClass: top
 cn: SEA Administrator
 gidNumber: 508
+memberUid: nyadmin
 memberUid: iladmin
 
 dn: cn=Realm Administrator,ou=groups,ou=cislave07,dc=slidev,dc=org
@@ -7023,7 +9895,9 @@ cn: Realm Administrator
 gidNumber: 509
 memberUid: fakerealmadmin
 memberUid: sunsetadmin
+memberUid: nyadmin
 memberUid: sunsetrealmadmin
+memberUid: daybreakadmin
  GRFCuEDNjZSMfahLDbIlZuxYqdbnbFzOd
 
 dn: cn=Ingestion User,ou=groups,ou=cislave07,dc=slidev,dc=org
@@ -7032,8 +9906,12 @@ objectClass: posixGroup
 objectClass: top
 cn: Ingestion User
 gidNumber: 510
+memberUid: nyadmin
 memberUid: sunsetadmin
+memberUid: daybreakadmin
 memberUid: ingestionuser
+memberUid: devldapuserpwolf-HP-EliteBook-2560p@slidev.org
+memberUid: devldapuser@slidev.org
 memberUid: sunsetingestionuser
 memberUid: sandboxingestionuser
 
@@ -7063,6 +9941,40 @@ objectClass: top
 cn: Sandbox Administrator
 gidNumber: 516
 memberUid: sandboxadministrator
+memberUid: devldapuser@slidev.org
+memberUid: devldapuser_nxslave1@slidev.org
+memberUid: devldapuser_nxslave5@slidev.org
+memberUid: devldapuser_nxslave8@slidev.org
+memberUid: devldapuser_nxslave7@slidev.org
+memberUid: devldapuser_nxslave2@slidev.org
+memberUid: devldapuser_nxslave9@slidev.org
+memberUid: devldapuser_ablum-mac.local@slidev.org
+memberUid: devldapuser_bsuzuki-mac.local@slidev.org
+memberUid: devldapuser_jhinsdale-mac.local@slidev.org
+memberUid: devldapuser_jsingh-mac.local@slidev.org
+memberUid: devldapuser_tshewchuk-mac.local@slidev.org
+memberUid: devldapuser_smuhit-mac.local@slidev.org
+memberUid: devldapuser_tke-mac-7.local@slidev.org
+memberUid: devldapuser_local.slidev.org@slidev.org
+memberUid: devldapuser_cislave@slidev.org
+memberUid: devldapuser_06_6c_72_4f_05_3a@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_02@slidev.org
+memberUid: devldapuser_06_6c_72_53_3f_2f@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_03@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_33@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_31@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_05@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_32@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_04@slidev.org
+memberUid: devldapuser_06_6c_72_7d_66_fc@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a4@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a3@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a7@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a2@slidev.org
+memberUid: e2etestdev_sb@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a5@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a0@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a6@slidev.org
 
 dn: cn=ingestion_user,ou=groups,ou=cislave07,dc=slidev,dc=org
 changetype: add
@@ -7070,15 +9982,60 @@ objectClass: posixGroup
 objectClass: top
 cn: ingestion_user
 gidNumber: 510
+memberUid: nyadmin
 memberUid: sunsetadmin
+memberUid: daybreakadmin
 memberUid: ingestionuser
+memberUid: devldapuser@slidev.org
 memberUid: sunsetingestionuser
 memberUid: sandboxingestionuser
+memberUid: devldapuser_nxslave4@slidev.org
+memberUid: devldapuser_Liu-Mac.local@slidev.org
+memberUid: devldapuser_localhost@slidev.org
+memberUid: devldapuser_nxslave6@slidev.org
+memberUid: devldapuser_nxslave3@slidev.org
+memberUid: devldapuser_nxslave10@slidev.org
+memberUid: devldapuser_nxslave1@slidev.org
+memberUid: devldapuser_nxslave5@slidev.org
+memberUid: devldapuser_cislave01.slidev.org@slidev.org
+memberUid: devldapuser_cislave02.slidev.org@slidev.org
+memberUid: devldapuser_nxslave8@slidev.org
+memberUid: devldapuser_nxslave7@slidev.org
+memberUid: devldapuser_nxslave2@slidev.org
+memberUid: devldapuser_nxslave9@slidev.org
+memberUid: devldapuser_ablum-mac.local@slidev.org
+memberUid: devldapuser_bsuzuki-mac.local@slidev.org
+memberUid: devldapuser_jhinsdale-mac.local@slidev.org
+memberUid: devldapuser_jsingh-mac.local@slidev.org
+memberUid: devldapuser_tshewchuk-mac.local@slidev.org
+memberUid: devldapuser_smuhit-mac.local@slidev.org
+memberUid: devldapuser_tke-mac-7.local@slidev.org
  uEcikWNsXejsrPvRiLwq
+memberUid: devldapuser_local.slidev.org@slidev.org
  ksCZdZzOjFhnnnzwaxnyfQawiAATbFNDS
+memberUid: devldapuser_cislave@slidev.org
+memberUid: devldapuser_06_6c_72_4f_05_3a@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_02@slidev.org
 memberUid: ingestionuser_06_6c_72_67_a5_02_06_6c_72_67_a5_02
+memberUid: devldapuser_06_6c_72_53_3f_2f@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_03@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_33@slidev.org
  meqbNsGTIdKlRFiVIgCkzvrdJDnOgq
+memberUid: devldapuser_06_6c_72_46_25_31@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_05@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_32@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_04@slidev.org
+memberUid: devldapuser_06_6c_72_7d_66_fc@slidev.org
  LiFGPQaDeIHHtxhkcGXCqPWzmQWjTm
+memberUid: devldapuser_06_6c_72_4c_26_a4@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a3@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a7@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a1@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a2@slidev.org
+memberUid: e2etestdev_sb@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a5@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a0@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a6@slidev.org
 
 dn: cn=application_developer,ou=groups,ou=cislave07,dc=slidev,dc=org
 changetype: add
@@ -7090,8 +10047,50 @@ memberUid: testdeveloper
 memberUid: developer
 memberUid: slcdeveloper
 memberUid: developer-email@slidev.org
+memberUid: devldapuser@slidev.org
 memberUid: sandboxdeveloper
+memberUid: devldapuser_Liu-Mac.local@slidev.org
+memberUid: devldapuser_localhost@slidev.org
+memberUid: devldapuser_nxslave6@slidev.org
+memberUid: devldapuser_nxslave3@slidev.org
+memberUid: devldapuser_nxslave10@slidev.org
+memberUid: devldapuser_nxslave1@slidev.org
+memberUid: devldapuser_nxslave5@slidev.org
+memberUid: devldapuser_cislave01.slidev.org@slidev.org
+memberUid: devldapuser_cislave02.slidev.org@slidev.org
+memberUid: devldapuser_nxslave8@slidev.org
+memberUid: devldapuser_nxslave7@slidev.org
+memberUid: devldapuser_nxslave2@slidev.org
+memberUid: devldapuser_nxslave9@slidev.org
+memberUid: devldapuser_ablum-mac.local@slidev.org
+memberUid: devldapuser_bsuzuki-mac.local@slidev.org
+memberUid: devldapuser_jhinsdale-mac.local@slidev.org
+memberUid: devldapuser_jsingh-mac.local@slidev.org
+memberUid: devldapuser_tshewchuk-mac.local@slidev.org
+memberUid: devldapuser_smuhit-mac.local@slidev.org
+memberUid: devldapuser_tke-mac-7.local@slidev.org
 memberUid: admintest-developer@slidev.org
+memberUid: devldapuser_local.slidev.org@slidev.org
+memberUid: devldapuser_cislave@slidev.org
+memberUid: devldapuser_06_6c_72_4f_05_3a@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_02@slidev.org
+memberUid: devldapuser_06_6c_72_53_3f_2f@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_03@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_33@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_31@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_05@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_32@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_04@slidev.org
+memberUid: devldapuser_06_6c_72_7d_66_fc@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a4@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a3@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a7@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a1@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a2@slidev.org
+memberUid: e2etestdev_sb@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a5@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a0@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a6@slidev.org
 
 dn: cn=SLC Operator,ou=groups,ou=cislave07,dc=slidev,dc=org
 changetype: add
@@ -7123,6 +10122,25 @@ displayName: 2ccd88620d9d3fb3ee8ee839c806fb73
 givenName: SLC
 loginShell: /bin/sh
 mail: slcoperator@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Daybreak Admin,ou=people,ou=cislave07,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Daybreak Admin
+gidNumber: 505
+homeDirectory: /ingestion/lz/Midgar/13e785053e77f7d6b064cdcd43167f70ae8c32ca
+ 88c6a3b9b0c8cd52458faa77
+sn: Admin
+uid: daybreakadmin
+uidNumber: 1119
+description:: dGVuYW50PU1pZGdhcgplZE9yZz1JTC1EQVlCUkVBSw==
+displayName: 0bd6b800ec046191473a61b9b9584c48
+givenName: Daybreak
+loginShell: /bin/sh
+mail: daybreakadmin@slidev.org
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=Test Developer,ou=people,ou=cislave07,dc=slidev,dc=org
@@ -7178,6 +10196,23 @@ displayName: 80e7f8e4c713a7c2495807c5c7a69dcf
 givenName: IL
 loginShell: /bin/sh
 mail: iladmin@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=NY Admin,ou=people,ou=cislave07,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: NY Admin
+gidNumber: 508
+homeDirectory: /mnt/gluster-lz/NY/NY-STATE-NYC
+sn: Admin
+uid: nyadmin
+uidNumber: 1123
+description:: dGVuYW50PUh5cnVsZQplZE9yZz1OWS1TVEFURS1OWUM=
+displayName: 507c174942f3dd3ebc0e4b16d68553f2
+givenName: NY
+loginShell: /bin/sh
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=Sunset RealmAdmin,ou=people,ou=cislave07,dc=slidev,dc=org
@@ -7283,6 +10318,24 @@ displayName: 09e5fa8790282698c9c2f29a373618fa
 givenName: Fakerealmadmin
 loginShell: /bin/sh
 mail: fakerealmadmin@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=DaybreakNoRealmAdmin Test,ou=people,ou=cislave07,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: DaybreakNoRealmAdmin Test
+gidNumber: 511
+homeDirectory: /home/users/daybreaknorealmadmin
+sn: Test
+uid: daybreaknorealmadmin
+uidNumber: 1133
+description:: dGVuYW50PU1pZGdhcgplZE9yZz1JTC1EQVlCUkVBSw==
+displayName: e0dda68f60f746ed58bd461a0a11792d
+givenName: DaybreakNoRealmAdmin
+loginShell: /bin/sh
+mail: daybreaknorealmadmin@slidev.org
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=SLC Developer,ou=people,ou=cislave07,dc=slidev,dc=org
@@ -7421,6 +10474,64 @@ givenName: Ingestion
 mail: ingestionuser@slidev.org
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
+dn: cn=developer-email@slidev.org,ou=people,ou=cislave07,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: top
+objectClass: posixAccount
+cn: developer-email@slidev.org
+gidNumber: 500
+homeDirectory: /ingestion/lz/developer-email@slidev.org/IL
+sn: Developer
+uid: developer-email@slidev.org
+uidNumber: 834
+description:: dGVuYW50PWRldmVsb3Blci1lbWFpbEBzbGlkZXYub3JnCmVkT3JnPUlM
+destinationIndicator: approved
+displayName: 75c16a1f1735525ab6adee8c01fa4a7f
+gecos: 
+givenName: Joe
+mail: developer-email@slidev.org
+o: SLC
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Bill Operator,ou=people,ou=cislave07,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Bill Operator
+gidNumber: 100
+homeDirectory: /home/users/toperator
+sn: Operator
+uid: slcoperator-email@slidev.org
+uidNumber: 1164
+displayName: 4ba75e11e2932e68dd6af3b4077c16ee
+givenName: Bill
+loginShell: /bin/bash
+mail: slcoperator-email@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=admintest-developer@slidev.org,ou=people,ou=cislave07,dc=slidev,dc=or
+ g
+changetype: add
+objectClass: inetOrgPerson
+objectClass: top
+objectClass: posixAccount
+cn: admintest-developer@slidev.org
+gidNumber: 500
+homeDirectory: /ingestion/lz/developer-email@slidev.org/IL
+sn: Developer
+uid: admintest-developer@slidev.org
+uidNumber: 834
+description:: dGVuYW50PWRldmVsb3Blci1lbWFpbEBzbGlkZXYub3JnCmVkT3JnPUlM
+destinationIndicator: approved
+displayName: 75c16a1f1735525ab6adee8c01fa4a7f
+gecos: 
+givenName: Joe
+mail: admintest-developer@slidev.org
+o: SLC
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
 dn: ou=cislave08,dc=slidev,dc=org
 changetype: add
 objectClass: organizationalUnit
@@ -7439,6 +10550,8 @@ objectClass: top
 cn: LEA Administrator
 gidNumber: 505
 memberUid: sunsetadmin
+memberUid: daybreakadmin
+memberUid: daybreaknorealmadmin
 
 dn: cn=Application Developer,ou=groups,ou=cislave08,dc=slidev,dc=org
 changetype: add
@@ -7450,6 +10563,7 @@ memberUid: testdeveloper
 memberUid: developer
 memberUid: slcdeveloper
 memberUid: developer-email@slidev.org
+memberUid: devldapuser@slidev.org
 memberUid: sandboxdeveloper
 memberUid: admintest-developer@slidev.org
 
@@ -7459,6 +10573,7 @@ objectClass: posixGroup
 objectClass: top
 cn: SEA Administrator
 gidNumber: 508
+memberUid: nyadmin
 memberUid: iladmin
 
 dn: cn=Realm Administrator,ou=groups,ou=cislave08,dc=slidev,dc=org
@@ -7469,7 +10584,9 @@ cn: Realm Administrator
 gidNumber: 509
 memberUid: fakerealmadmin
 memberUid: sunsetadmin
+memberUid: nyadmin
 memberUid: sunsetrealmadmin
+memberUid: daybreakadmin
  GRFCuEDNjZSMfahLDbIlZuxYqdbnbFzOd
 
 dn: cn=Ingestion User,ou=groups,ou=cislave08,dc=slidev,dc=org
@@ -7478,8 +10595,12 @@ objectClass: posixGroup
 objectClass: top
 cn: Ingestion User
 gidNumber: 510
+memberUid: nyadmin
 memberUid: sunsetadmin
+memberUid: daybreakadmin
 memberUid: ingestionuser
+memberUid: devldapuserpwolf-HP-EliteBook-2560p@slidev.org
+memberUid: devldapuser@slidev.org
 memberUid: sunsetingestionuser
 memberUid: sandboxingestionuser
 
@@ -7509,6 +10630,40 @@ objectClass: top
 cn: Sandbox Administrator
 gidNumber: 516
 memberUid: sandboxadministrator
+memberUid: devldapuser@slidev.org
+memberUid: devldapuser_nxslave1@slidev.org
+memberUid: devldapuser_nxslave5@slidev.org
+memberUid: devldapuser_nxslave8@slidev.org
+memberUid: devldapuser_nxslave7@slidev.org
+memberUid: devldapuser_nxslave2@slidev.org
+memberUid: devldapuser_nxslave9@slidev.org
+memberUid: devldapuser_ablum-mac.local@slidev.org
+memberUid: devldapuser_bsuzuki-mac.local@slidev.org
+memberUid: devldapuser_jhinsdale-mac.local@slidev.org
+memberUid: devldapuser_jsingh-mac.local@slidev.org
+memberUid: devldapuser_tshewchuk-mac.local@slidev.org
+memberUid: devldapuser_smuhit-mac.local@slidev.org
+memberUid: devldapuser_tke-mac-7.local@slidev.org
+memberUid: devldapuser_local.slidev.org@slidev.org
+memberUid: devldapuser_cislave@slidev.org
+memberUid: devldapuser_06_6c_72_4f_05_3a@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_02@slidev.org
+memberUid: devldapuser_06_6c_72_53_3f_2f@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_03@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_33@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_31@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_05@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_32@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_04@slidev.org
+memberUid: devldapuser_06_6c_72_7d_66_fc@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a4@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a3@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a7@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a2@slidev.org
+memberUid: e2etestdev_sb@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a5@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a0@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a6@slidev.org
 
 dn: cn=ingestion_user,ou=groups,ou=cislave08,dc=slidev,dc=org
 changetype: add
@@ -7516,15 +10671,60 @@ objectClass: posixGroup
 objectClass: top
 cn: ingestion_user
 gidNumber: 510
+memberUid: nyadmin
 memberUid: sunsetadmin
+memberUid: daybreakadmin
 memberUid: ingestionuser
+memberUid: devldapuser@slidev.org
 memberUid: sunsetingestionuser
 memberUid: sandboxingestionuser
+memberUid: devldapuser_nxslave4@slidev.org
+memberUid: devldapuser_Liu-Mac.local@slidev.org
+memberUid: devldapuser_localhost@slidev.org
+memberUid: devldapuser_nxslave6@slidev.org
+memberUid: devldapuser_nxslave3@slidev.org
+memberUid: devldapuser_nxslave10@slidev.org
+memberUid: devldapuser_nxslave1@slidev.org
+memberUid: devldapuser_nxslave5@slidev.org
+memberUid: devldapuser_cislave01.slidev.org@slidev.org
+memberUid: devldapuser_cislave02.slidev.org@slidev.org
+memberUid: devldapuser_nxslave8@slidev.org
+memberUid: devldapuser_nxslave7@slidev.org
+memberUid: devldapuser_nxslave2@slidev.org
+memberUid: devldapuser_nxslave9@slidev.org
+memberUid: devldapuser_ablum-mac.local@slidev.org
+memberUid: devldapuser_bsuzuki-mac.local@slidev.org
+memberUid: devldapuser_jhinsdale-mac.local@slidev.org
+memberUid: devldapuser_jsingh-mac.local@slidev.org
+memberUid: devldapuser_tshewchuk-mac.local@slidev.org
+memberUid: devldapuser_smuhit-mac.local@slidev.org
+memberUid: devldapuser_tke-mac-7.local@slidev.org
  uEcikWNsXejsrPvRiLwq
+memberUid: devldapuser_local.slidev.org@slidev.org
  ksCZdZzOjFhnnnzwaxnyfQawiAATbFNDS
+memberUid: devldapuser_cislave@slidev.org
+memberUid: devldapuser_06_6c_72_4f_05_3a@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_02@slidev.org
 memberUid: ingestionuser_06_6c_72_67_a5_02_06_6c_72_67_a5_02
+memberUid: devldapuser_06_6c_72_53_3f_2f@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_03@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_33@slidev.org
  meqbNsGTIdKlRFiVIgCkzvrdJDnOgq
+memberUid: devldapuser_06_6c_72_46_25_31@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_05@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_32@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_04@slidev.org
+memberUid: devldapuser_06_6c_72_7d_66_fc@slidev.org
  LiFGPQaDeIHHtxhkcGXCqPWzmQWjTm
+memberUid: devldapuser_06_6c_72_4c_26_a4@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a3@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a7@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a1@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a2@slidev.org
+memberUid: e2etestdev_sb@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a5@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a0@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a6@slidev.org
 
 dn: cn=application_developer,ou=groups,ou=cislave08,dc=slidev,dc=org
 changetype: add
@@ -7536,8 +10736,50 @@ memberUid: testdeveloper
 memberUid: developer
 memberUid: slcdeveloper
 memberUid: developer-email@slidev.org
+memberUid: devldapuser@slidev.org
 memberUid: sandboxdeveloper
+memberUid: devldapuser_Liu-Mac.local@slidev.org
+memberUid: devldapuser_localhost@slidev.org
+memberUid: devldapuser_nxslave6@slidev.org
+memberUid: devldapuser_nxslave3@slidev.org
+memberUid: devldapuser_nxslave10@slidev.org
+memberUid: devldapuser_nxslave1@slidev.org
+memberUid: devldapuser_nxslave5@slidev.org
+memberUid: devldapuser_cislave01.slidev.org@slidev.org
+memberUid: devldapuser_cislave02.slidev.org@slidev.org
+memberUid: devldapuser_nxslave8@slidev.org
+memberUid: devldapuser_nxslave7@slidev.org
+memberUid: devldapuser_nxslave2@slidev.org
+memberUid: devldapuser_nxslave9@slidev.org
+memberUid: devldapuser_ablum-mac.local@slidev.org
+memberUid: devldapuser_bsuzuki-mac.local@slidev.org
+memberUid: devldapuser_jhinsdale-mac.local@slidev.org
+memberUid: devldapuser_jsingh-mac.local@slidev.org
+memberUid: devldapuser_tshewchuk-mac.local@slidev.org
+memberUid: devldapuser_smuhit-mac.local@slidev.org
+memberUid: devldapuser_tke-mac-7.local@slidev.org
 memberUid: admintest-developer@slidev.org
+memberUid: devldapuser_local.slidev.org@slidev.org
+memberUid: devldapuser_cislave@slidev.org
+memberUid: devldapuser_06_6c_72_4f_05_3a@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_02@slidev.org
+memberUid: devldapuser_06_6c_72_53_3f_2f@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_03@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_33@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_31@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_05@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_32@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_04@slidev.org
+memberUid: devldapuser_06_6c_72_7d_66_fc@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a4@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a3@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a7@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a1@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a2@slidev.org
+memberUid: e2etestdev_sb@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a5@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a0@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a6@slidev.org
 
 dn: cn=SLC Operator,ou=groups,ou=cislave08,dc=slidev,dc=org
 changetype: add
@@ -7569,6 +10811,25 @@ displayName: 2ccd88620d9d3fb3ee8ee839c806fb73
 givenName: SLC
 loginShell: /bin/sh
 mail: slcoperator@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Daybreak Admin,ou=people,ou=cislave08,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Daybreak Admin
+gidNumber: 505
+homeDirectory: /ingestion/lz/Midgar/13e785053e77f7d6b064cdcd43167f70ae8c32ca
+ 88c6a3b9b0c8cd52458faa77
+sn: Admin
+uid: daybreakadmin
+uidNumber: 1119
+description:: dGVuYW50PU1pZGdhcgplZE9yZz1JTC1EQVlCUkVBSw==
+displayName: 0bd6b800ec046191473a61b9b9584c48
+givenName: Daybreak
+loginShell: /bin/sh
+mail: daybreakadmin@slidev.org
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=Test Developer,ou=people,ou=cislave08,dc=slidev,dc=org
@@ -7624,6 +10885,23 @@ displayName: 80e7f8e4c713a7c2495807c5c7a69dcf
 givenName: IL
 loginShell: /bin/sh
 mail: iladmin@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=NY Admin,ou=people,ou=cislave08,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: NY Admin
+gidNumber: 508
+homeDirectory: /mnt/gluster-lz/NY/NY-STATE-NYC
+sn: Admin
+uid: nyadmin
+uidNumber: 1123
+description:: dGVuYW50PUh5cnVsZQplZE9yZz1OWS1TVEFURS1OWUM=
+displayName: 507c174942f3dd3ebc0e4b16d68553f2
+givenName: NY
+loginShell: /bin/sh
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=Sunset RealmAdmin,ou=people,ou=cislave08,dc=slidev,dc=org
@@ -7729,6 +11007,24 @@ displayName: 09e5fa8790282698c9c2f29a373618fa
 givenName: Fakerealmadmin
 loginShell: /bin/sh
 mail: fakerealmadmin@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=DaybreakNoRealmAdmin Test,ou=people,ou=cislave08,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: DaybreakNoRealmAdmin Test
+gidNumber: 511
+homeDirectory: /home/users/daybreaknorealmadmin
+sn: Test
+uid: daybreaknorealmadmin
+uidNumber: 1133
+description:: dGVuYW50PU1pZGdhcgplZE9yZz1JTC1EQVlCUkVBSw==
+displayName: e0dda68f60f746ed58bd461a0a11792d
+givenName: DaybreakNoRealmAdmin
+loginShell: /bin/sh
+mail: daybreaknorealmadmin@slidev.org
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=SLC Developer,ou=people,ou=cislave08,dc=slidev,dc=org
@@ -7867,6 +11163,64 @@ givenName: Ingestion
 mail: ingestionuser@slidev.org
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
+dn: cn=developer-email@slidev.org,ou=people,ou=cislave08,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: top
+objectClass: posixAccount
+cn: developer-email@slidev.org
+gidNumber: 500
+homeDirectory: /ingestion/lz/developer-email@slidev.org/IL
+sn: Developer
+uid: developer-email@slidev.org
+uidNumber: 834
+description:: dGVuYW50PWRldmVsb3Blci1lbWFpbEBzbGlkZXYub3JnCmVkT3JnPUlM
+destinationIndicator: approved
+displayName: 75c16a1f1735525ab6adee8c01fa4a7f
+gecos: 
+givenName: Joe
+mail: developer-email@slidev.org
+o: SLC
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Bill Operator,ou=people,ou=cislave08,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Bill Operator
+gidNumber: 100
+homeDirectory: /home/users/toperator
+sn: Operator
+uid: slcoperator-email@slidev.org
+uidNumber: 1164
+displayName: 4ba75e11e2932e68dd6af3b4077c16ee
+givenName: Bill
+loginShell: /bin/bash
+mail: slcoperator-email@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=admintest-developer@slidev.org,ou=people,ou=cislave08,dc=slidev,dc=or
+ g
+changetype: add
+objectClass: inetOrgPerson
+objectClass: top
+objectClass: posixAccount
+cn: admintest-developer@slidev.org
+gidNumber: 500
+homeDirectory: /ingestion/lz/developer-email@slidev.org/IL
+sn: Developer
+uid: admintest-developer@slidev.org
+uidNumber: 834
+description:: dGVuYW50PWRldmVsb3Blci1lbWFpbEBzbGlkZXYub3JnCmVkT3JnPUlM
+destinationIndicator: approved
+displayName: 75c16a1f1735525ab6adee8c01fa4a7f
+gecos: 
+givenName: Joe
+mail: admintest-developer@slidev.org
+o: SLC
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
 dn: ou=cislave09,dc=slidev,dc=org
 changetype: add
 objectClass: organizationalUnit
@@ -7885,6 +11239,8 @@ objectClass: top
 cn: LEA Administrator
 gidNumber: 505
 memberUid: sunsetadmin
+memberUid: daybreakadmin
+memberUid: daybreaknorealmadmin
 
 dn: cn=Application Developer,ou=groups,ou=cislave09,dc=slidev,dc=org
 changetype: add
@@ -7896,6 +11252,7 @@ memberUid: testdeveloper
 memberUid: developer
 memberUid: slcdeveloper
 memberUid: developer-email@slidev.org
+memberUid: devldapuser@slidev.org
 memberUid: sandboxdeveloper
 memberUid: admintest-developer@slidev.org
 
@@ -7905,6 +11262,7 @@ objectClass: posixGroup
 objectClass: top
 cn: SEA Administrator
 gidNumber: 508
+memberUid: nyadmin
 memberUid: iladmin
 
 dn: cn=Realm Administrator,ou=groups,ou=cislave09,dc=slidev,dc=org
@@ -7915,7 +11273,9 @@ cn: Realm Administrator
 gidNumber: 509
 memberUid: fakerealmadmin
 memberUid: sunsetadmin
+memberUid: nyadmin
 memberUid: sunsetrealmadmin
+memberUid: daybreakadmin
  GRFCuEDNjZSMfahLDbIlZuxYqdbnbFzOd
 
 dn: cn=Ingestion User,ou=groups,ou=cislave09,dc=slidev,dc=org
@@ -7924,8 +11284,12 @@ objectClass: posixGroup
 objectClass: top
 cn: Ingestion User
 gidNumber: 510
+memberUid: nyadmin
 memberUid: sunsetadmin
+memberUid: daybreakadmin
 memberUid: ingestionuser
+memberUid: devldapuserpwolf-HP-EliteBook-2560p@slidev.org
+memberUid: devldapuser@slidev.org
 memberUid: sunsetingestionuser
 memberUid: sandboxingestionuser
 
@@ -7955,6 +11319,40 @@ objectClass: top
 cn: Sandbox Administrator
 gidNumber: 516
 memberUid: sandboxadministrator
+memberUid: devldapuser@slidev.org
+memberUid: devldapuser_nxslave1@slidev.org
+memberUid: devldapuser_nxslave5@slidev.org
+memberUid: devldapuser_nxslave8@slidev.org
+memberUid: devldapuser_nxslave7@slidev.org
+memberUid: devldapuser_nxslave2@slidev.org
+memberUid: devldapuser_nxslave9@slidev.org
+memberUid: devldapuser_ablum-mac.local@slidev.org
+memberUid: devldapuser_bsuzuki-mac.local@slidev.org
+memberUid: devldapuser_jhinsdale-mac.local@slidev.org
+memberUid: devldapuser_jsingh-mac.local@slidev.org
+memberUid: devldapuser_tshewchuk-mac.local@slidev.org
+memberUid: devldapuser_smuhit-mac.local@slidev.org
+memberUid: devldapuser_tke-mac-7.local@slidev.org
+memberUid: devldapuser_local.slidev.org@slidev.org
+memberUid: devldapuser_cislave@slidev.org
+memberUid: devldapuser_06_6c_72_4f_05_3a@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_02@slidev.org
+memberUid: devldapuser_06_6c_72_53_3f_2f@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_03@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_33@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_31@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_05@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_32@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_04@slidev.org
+memberUid: devldapuser_06_6c_72_7d_66_fc@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a4@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a3@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a7@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a2@slidev.org
+memberUid: e2etestdev_sb@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a5@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a0@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a6@slidev.org
 
 dn: cn=ingestion_user,ou=groups,ou=cislave09,dc=slidev,dc=org
 changetype: add
@@ -7962,15 +11360,60 @@ objectClass: posixGroup
 objectClass: top
 cn: ingestion_user
 gidNumber: 510
+memberUid: nyadmin
 memberUid: sunsetadmin
+memberUid: daybreakadmin
 memberUid: ingestionuser
+memberUid: devldapuser@slidev.org
 memberUid: sunsetingestionuser
 memberUid: sandboxingestionuser
+memberUid: devldapuser_nxslave4@slidev.org
+memberUid: devldapuser_Liu-Mac.local@slidev.org
+memberUid: devldapuser_localhost@slidev.org
+memberUid: devldapuser_nxslave6@slidev.org
+memberUid: devldapuser_nxslave3@slidev.org
+memberUid: devldapuser_nxslave10@slidev.org
+memberUid: devldapuser_nxslave1@slidev.org
+memberUid: devldapuser_nxslave5@slidev.org
+memberUid: devldapuser_cislave01.slidev.org@slidev.org
+memberUid: devldapuser_cislave02.slidev.org@slidev.org
+memberUid: devldapuser_nxslave8@slidev.org
+memberUid: devldapuser_nxslave7@slidev.org
+memberUid: devldapuser_nxslave2@slidev.org
+memberUid: devldapuser_nxslave9@slidev.org
+memberUid: devldapuser_ablum-mac.local@slidev.org
+memberUid: devldapuser_bsuzuki-mac.local@slidev.org
+memberUid: devldapuser_jhinsdale-mac.local@slidev.org
+memberUid: devldapuser_jsingh-mac.local@slidev.org
+memberUid: devldapuser_tshewchuk-mac.local@slidev.org
+memberUid: devldapuser_smuhit-mac.local@slidev.org
+memberUid: devldapuser_tke-mac-7.local@slidev.org
  uEcikWNsXejsrPvRiLwq
+memberUid: devldapuser_local.slidev.org@slidev.org
  ksCZdZzOjFhnnnzwaxnyfQawiAATbFNDS
+memberUid: devldapuser_cislave@slidev.org
+memberUid: devldapuser_06_6c_72_4f_05_3a@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_02@slidev.org
 memberUid: ingestionuser_06_6c_72_67_a5_02_06_6c_72_67_a5_02
+memberUid: devldapuser_06_6c_72_53_3f_2f@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_03@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_33@slidev.org
  meqbNsGTIdKlRFiVIgCkzvrdJDnOgq
+memberUid: devldapuser_06_6c_72_46_25_31@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_05@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_32@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_04@slidev.org
+memberUid: devldapuser_06_6c_72_7d_66_fc@slidev.org
  LiFGPQaDeIHHtxhkcGXCqPWzmQWjTm
+memberUid: devldapuser_06_6c_72_4c_26_a4@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a3@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a7@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a1@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a2@slidev.org
+memberUid: e2etestdev_sb@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a5@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a0@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a6@slidev.org
 
 dn: cn=application_developer,ou=groups,ou=cislave09,dc=slidev,dc=org
 changetype: add
@@ -7982,8 +11425,50 @@ memberUid: testdeveloper
 memberUid: developer
 memberUid: slcdeveloper
 memberUid: developer-email@slidev.org
+memberUid: devldapuser@slidev.org
 memberUid: sandboxdeveloper
+memberUid: devldapuser_Liu-Mac.local@slidev.org
+memberUid: devldapuser_localhost@slidev.org
+memberUid: devldapuser_nxslave6@slidev.org
+memberUid: devldapuser_nxslave3@slidev.org
+memberUid: devldapuser_nxslave10@slidev.org
+memberUid: devldapuser_nxslave1@slidev.org
+memberUid: devldapuser_nxslave5@slidev.org
+memberUid: devldapuser_cislave01.slidev.org@slidev.org
+memberUid: devldapuser_cislave02.slidev.org@slidev.org
+memberUid: devldapuser_nxslave8@slidev.org
+memberUid: devldapuser_nxslave7@slidev.org
+memberUid: devldapuser_nxslave2@slidev.org
+memberUid: devldapuser_nxslave9@slidev.org
+memberUid: devldapuser_ablum-mac.local@slidev.org
+memberUid: devldapuser_bsuzuki-mac.local@slidev.org
+memberUid: devldapuser_jhinsdale-mac.local@slidev.org
+memberUid: devldapuser_jsingh-mac.local@slidev.org
+memberUid: devldapuser_tshewchuk-mac.local@slidev.org
+memberUid: devldapuser_smuhit-mac.local@slidev.org
+memberUid: devldapuser_tke-mac-7.local@slidev.org
 memberUid: admintest-developer@slidev.org
+memberUid: devldapuser_local.slidev.org@slidev.org
+memberUid: devldapuser_cislave@slidev.org
+memberUid: devldapuser_06_6c_72_4f_05_3a@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_02@slidev.org
+memberUid: devldapuser_06_6c_72_53_3f_2f@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_03@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_33@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_31@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_05@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_32@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_04@slidev.org
+memberUid: devldapuser_06_6c_72_7d_66_fc@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a4@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a3@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a7@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a1@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a2@slidev.org
+memberUid: e2etestdev_sb@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a5@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a0@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a6@slidev.org
 
 dn: cn=SLC Operator,ou=groups,ou=cislave09,dc=slidev,dc=org
 changetype: add
@@ -8015,6 +11500,25 @@ displayName: 2ccd88620d9d3fb3ee8ee839c806fb73
 givenName: SLC
 loginShell: /bin/sh
 mail: slcoperator@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Daybreak Admin,ou=people,ou=cislave09,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Daybreak Admin
+gidNumber: 505
+homeDirectory: /ingestion/lz/Midgar/13e785053e77f7d6b064cdcd43167f70ae8c32ca
+ 88c6a3b9b0c8cd52458faa77
+sn: Admin
+uid: daybreakadmin
+uidNumber: 1119
+description:: dGVuYW50PU1pZGdhcgplZE9yZz1JTC1EQVlCUkVBSw==
+displayName: 0bd6b800ec046191473a61b9b9584c48
+givenName: Daybreak
+loginShell: /bin/sh
+mail: daybreakadmin@slidev.org
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=Test Developer,ou=people,ou=cislave09,dc=slidev,dc=org
@@ -8070,6 +11574,23 @@ displayName: 80e7f8e4c713a7c2495807c5c7a69dcf
 givenName: IL
 loginShell: /bin/sh
 mail: iladmin@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=NY Admin,ou=people,ou=cislave09,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: NY Admin
+gidNumber: 508
+homeDirectory: /mnt/gluster-lz/NY/NY-STATE-NYC
+sn: Admin
+uid: nyadmin
+uidNumber: 1123
+description:: dGVuYW50PUh5cnVsZQplZE9yZz1OWS1TVEFURS1OWUM=
+displayName: 507c174942f3dd3ebc0e4b16d68553f2
+givenName: NY
+loginShell: /bin/sh
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=Sunset RealmAdmin,ou=people,ou=cislave09,dc=slidev,dc=org
@@ -8175,6 +11696,24 @@ displayName: 09e5fa8790282698c9c2f29a373618fa
 givenName: Fakerealmadmin
 loginShell: /bin/sh
 mail: fakerealmadmin@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=DaybreakNoRealmAdmin Test,ou=people,ou=cislave09,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: DaybreakNoRealmAdmin Test
+gidNumber: 511
+homeDirectory: /home/users/daybreaknorealmadmin
+sn: Test
+uid: daybreaknorealmadmin
+uidNumber: 1133
+description:: dGVuYW50PU1pZGdhcgplZE9yZz1JTC1EQVlCUkVBSw==
+displayName: e0dda68f60f746ed58bd461a0a11792d
+givenName: DaybreakNoRealmAdmin
+loginShell: /bin/sh
+mail: daybreaknorealmadmin@slidev.org
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=SLC Developer,ou=people,ou=cislave09,dc=slidev,dc=org
@@ -8313,6 +11852,64 @@ givenName: Ingestion
 mail: ingestionuser@slidev.org
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
+dn: cn=developer-email@slidev.org,ou=people,ou=cislave09,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: top
+objectClass: posixAccount
+cn: developer-email@slidev.org
+gidNumber: 500
+homeDirectory: /ingestion/lz/developer-email@slidev.org/IL
+sn: Developer
+uid: developer-email@slidev.org
+uidNumber: 834
+description:: dGVuYW50PWRldmVsb3Blci1lbWFpbEBzbGlkZXYub3JnCmVkT3JnPUlM
+destinationIndicator: approved
+displayName: 75c16a1f1735525ab6adee8c01fa4a7f
+gecos: 
+givenName: Joe
+mail: developer-email@slidev.org
+o: SLC
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Bill Operator,ou=people,ou=cislave09,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Bill Operator
+gidNumber: 100
+homeDirectory: /home/users/toperator
+sn: Operator
+uid: slcoperator-email@slidev.org
+uidNumber: 1164
+displayName: 4ba75e11e2932e68dd6af3b4077c16ee
+givenName: Bill
+loginShell: /bin/bash
+mail: slcoperator-email@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=admintest-developer@slidev.org,ou=people,ou=cislave09,dc=slidev,dc=or
+ g
+changetype: add
+objectClass: inetOrgPerson
+objectClass: top
+objectClass: posixAccount
+cn: admintest-developer@slidev.org
+gidNumber: 500
+homeDirectory: /ingestion/lz/developer-email@slidev.org/IL
+sn: Developer
+uid: admintest-developer@slidev.org
+uidNumber: 834
+description:: dGVuYW50PWRldmVsb3Blci1lbWFpbEBzbGlkZXYub3JnCmVkT3JnPUlM
+destinationIndicator: approved
+displayName: 75c16a1f1735525ab6adee8c01fa4a7f
+gecos: 
+givenName: Joe
+mail: admintest-developer@slidev.org
+o: SLC
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
 dn: ou=cislave10,dc=slidev,dc=org
 changetype: add
 objectClass: organizationalUnit
@@ -8331,6 +11928,8 @@ objectClass: top
 cn: LEA Administrator
 gidNumber: 505
 memberUid: sunsetadmin
+memberUid: daybreakadmin
+memberUid: daybreaknorealmadmin
 
 dn: cn=Application Developer,ou=groups,ou=cislave10,dc=slidev,dc=org
 changetype: add
@@ -8342,6 +11941,7 @@ memberUid: testdeveloper
 memberUid: developer
 memberUid: slcdeveloper
 memberUid: developer-email@slidev.org
+memberUid: devldapuser@slidev.org
 memberUid: sandboxdeveloper
 memberUid: admintest-developer@slidev.org
 
@@ -8351,6 +11951,7 @@ objectClass: posixGroup
 objectClass: top
 cn: SEA Administrator
 gidNumber: 508
+memberUid: nyadmin
 memberUid: iladmin
 
 dn: cn=Realm Administrator,ou=groups,ou=cislave10,dc=slidev,dc=org
@@ -8361,7 +11962,9 @@ cn: Realm Administrator
 gidNumber: 509
 memberUid: fakerealmadmin
 memberUid: sunsetadmin
+memberUid: nyadmin
 memberUid: sunsetrealmadmin
+memberUid: daybreakadmin
  GRFCuEDNjZSMfahLDbIlZuxYqdbnbFzOd
 
 dn: cn=Ingestion User,ou=groups,ou=cislave10,dc=slidev,dc=org
@@ -8370,8 +11973,12 @@ objectClass: posixGroup
 objectClass: top
 cn: Ingestion User
 gidNumber: 510
+memberUid: nyadmin
 memberUid: sunsetadmin
+memberUid: daybreakadmin
 memberUid: ingestionuser
+memberUid: devldapuserpwolf-HP-EliteBook-2560p@slidev.org
+memberUid: devldapuser@slidev.org
 memberUid: sunsetingestionuser
 memberUid: sandboxingestionuser
 
@@ -8401,6 +12008,40 @@ objectClass: top
 cn: Sandbox Administrator
 gidNumber: 516
 memberUid: sandboxadministrator
+memberUid: devldapuser@slidev.org
+memberUid: devldapuser_nxslave1@slidev.org
+memberUid: devldapuser_nxslave5@slidev.org
+memberUid: devldapuser_nxslave8@slidev.org
+memberUid: devldapuser_nxslave7@slidev.org
+memberUid: devldapuser_nxslave2@slidev.org
+memberUid: devldapuser_nxslave9@slidev.org
+memberUid: devldapuser_ablum-mac.local@slidev.org
+memberUid: devldapuser_bsuzuki-mac.local@slidev.org
+memberUid: devldapuser_jhinsdale-mac.local@slidev.org
+memberUid: devldapuser_jsingh-mac.local@slidev.org
+memberUid: devldapuser_tshewchuk-mac.local@slidev.org
+memberUid: devldapuser_smuhit-mac.local@slidev.org
+memberUid: devldapuser_tke-mac-7.local@slidev.org
+memberUid: devldapuser_local.slidev.org@slidev.org
+memberUid: devldapuser_cislave@slidev.org
+memberUid: devldapuser_06_6c_72_4f_05_3a@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_02@slidev.org
+memberUid: devldapuser_06_6c_72_53_3f_2f@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_03@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_33@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_31@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_05@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_32@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_04@slidev.org
+memberUid: devldapuser_06_6c_72_7d_66_fc@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a4@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a3@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a7@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a2@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a5@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a0@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a6@slidev.org
+memberUid: e2etestdev_sb@slidev.org
 
 dn: cn=ingestion_user,ou=groups,ou=cislave10,dc=slidev,dc=org
 changetype: add
@@ -8408,15 +12049,60 @@ objectClass: posixGroup
 objectClass: top
 cn: ingestion_user
 gidNumber: 510
+memberUid: nyadmin
 memberUid: sunsetadmin
+memberUid: daybreakadmin
 memberUid: ingestionuser
+memberUid: devldapuser@slidev.org
 memberUid: sunsetingestionuser
 memberUid: sandboxingestionuser
+memberUid: devldapuser_nxslave4@slidev.org
+memberUid: devldapuser_Liu-Mac.local@slidev.org
+memberUid: devldapuser_localhost@slidev.org
+memberUid: devldapuser_nxslave6@slidev.org
+memberUid: devldapuser_nxslave3@slidev.org
+memberUid: devldapuser_nxslave10@slidev.org
+memberUid: devldapuser_nxslave1@slidev.org
+memberUid: devldapuser_nxslave5@slidev.org
+memberUid: devldapuser_cislave01.slidev.org@slidev.org
+memberUid: devldapuser_cislave02.slidev.org@slidev.org
+memberUid: devldapuser_nxslave8@slidev.org
+memberUid: devldapuser_nxslave7@slidev.org
+memberUid: devldapuser_nxslave2@slidev.org
+memberUid: devldapuser_nxslave9@slidev.org
+memberUid: devldapuser_ablum-mac.local@slidev.org
+memberUid: devldapuser_bsuzuki-mac.local@slidev.org
+memberUid: devldapuser_jhinsdale-mac.local@slidev.org
+memberUid: devldapuser_jsingh-mac.local@slidev.org
+memberUid: devldapuser_tshewchuk-mac.local@slidev.org
+memberUid: devldapuser_smuhit-mac.local@slidev.org
+memberUid: devldapuser_tke-mac-7.local@slidev.org
  uEcikWNsXejsrPvRiLwq
+memberUid: devldapuser_local.slidev.org@slidev.org
  ksCZdZzOjFhnnnzwaxnyfQawiAATbFNDS
+memberUid: devldapuser_cislave@slidev.org
+memberUid: devldapuser_06_6c_72_4f_05_3a@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_02@slidev.org
 memberUid: ingestionuser_06_6c_72_67_a5_02_06_6c_72_67_a5_02
+memberUid: devldapuser_06_6c_72_53_3f_2f@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_03@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_33@slidev.org
  meqbNsGTIdKlRFiVIgCkzvrdJDnOgq
+memberUid: devldapuser_06_6c_72_46_25_31@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_05@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_32@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_04@slidev.org
+memberUid: devldapuser_06_6c_72_7d_66_fc@slidev.org
  LiFGPQaDeIHHtxhkcGXCqPWzmQWjTm
+memberUid: devldapuser_06_6c_72_4c_26_a4@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a3@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a7@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a1@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a2@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a5@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a0@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a6@slidev.org
+memberUid: e2etestdev_sb@slidev.org
 
 dn: cn=application_developer,ou=groups,ou=cislave10,dc=slidev,dc=org
 changetype: add
@@ -8428,8 +12114,50 @@ memberUid: testdeveloper
 memberUid: developer
 memberUid: slcdeveloper
 memberUid: developer-email@slidev.org
+memberUid: devldapuser@slidev.org
 memberUid: sandboxdeveloper
+memberUid: devldapuser_Liu-Mac.local@slidev.org
+memberUid: devldapuser_localhost@slidev.org
+memberUid: devldapuser_nxslave6@slidev.org
+memberUid: devldapuser_nxslave3@slidev.org
+memberUid: devldapuser_nxslave10@slidev.org
+memberUid: devldapuser_nxslave1@slidev.org
+memberUid: devldapuser_nxslave5@slidev.org
+memberUid: devldapuser_cislave01.slidev.org@slidev.org
+memberUid: devldapuser_cislave02.slidev.org@slidev.org
+memberUid: devldapuser_nxslave8@slidev.org
+memberUid: devldapuser_nxslave7@slidev.org
+memberUid: devldapuser_nxslave2@slidev.org
+memberUid: devldapuser_nxslave9@slidev.org
+memberUid: devldapuser_ablum-mac.local@slidev.org
+memberUid: devldapuser_bsuzuki-mac.local@slidev.org
+memberUid: devldapuser_jhinsdale-mac.local@slidev.org
+memberUid: devldapuser_jsingh-mac.local@slidev.org
+memberUid: devldapuser_tshewchuk-mac.local@slidev.org
+memberUid: devldapuser_smuhit-mac.local@slidev.org
+memberUid: devldapuser_tke-mac-7.local@slidev.org
 memberUid: admintest-developer@slidev.org
+memberUid: devldapuser_local.slidev.org@slidev.org
+memberUid: devldapuser_cislave@slidev.org
+memberUid: devldapuser_06_6c_72_4f_05_3a@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_02@slidev.org
+memberUid: devldapuser_06_6c_72_53_3f_2f@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_03@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_33@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_31@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_05@slidev.org
+memberUid: devldapuser_06_6c_72_46_25_32@slidev.org
+memberUid: devldapuser_06_6c_72_67_a5_04@slidev.org
+memberUid: devldapuser_06_6c_72_7d_66_fc@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a4@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a3@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a7@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a1@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a2@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a5@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a0@slidev.org
+memberUid: devldapuser_06_6c_72_4c_26_a6@slidev.org
+memberUid: e2etestdev_sb@slidev.org
 
 dn: cn=SLC Operator,ou=groups,ou=cislave10,dc=slidev,dc=org
 changetype: add
@@ -8461,6 +12189,25 @@ displayName: 2ccd88620d9d3fb3ee8ee839c806fb73
 givenName: SLC
 loginShell: /bin/sh
 mail: slcoperator@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Daybreak Admin,ou=people,ou=cislave10,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Daybreak Admin
+gidNumber: 505
+homeDirectory: /ingestion/lz/Midgar/13e785053e77f7d6b064cdcd43167f70ae8c32ca
+ 88c6a3b9b0c8cd52458faa77
+sn: Admin
+uid: daybreakadmin
+uidNumber: 1119
+description:: dGVuYW50PU1pZGdhcgplZE9yZz1JTC1EQVlCUkVBSw==
+displayName: 0bd6b800ec046191473a61b9b9584c48
+givenName: Daybreak
+loginShell: /bin/sh
+mail: daybreakadmin@slidev.org
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=Test Developer,ou=people,ou=cislave10,dc=slidev,dc=org
@@ -8516,6 +12263,23 @@ displayName: 80e7f8e4c713a7c2495807c5c7a69dcf
 givenName: IL
 loginShell: /bin/sh
 mail: iladmin@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=NY Admin,ou=people,ou=cislave10,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: NY Admin
+gidNumber: 508
+homeDirectory: /mnt/gluster-lz/NY/NY-STATE-NYC
+sn: Admin
+uid: nyadmin
+uidNumber: 1123
+description:: dGVuYW50PUh5cnVsZQplZE9yZz1OWS1TVEFURS1OWUM=
+displayName: 507c174942f3dd3ebc0e4b16d68553f2
+givenName: NY
+loginShell: /bin/sh
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=Sunset RealmAdmin,ou=people,ou=cislave10,dc=slidev,dc=org
@@ -8621,6 +12385,24 @@ displayName: 09e5fa8790282698c9c2f29a373618fa
 givenName: Fakerealmadmin
 loginShell: /bin/sh
 mail: fakerealmadmin@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=DaybreakNoRealmAdmin Test,ou=people,ou=cislave10,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: DaybreakNoRealmAdmin Test
+gidNumber: 511
+homeDirectory: /home/users/daybreaknorealmadmin
+sn: Test
+uid: daybreaknorealmadmin
+uidNumber: 1133
+description:: dGVuYW50PU1pZGdhcgplZE9yZz1JTC1EQVlCUkVBSw==
+displayName: e0dda68f60f746ed58bd461a0a11792d
+givenName: DaybreakNoRealmAdmin
+loginShell: /bin/sh
+mail: daybreaknorealmadmin@slidev.org
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=SLC Developer,ou=people,ou=cislave10,dc=slidev,dc=org
@@ -8757,6 +12539,64 @@ uidNumber: 1149
 displayName: 37824346f8e9ac9bacfe2ed5751de162
 givenName: Ingestion
 mail: ingestionuser@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=developer-email@slidev.org,ou=people,ou=cislave10,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: top
+objectClass: posixAccount
+cn: developer-email@slidev.org
+gidNumber: 500
+homeDirectory: /ingestion/lz/developer-email@slidev.org/IL
+sn: Developer
+uid: developer-email@slidev.org
+uidNumber: 834
+description:: dGVuYW50PWRldmVsb3Blci1lbWFpbEBzbGlkZXYub3JnCmVkT3JnPUlM
+destinationIndicator: approved
+displayName: 75c16a1f1735525ab6adee8c01fa4a7f
+gecos: 
+givenName: Joe
+mail: developer-email@slidev.org
+o: SLC
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=Bill Operator,ou=people,ou=cislave10,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: Bill Operator
+gidNumber: 100
+homeDirectory: /home/users/toperator
+sn: Operator
+uid: slcoperator-email@slidev.org
+uidNumber: 1164
+displayName: 4ba75e11e2932e68dd6af3b4077c16ee
+givenName: Bill
+loginShell: /bin/bash
+mail: slcoperator-email@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=admintest-developer@slidev.org,ou=people,ou=cislave10,dc=slidev,dc=or
+ g
+changetype: add
+objectClass: inetOrgPerson
+objectClass: top
+objectClass: posixAccount
+cn: admintest-developer@slidev.org
+gidNumber: 500
+homeDirectory: /ingestion/lz/developer-email@slidev.org/IL
+sn: Developer
+uid: admintest-developer@slidev.org
+uidNumber: 834
+description:: dGVuYW50PWRldmVsb3Blci1lbWFpbEBzbGlkZXYub3JnCmVkT3JnPUlM
+destinationIndicator: approved
+displayName: 75c16a1f1735525ab6adee8c01fa4a7f
+gecos: 
+givenName: Joe
+mail: admintest-developer@slidev.org
+o: SLC
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=SAMT_Welcome_Email_production_06_6c_72_4c_26_a5tyTEUnFmTgYlKapkUSgNLQ
@@ -8920,6 +12760,36 @@ gecos:
 givenName: pJGWvsMmMDgIUxwfSEwRWGNPNakomJOhxwgYeWOWSjIieUpQRjP
 loginShell: /sbin/nologin
 mail: devldapuser@slidev.org
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=BadAdmin Test,ou=people,ou=IL-DAYBREAK,ou=DevTest,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: BadAdmin Test
+gidNumber: 511
+homeDirectory: /home/users/badadmin
+sn: Test
+uid: badadmin
+uidNumber: 1146
+givenName: BadAdmin
+loginShell: /bin/bash
+userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
+
+dn: cn=BadAdmin Test,ou=people,ou=IL-DAYBREAK,dc=slidev,dc=org
+changetype: add
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: BadAdmin Test
+gidNumber: 511
+homeDirectory: /home/users/badadmin
+sn: Test
+uid: badadmin
+uidNumber: 1146
+givenName: BadAdmin
+loginShell: /bin/bash
 userPassword:: e01ENX15bENoMXNmNERQekZDbFZ5cndHbXhnPT0=
 
 dn: cn=Christopher Koch,ou=people,ou=IL-DAYBREAK,dc=slidev,dc=org
