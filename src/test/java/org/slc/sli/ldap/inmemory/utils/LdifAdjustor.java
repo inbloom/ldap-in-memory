@@ -34,6 +34,7 @@ public class LdifAdjustor {
         SOURCE_DIR("s"),
         OUTPUT_DIR("o"),
         DEBUG("debug"),
+        OBFUSCATE_PASSWORDS("obfuscate_passwords"),
         SUFFIX("suffix");
 
         private String name;
@@ -65,6 +66,8 @@ public class LdifAdjustor {
         options.addOption(CliParams.HELP.getName(), null, false, "Show help");
 
         options.addOption(CliParams.DEBUG.getName(), null, false, "Show additional debug info.");
+
+        options.addOption(CliParams.OBFUSCATE_PASSWORDS.getName(), null, false, "Obfuscate passwords using Linda Kim.");
 
         options.addOption(OptionBuilder.withLongOpt(CliParams.FILE_NAME.getName())
               .withDescription("The LDIF file name.")
@@ -514,6 +517,7 @@ public class LdifAdjustor {
     /**
      * Runs the utility and parses input to output a modified LDIF export file.
      * Add --debug to spool output file contents to console.
+     * Add --obfuscate_passwords to force password obfuscation logic to execute.
      * --help
      * --f "ciDevLDIF.ldif" --s "/Users/tfritz/Projects/datastore_ldap_inmemory/src/test/resources/ldif/original" --o "/Users/tfritz/Projects/datastore_ldap_inmemory/src/test/resources/ldif" --suffix "modified"
      * @param
@@ -536,7 +540,7 @@ public class LdifAdjustor {
         final String defaultSuffix = ".modified";
 
         boolean debugEnabled = false;
-        boolean changePassword = false;
+        boolean obfuscatePasswords = false;
 
         CommandLineParser parser = new BasicParser();
 
@@ -556,6 +560,10 @@ public class LdifAdjustor {
 
             if (line.hasOption(CliParams.DEBUG.getName())) {
                 debugEnabled = true;
+            }
+
+            if (line.hasOption(CliParams.OBFUSCATE_PASSWORDS.getName())) {
+                obfuscatePasswords = true;
             }
 
             final String fileName = line.getOptionValue(CliParams.FILE_NAME.getName());
@@ -601,14 +609,17 @@ public class LdifAdjustor {
             //perform processing across all sections.
             parsedLdifFile = processAllSections(parsedLdifFile);
 
-            //perform password processing, which replaces existing userPassword values within an LDIF
-            //with that from a common user.  Note:  The FIRST occurrence of the user that is found is what
-            //will be used.
-            //TODO parameterize the target user.
-            String uid = "linda.kim";
-            String userPasswordLine = this.findPasswordForUser(parsedLdifFile, uid);
-            //iterate through people sections and replace the userPasswordLine (if it is not null)
-            parsedLdifFile = this.replaceUserPasswordEntries(parsedLdifFile, userPasswordLine);
+
+            if (obfuscatePasswords) {
+                /* perform password processing, which replaces existing userPassword values within an LDIF
+                with that from a common user.  Note:  The FIRST occurrence of the user that is found is what
+                will be used. */
+                //TODO parameterize the target user.
+                String uid = "linda.kim";
+                String userPasswordLine = this.findPasswordForUser(parsedLdifFile, uid);
+                //iterate through people sections and replace the userPasswordLine (if it is not null)
+                parsedLdifFile = this.replaceUserPasswordEntries(parsedLdifFile, userPasswordLine);
+            }
 
             System.out.println("writing output file..." + outputFile);
             try {
