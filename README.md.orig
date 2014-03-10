@@ -29,11 +29,16 @@ Deployment occurs by adding a WAR file and resources. To accomplish this, you wi
 
 Logging occurs through the SLF4J logging facade which is backed by Log4J. Log levels can be configured from within the log4j.xml. Two handlers have been implemented to allow IM-LDAP events to be exposed by log statements, which could also be captured by specific log file appenders (not included at this time).
 
+<<<<<<< HEAD
+Source Code
+The source code can be obtained from the git repository at the following location: https://github.com/inbloom/ldap_in_memory.git.
+=======
 #Listener
 
 The IM-LDAP allows for multiple listeners to be configured against the same internal server repository distinguished by port and authentication mechanism. However, currently, this implementation only supports use of one listener via the configuration file. Refer to the UnboundedID documentation [link] for more information.
 
 #Supported Platforms
+>>>>>>> Improve readability of the README
 
 The IM-LDAP runs within a Java Virtual Machine which means it is cross-portable to any OS that has a JDK.
 
