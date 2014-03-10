@@ -121,13 +121,10 @@ A deployment can be invoked directly via Maven. When the IM- LDAP server is run 
 2. Build the artifacts: `mvn clean install package`.
 3. Copy the resulting war file into your Java servlet container/application server (e.g. Tomcat or Jetty).
 4. Make the required resources are available on the classpath:
-
-  1. ldap-inmemory-config.xml
+  1. `ldap-inmemory-config.xml`
   2. Resources specified within the XML must exist relative to classpath:
-
-    - ldif/ldap-schema.ldif (Replace with LDIF schema export if customized, one schema for all LDIFs.)
-    - ldif/2014_01_16_ldap_export.ldif.modified (Replace with LDIFs, if customized.)
-
+    - `src/test/resources/ldif/ldap-schema.ldif` (Replace with LDIF schema export if customized, one schema for all LDIFs.)
+    - `src/test/resources/ldif/2014_01_16_ldap_export.ldif.modified` (Replace with LDIFs, if customized.)
 5. Start the server.
 6. Verify proper functionality using [Apache Directory Studio](https://directory.apache.org/studio/).
 
@@ -135,10 +132,11 @@ A deployment can be invoked directly via Maven. When the IM- LDAP server is run 
 You can connect to the IM-LDAP by using the Apache Directory Studio.
 Create a new connection to the local LDAP:
 
-  - Host: 127.0.0.1:10389
-  - Simple Authentication
-  - cn=Admin,dc=slidev,dc=org
-  - test1234
+  | Hostname               | 127.0.0.1                  |
+  | Port                   | 10389                      |
+  | Authentication Method  | Simple Authentication      |
+  | Bind DN                | cn=Admin,dc=slidev,dc=org  |
+  | Bind Password          | test1234                   |
 
 ## Resources
 The following list includes items related to this solution:
