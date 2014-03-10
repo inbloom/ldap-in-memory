@@ -28,7 +28,7 @@ Listener
 The IM-LDAP allows for multiple listeners to be configured against the same internal server repository distinguished by port and authentication mechanism. However, currently, this implementation only supports use of one listener via the configuration file. Refer to the UnboundedID documentation [link] for more information. 
 
 Source Code
-The source code can be obtained from the git repository at the following location: https://github.com/inbloomdev/datastore_ldap_inmemory. 
+The source code can be obtained from the git repository at the following location: https://github.com/inbloom/ldap_in_memory.git.
 
 Supported Platforms
 The IM-LDAP runs within a Java Virtual Machine which means it is cross-portable to any OS that has a JDK.
