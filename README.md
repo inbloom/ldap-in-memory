@@ -1,9 +1,9 @@
 # In-Memory LDAP Server
 
 ## Overview
-The in-memory LDAP component (IM-LDAP) simplifies the task of standing up an LDAP server for non-production environments. These procedures explain how to easily configure an IM-LDAP directory server to use for testing, demonstration purposes, or even simple LDAP data processing tasks. This method has the advantage of not having to install and maintain a server and provides for server-independent functionality.
+The in-memory LDAP server (IM-LDAP) simplifies the task of standing up an LDAP server for non-production environments. This document explains how to easily configure an IM-LDAP directory server for testing, demonstration purposes, or simple LDAP data processing tasks. IM-LDAP allows for easy, cross-platform development of applications, such as the [inBloom Secure Data Service](http://github.com/secure-data-service), that rely on an LDAP server.
 
-This implementation uses the UnboundedID Java SDK that includes a fast, powerful, and user-friendly Java API for communicating with LDAP directory servers. The UnboundID Identity Data Platform provides a directory services solution designed to scale for extremely large identity datasets and also provides the data synchronization services necessary to support a low-risk migration from existing directory services solutions.
+This implementation leverages the [UnboundedID Java SDK](https://www.unboundid.com/products/ldapsdk/). This library includes a fast, powerful, and user-friendly Java API for communicating with LDAP directory servers. The UnboundID Identity Data Platform provides a directory services solution designed to scale for extremely large identity datasets and also provides the data synchronization services necessary to support a low-risk migration from existing directory services solutions.
 
 The UnboundID LDAP SDK for Java is free to use and redistribute in open source or proprietary applications under the GPLv2, LGPLv2.1 and the UnboundID Free Use License. It does not have any third-party dependencies and commercial support is available from UnboundID.
 
@@ -56,7 +56,7 @@ The IM-LDAP runs within a Java Virtual Machine.
 
 http://www.ldapguru.info/ldap/ldap-programming-practices.html
 
-## Prerequisites for use with the inBloom Secure Data Service
+## Integrating with the [inBloom Secure Data Service](http://github.com/inbloom/secure-data-service)
 
   - SDS installation/configuration is recommended prior to setting up LDAP. Then, once the LDAP is set up, you can deploy and run it on the configured SDS platform. The links below provide information on SDS installation/configuration:
 
@@ -119,7 +119,7 @@ A deployment can be invoked directly via Maven. When the IM- LDAP server is run 
 
 1. Access the git repository and navigate to the root directory.
 2. Build the artifacts: `mvn clean install package`.
-3. Copy the resulting war file into your servlet container/application server (e.g. Tomcat, Jetty, Resin, Jboss, etc).
+3. Copy the resulting war file into your Java servlet container/application server (e.g. Tomcat or Jetty).
 4. Make the required resources are available on the classpath:
 
   1. ldap-inmemory-config.xml
@@ -129,7 +129,7 @@ A deployment can be invoked directly via Maven. When the IM- LDAP server is run 
     - ldif/2014_01_16_ldap_export.ldif.modified (Replace with LDIFs, if customized.)
 
 5. Start the server.
-6. Verify proper functionality using the Apache Directory Studio.
+6. Verify proper functionality using [Apache Directory Studio](https://directory.apache.org/studio/).
 
 ### Apache Directory Studio
 You can connect to the IM-LDAP by using the Apache Directory Studio.
