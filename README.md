@@ -1,3 +1,10 @@
+.___   _____            .____     ________      _____ __________
+|   | /     \           |    |    \______ \    /  _  \\______   \
+|   |/  \ /  \   ______ |    |     |    |  \  /  /_\  \|     ___/
+|   /    Y    \ /_____/ |    |___  |    `   \/    |    \    |
+|___\____|__  /         |_______ \/_______  /\____|__  /____|
+            \/                  \/        \/         \/
+
 # In-Memory LDAP Server
 
 ## Overview
@@ -132,6 +139,7 @@ A deployment can be invoked directly via Maven. When the IM- LDAP server is run 
 You can connect to the IM-LDAP by using the Apache Directory Studio.
 Create a new connection to the local LDAP:
 
+  | ---------------------- | -------------------------- |
   | Hostname               | 127.0.0.1                  |
   | Port                   | 10389                      |
   | Authentication Method  | Simple Authentication      |
