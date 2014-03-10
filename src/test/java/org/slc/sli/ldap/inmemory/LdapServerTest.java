@@ -17,7 +17,7 @@ import org.junit.Test;
  */
 public class LdapServerTest {
 
-    private static int ROOT_ENTITY_COUNT = 683;
+    private static int ROOT_ENTITY_COUNT = 819;
     private static int LEA_ADMIN_COUNT = 13;
 
     /**
