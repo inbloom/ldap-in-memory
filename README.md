@@ -109,7 +109,7 @@ For reference: the original value from git:
 A local deployment can be invoked directly via Maven. When the IM-LDAP server is run in this mode, it will use the "test" classpath and "test" resources.
 
 1. Access the git repository and navigate to the root directory.
-2. Build the artifacts: "mvn clean install package".
+2. Build the artifacts: "mvn clean install package -Dsli.env=local-ldap-server".
 3. Run the server using `mvn jetty:run`. This will use the “test” classpath (which means resources found beneath test).
 4. Start the inBloom admin-rails application.
 5. Select the URL: http://local.slidev.org:3001/application_authorizations
