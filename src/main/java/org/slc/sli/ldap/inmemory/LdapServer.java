@@ -20,22 +20,15 @@ public class LdapServer {
     private LdapServer() {
     }
 
-    /**
-     * Holder is loaded on first execution of getInstance(), or on first access to INSTANCE; not before. *
-     */
-    private static class SingletonHolder {
-        public static final LdapServerImpl INSTANCE = new LdapServerImpl();
-    }
+    private static volatile LdapServerImpl instance = null;
 
-    /**
-     * Returns the singleton instance. *
-     */
     public static LdapServerImpl getInstance() {
-        return SingletonHolder.INSTANCE;
+        if (instance == null) {
+            synchronized(LdapServer.class) {
+                if (instance == null)
+                    instance = new LdapServerImpl();
+            }
+        }
+        return instance;
     }
-
-    public LdapServerImpl getLdapServer() {
-        return SingletonHolder.INSTANCE;
-    }
-
 }
