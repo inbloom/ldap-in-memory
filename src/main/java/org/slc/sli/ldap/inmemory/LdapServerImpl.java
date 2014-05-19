@@ -15,6 +15,7 @@ import org.apache.commons.lang3.builder.ToStringStyle;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.slc.sli.ldap.inmemory.domain.Ldif;
 import org.slc.sli.ldap.inmemory.domain.Listener;
+import org.slc.sli.ldap.inmemory.domain.PasswordRewriteStrategy;
 import org.slc.sli.ldap.inmemory.domain.Server;
 import org.slc.sli.ldap.inmemory.loghandlers.AccessLogHandler;
 import org.slc.sli.ldap.inmemory.loghandlers.LDAPDebugLogHandler;
@@ -67,6 +68,8 @@ public class LdapServerImpl {
 
     //should wrap this with atomicreference
     private InMemoryDirectoryServer server;
+
+    private PasswordRewriteStrategy passwordStrategy = PasswordRewriteStrategy.getInstance();
 
     /**
      * Either synchronize access to start/stop methods, or protect isStarted with a lock.
@@ -389,6 +392,8 @@ public class LdapServerImpl {
             searchResult = connection.search(searchRequest);
             int resultCount = searchResult.getEntryCount();
 
+
+
             for (SearchResultEntry entry : searchResult.getSearchEntries()) {
                 LOG.debug("    entry: " + ToStringBuilder.reflectionToString(entry, ToStringStyle.DEFAULT_STYLE));
                 //  Attribute(name=userPassword, values={'{MD5}LUOaIWq99K/a23tT6zJWDg=='})
@@ -396,11 +401,7 @@ public class LdapServerImpl {
                 final String dn = entry.getDN(); //ou=people,...
                 final String uid = entry.getAttributeValue("uid");
 
-                // todo: remove this and replace with strategy injection
-                String newPwd = uid + "1234";
-                if (uid.equals("developer-email@slidev.org")) {
-                    newPwd = "test1234"; // ha, ha michael gillian!!
-                }
+                String newPwd = passwordStrategy.generatePassword(uid);
 
                 LOG.debug("      uid: " + uid);
                 LOG.debug("         dn:" + dn);
