@@ -4818,8 +4818,7 @@ givenName: Charter
 loginShell: /bin/sh
 userPassword:: e01ENX16c3VlTUtJRkZ5eVpNcmt0NWE4QU13PT0=
 
-dn: cn=developer-email@slidev.org,ou=people,ou=LocalNew,ou=DevTest,dc=slidev
- ,dc=org
+dn: cn=developer-email@slidev.org,ou=people,ou=LocalNew,ou=DevTest,dc=slidev,dc=org
 changetype: add
 objectClass: inetOrgPerson
 objectClass: top
@@ -13186,4 +13185,24 @@ uidNumber: 1150
 givenName: Christopher
 loginShell: /bin/bash
 userPassword:: e01ENX1CVjk1NjV0ejJQdVlzQ2c3eDJxRGhnPT0=
+
+dn: cn=e2etestdev_sb@slidev.org,ou=people,ou=SLIAdmin,dc=slidev,dc=org
+changetype: add
+objectClass: top
+objectClass: posixAccount
+objectClass: inetOrgPerson
+cn: e2etestdev_sb@slidev.org
+gidNumber: 113
+homeDirectory: /dev/null
+sn: Developer
+uid: e2etestdev_sb@slidev.org
+uidNumber: 500
+destinationIndicator: submitted
+displayName: -
+gecos:
+givenName: RCTest
+loginShell: /sbin/nologin
+mail: e2etestdev_sb@slidev.org
+o: WGEN RC
+userPassword:: dGVzdDEyMzQ=
 

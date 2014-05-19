@@ -48,9 +48,13 @@ import java.util.concurrent.locks.ReentrantLock;
 public class LdapServerImpl {
     private final static Logger LOG = LoggerFactory.getLogger(LdapServerImpl.class);
 
-    /** Lock timeout value.  If needed, move this value into config XML. */
+    /**
+     * Lock timeout value.  If needed, move this value into config XML.
+     */
     private static final int LOCK_TIMEOUT = 60;
-    /** Lock timeout value Time Unit.  If needed, move this value into config XML. */
+    /**
+     * Lock timeout value Time Unit.  If needed, move this value into config XML.
+     */
     private static final TimeUnit TIME_UNIT = TimeUnit.SECONDS;
 
     public static final String CONFIG_FILE = "ldap-inmemory-config.xml";
@@ -64,14 +68,20 @@ public class LdapServerImpl {
     //should wrap this with atomicreference
     private InMemoryDirectoryServer server;
 
-    /** Either synchronize access to start/stop methods, or protect isStarted with a lock.  */
+    /**
+     * Either synchronize access to start/stop methods, or protect isStarted with a lock.
+     */
     private final AtomicBoolean isStarted = new AtomicBoolean(Boolean.FALSE);
 
-    /** Lock used to ensure threadsafe server state changes (e.g. startup, shutdown, etc). */
+    /**
+     * Lock used to ensure threadsafe server state changes (e.g. startup, shutdown, etc).
+     */
     private final ReentrantLock serverStateLock = new ReentrantLock();
 
     //should wrap this with atomicreference
-    /** Encapsulates configuration entries read from properties file. */
+    /**
+     * Encapsulates configuration entries read from properties file.
+     */
     private Server configuration;
 
     /**
@@ -82,6 +92,7 @@ public class LdapServerImpl {
 
     /**
      * Helper method used to indentify if the server in memory LDAP server has been initialized, loaded and is listening for messages.
+     *
      * @return boolean True if started.
      */
     public boolean isStarted() {
@@ -90,6 +101,7 @@ public class LdapServerImpl {
 
     /**
      * Returns (or better yet, leaks) the instance of the InMemoryDirectoryServer.  Since this class is for development, it's a convenience for testing.
+     *
      * @return InMemoryDirectoryServer
      */
     public InMemoryDirectoryServer getInMemoryDirectoryServer() {
@@ -115,6 +127,7 @@ public class LdapServerImpl {
 
     /**
      * Starts an instance of the in memory LDAP server.
+     *
      * @throws Exception
      */
     public void start() throws Exception {
@@ -152,6 +165,7 @@ public class LdapServerImpl {
 
     /**
      * Returns the Listener Configs to register with he InMemory LDAP server.
+     *
      * @return The server object loaded from XML file by JAXB.
      * @throws Exception
      */
@@ -178,6 +192,7 @@ public class LdapServerImpl {
 
     /**
      * Configures and starts the local LDAP server.  This method is invoked by start().
+     *
      * @throws Exception
      */
     protected synchronized void configureAndStartServer() throws Exception {
@@ -260,30 +275,32 @@ public class LdapServerImpl {
 
     /**
      * Loads the root entry into the LDAP server, as specified in the configuration file.
+     *
      * @throws Exception
      */
     protected void loadRootEntry() throws Exception {
         LOG.info(">>>LdapServerImpl.loadRootEntry()");
 
-            SearchResultEntry entry = this.server.getEntry(configuration.getRoot().getObjectDn());
-            if (entry == null) {
-                LOG.info("   Root entry not found, create it.");
-                final String attributeName = "objectClass";
-                final Collection<String> attributeValues = new ArrayList<String>();
-                for (String name : configuration.getRoot().getObjectClasses()) {
-                    attributeValues.add(name);
-                }
-                Entry rootEntry = new Entry(new DN(configuration.getRoot().getObjectDn()));
-                rootEntry.addAttribute(attributeName, attributeValues);
-                this.server.add(rootEntry);
+        SearchResultEntry entry = this.server.getEntry(configuration.getRoot().getObjectDn());
+        if (entry == null) {
+            LOG.info("   Root entry not found, create it.");
+            final String attributeName = "objectClass";
+            final Collection<String> attributeValues = new ArrayList<String>();
+            for (String name : configuration.getRoot().getObjectClasses()) {
+                attributeValues.add(name);
             }
-            entry = this.server.getEntry(configuration.getRoot().getObjectDn());
-            LOG.info("   Added root entry: {}", ToStringBuilder.reflectionToString(entry, ToStringStyle.MULTI_LINE_STYLE));
+            Entry rootEntry = new Entry(new DN(configuration.getRoot().getObjectDn()));
+            rootEntry.addAttribute(attributeName, attributeValues);
+            this.server.add(rootEntry);
+        }
+        entry = this.server.getEntry(configuration.getRoot().getObjectDn());
+        LOG.info("   Added root entry: {}", ToStringBuilder.reflectionToString(entry, ToStringStyle.MULTI_LINE_STYLE));
 
     }
 
     /**
      * Loads entries (non-attribute entries) as specified in the configuration file.
+     *
      * @throws Exception
      */
     protected void loadEntries() throws Exception {
@@ -310,6 +327,7 @@ public class LdapServerImpl {
 
     /**
      * Loads LDIF files as specified in the configuration file.
+     *
      * @throws Exception
      */
     protected void loadLdifFiles() throws Exception {
@@ -377,7 +395,12 @@ public class LdapServerImpl {
 
                 final String dn = entry.getDN(); //ou=people,...
                 final String uid = entry.getAttributeValue("uid");
-                final String newPwd = uid + "1234";
+
+                // todo: remove this and replace with strategy injection
+                String newPwd = uid + "1234";
+                if (uid.equals("developer-email@slidev.org")) {
+                    newPwd = "test1234"; // ha, ha michael gillian!!
+                }
 
                 LOG.debug("      uid: " + uid);
                 LOG.debug("         dn:" + dn);
@@ -386,11 +409,9 @@ public class LdapServerImpl {
                 final String user = "uid=" + uid + "," + suffix;
                 LOG.debug("                " + user);
 
-                PasswordModifyExtendedRequest passwordModifyRequest =
-                      new PasswordModifyExtendedRequest(
-                            dn, // The user to update
-                            entry.getAttributeValue("userPassword"), // The current password for the user.
-                            newPwd); // The new password.  null = server will generate
+                PasswordModifyExtendedRequest passwordModifyRequest = new PasswordModifyExtendedRequest(dn, // The user to update
+                        entry.getAttributeValue("userPassword"), // The current password for the user.
+                        newPwd); // The new password.  null = server will generate
 
                 PasswordModifyExtendedResult passwordModifyResult;
 

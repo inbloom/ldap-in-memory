@@ -17,7 +17,7 @@ import org.junit.Test;
  */
 public class LdapServerTest {
 
-    private static int ROOT_ENTITY_COUNT = 819;
+    private static int ROOT_ENTITY_COUNT = 820;
     private static int LEA_ADMIN_COUNT = 13;
 
     /**
@@ -92,7 +92,7 @@ public class LdapServerTest {
             int entryCount = LdapServer.getInstance().getInMemoryDirectoryServer().countEntries();
 
             System.out.println("   getRootDSEentry count: " + entryCount);
-            Assert.assertEquals(entryCount, LdapServerTest.ROOT_ENTITY_COUNT);
+            Assert.assertEquals(LdapServerTest.ROOT_ENTITY_COUNT, entryCount);
 
             /* Establish a secure connection using the socket factory. */
             connection = LdapServer.getInstance().getInMemoryDirectoryServer().getConnection();
