@@ -8,7 +8,7 @@
 # In-Memory LDAP Server
 
 ## Overview
-The in-memory LDAP server (IM-LDAP) simplifies the task of standing up an LDAP server for non-production environments. This document explains how to easily configure an IM-LDAP directory server for testing, demonstration purposes, or simple LDAP data processing tasks. IM-LDAP allows for easy, cross-platform development of applications, such as the [inBloom Secure Data Service](http://github.com/secure-data-service), that rely on an LDAP server.
+The in-memory LDAP server (IM-LDAP) simplifies the task of standing up an LDAP server for non-production environments. This document explains how to easily configure an IM-LDAP directory server for testing, demonstration purposes, or simple LDAP data processing tasks. IM-LDAP allows for easy, cross-platform development of applications, such as the [Secure Data Service](https://github.com/inbloom/secure-data-service), that rely on an LDAP server.
 
 This implementation leverages the [UnboundedID Java SDK](https://www.unboundid.com/products/ldapsdk/). This library includes a fast, powerful, and user-friendly Java API for communicating with LDAP directory servers. The UnboundID Identity Data Platform provides a directory services solution designed to scale for extremely large identity datasets and also provides the data synchronization services necessary to support a low-risk migration from existing directory services solutions.
 
@@ -63,7 +63,7 @@ The IM-LDAP runs within a Java Virtual Machine.
 
 http://www.ldapguru.info/ldap/ldap-programming-practices.html
 
-## Integrating with the [inBloom Secure Data Service](http://github.com/inbloom/secure-data-service)
+## Integrating with the [Secure Data Service](http://github.com/inbloom/secure-data-service)
 
   - SDS installation/configuration is recommended prior to setting up LDAP. Then, once the LDAP is set up, you can deploy and run it on the configured SDS platform. The links below provide information on SDS installation/configuration:
 
@@ -154,8 +154,3 @@ The following list includes items related to this solution:
   - http://www.unboundid.com/products/ldapsdk/docs/javadoc/com/unboundid/ldap/listener/InMemoryDirectoryServer.html
   - http://www.unboundid.com/products/ldap-sdk/docs/javadoc/com/unboundid/util/ssl/SSLUtil.html
   - http://github.com/trevershick/ldap-test-utils
-
-## Support
-For support, visit the inBloom [Open Source Developer Community Forum](http://forums.inbloom.org), a discussion forum for developers and other members of the inBloom community.
-
-
