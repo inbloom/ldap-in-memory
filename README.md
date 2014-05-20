@@ -78,7 +78,7 @@ http://www.ldapguru.info/ldap/ldap-programming-practices.html
 
 ## Configuration
 
-### inBloom Platform
+### Platform
 
 After SDS artifacts have been built and deployed, you must modify the sli.properties entries. Alternatively, the YML used to generate sli.properties could be modified. However, this procedure is more complex and changes the default "local" behavior.
 
